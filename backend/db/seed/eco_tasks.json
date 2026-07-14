@@ -1,0 +1,282 @@
+[
+  {
+    "id": "people-01",
+    "domain": "people",
+    "label": {
+      "fr": "Gérer les conflits",
+      "en": "Manage conflict"
+    }
+  },
+  {
+    "id": "people-02",
+    "domain": "people",
+    "label": {
+      "fr": "Diriger une équipe",
+      "en": "Lead a team"
+    }
+  },
+  {
+    "id": "people-03",
+    "domain": "people",
+    "label": {
+      "fr": "Soutenir la performance de l'équipe",
+      "en": "Support team performance"
+    }
+  },
+  {
+    "id": "people-04",
+    "domain": "people",
+    "label": {
+      "fr": "Responsabiliser l'équipe et les parties prenantes",
+      "en": "Empower team members and stakeholders"
+    }
+  },
+  {
+    "id": "people-05",
+    "domain": "people",
+    "label": {
+      "fr": "Assurer la formation adéquate des membres et parties prenantes",
+      "en": "Ensure team members/stakeholders are adequately trained"
+    }
+  },
+  {
+    "id": "people-06",
+    "domain": "people",
+    "label": {
+      "fr": "Constituer une équipe",
+      "en": "Build a team"
+    }
+  },
+  {
+    "id": "people-07",
+    "domain": "people",
+    "label": {
+      "fr": "Lever les obstacles et blocages",
+      "en": "Address and remove impediments, obstacles and blockers"
+    }
+  },
+  {
+    "id": "people-08",
+    "domain": "people",
+    "label": {
+      "fr": "Négocier les accords projet",
+      "en": "Negotiate project agreements"
+    }
+  },
+  {
+    "id": "people-09",
+    "domain": "people",
+    "label": {
+      "fr": "Collaborer avec les parties prenantes",
+      "en": "Collaborate with stakeholders"
+    }
+  },
+  {
+    "id": "people-10",
+    "domain": "people",
+    "label": {
+      "fr": "Construire une compréhension partagée",
+      "en": "Build shared understanding"
+    }
+  },
+  {
+    "id": "people-11",
+    "domain": "people",
+    "label": {
+      "fr": "Engager et soutenir les équipes virtuelles",
+      "en": "Engage and support virtual teams"
+    }
+  },
+  {
+    "id": "people-12",
+    "domain": "people",
+    "label": {
+      "fr": "Définir les règles de fonctionnement de l'équipe",
+      "en": "Define team ground rules"
+    }
+  },
+  {
+    "id": "people-13",
+    "domain": "people",
+    "label": {
+      "fr": "Mentorer les parties prenantes concernées",
+      "en": "Mentor relevant stakeholders"
+    }
+  },
+  {
+    "id": "people-14",
+    "domain": "people",
+    "label": {
+      "fr": "Favoriser la performance par l'intelligence émotionnelle",
+      "en": "Promote team performance through the application of emotional intelligence"
+    }
+  },
+  {
+    "id": "process-01",
+    "domain": "process",
+    "label": {
+      "fr": "Exécuter le projet avec un sentiment d’urgence",
+      "en": "Execute project with urgency"
+    }
+  },
+  {
+    "id": "process-02",
+    "domain": "process",
+    "label": {
+      "fr": "Gérer les communications",
+      "en": "Manage communications"
+    }
+  },
+  {
+    "id": "process-03",
+    "domain": "process",
+    "label": {
+      "fr": "Évaluer et gérer les risques",
+      "en": "Assess and manage risks"
+    }
+  },
+  {
+    "id": "process-04",
+    "domain": "process",
+    "label": {
+      "fr": "Engager les parties prenantes",
+      "en": "Engage stakeholders"
+    }
+  },
+  {
+    "id": "process-05",
+    "domain": "process",
+    "label": {
+      "fr": "Planifier et gérer le budget et les ressources",
+      "en": "Plan and manage budget and resources"
+    }
+  },
+  {
+    "id": "process-06",
+    "domain": "process",
+    "label": {
+      "fr": "Planifier et gérer l'échéancier",
+      "en": "Plan and manage schedule"
+    }
+  },
+  {
+    "id": "process-07",
+    "domain": "process",
+    "label": {
+      "fr": "Planifier et gérer la qualité des livrables",
+      "en": "Plan and manage quality of products/deliverables"
+    }
+  },
+  {
+    "id": "process-08",
+    "domain": "process",
+    "label": {
+      "fr": "Planifier et gérer le périmètre",
+      "en": "Plan and manage scope"
+    }
+  },
+  {
+    "id": "process-09",
+    "domain": "process",
+    "label": {
+      "fr": "Intégrer les activités de planification du projet",
+      "en": "Integrate project planning activities"
+    }
+  },
+  {
+    "id": "process-10",
+    "domain": "process",
+    "label": {
+      "fr": "Gérer les changements du projet",
+      "en": "Manage project changes"
+    }
+  },
+  {
+    "id": "process-11",
+    "domain": "process",
+    "label": {
+      "fr": "Planifier et gérer les achats",
+      "en": "Plan and manage procurement"
+    }
+  },
+  {
+    "id": "process-12",
+    "domain": "process",
+    "label": {
+      "fr": "Gérer les artefacts du projet",
+      "en": "Manage project artifacts"
+    }
+  },
+  {
+    "id": "process-13",
+    "domain": "process",
+    "label": {
+      "fr": "Déterminer la méthodologie / les pratiques appropriées",
+      "en": "Determine appropriate project methodology/methods and practices"
+    }
+  },
+  {
+    "id": "process-14",
+    "domain": "process",
+    "label": {
+      "fr": "Établir la structure de gouvernance du projet",
+      "en": "Establish project governance structure"
+    }
+  },
+  {
+    "id": "process-15",
+    "domain": "process",
+    "label": {
+      "fr": "Gérer les problèmes du projet",
+      "en": "Manage project issues"
+    }
+  },
+  {
+    "id": "process-16",
+    "domain": "process",
+    "label": {
+      "fr": "Assurer le transfert de connaissances pour la continuité du projet",
+      "en": "Ensure knowledge transfer for project continuity"
+    }
+  },
+  {
+    "id": "process-17",
+    "domain": "process",
+    "label": {
+      "fr": "Planifier et gérer la clôture du projet ou de la phase",
+      "en": "Plan and manage project/phase closure"
+    }
+  },
+  {
+    "id": "business-01",
+    "domain": "business",
+    "label": {
+      "fr": "Planifier et gérer la conformité du projet",
+      "en": "Plan and manage project compliance"
+    }
+  },
+  {
+    "id": "business-02",
+    "domain": "business",
+    "label": {
+      "fr": "Évaluer et livrer les bénéfices et la valeur du projet",
+      "en": "Evaluate and deliver project benefits and value"
+    }
+  },
+  {
+    "id": "business-03",
+    "domain": "business",
+    "label": {
+      "fr": "Évaluer et traiter l'impact des changements de l'environnement d'affaires externe",
+      "en": "Evaluate and address external business environment changes for impact on scope"
+    }
+  },
+  {
+    "id": "business-04",
+    "domain": "business",
+    "label": {
+      "fr": "Soutenir le changement organisationnel",
+      "en": "Support organizational change"
+    }
+  }
+]

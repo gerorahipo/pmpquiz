@@ -1,0 +1,15 @@
+name: pmpquiz-api
+type: php
+docroot: public
+php_version: "8.3"
+webserver_type: nginx-fpm
+xdebug_enabled: false
+database:
+  type: mysql
+  version: "8.0"
+composer_version: "2"
+web_environment:
+  # Dev-only secret. Change this before any non-local deployment.
+  - JWT_SECRET=dev-change-me-6f2b9c1e8a7d4f0b
+  # Allow the Vite dev server (and anything, in dev) to call the API.
+  - CORS_ALLOW_ORIGIN=*

@@ -1,0 +1,16 @@
+# DDEV
+/.ddev/.dbimageBuild
+/.ddev/.ddev-docker-*.yaml
+/.ddev/.global_commands
+/.ddev/apache
+/.ddev/db_snapshots
+/.ddev/import.yaml
+/.ddev/providers
+/.ddev/sequelpro.spf
+/.ddev/import-db
+
+# PHP
+/vendor/
+
+# Local env overrides
+.env

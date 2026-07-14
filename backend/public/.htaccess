@@ -1,0 +1,8 @@
+# Front-controller fallback for Apache (DDEV uses nginx by default, which
+# already routes to index.php; this is here only if you switch to apache-fpm).
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>

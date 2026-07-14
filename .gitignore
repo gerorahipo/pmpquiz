@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dev-dist/
+.vite/
+
+# Local env (keep .env.example)
+.env
+.env.local
+.env.*.local
+*.local
+
+# Seed generation temp
+scripts/.seedtmp/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Claude Code local (machine-specific) settings — keep launch.json shared
+.claude/settings.local.json
