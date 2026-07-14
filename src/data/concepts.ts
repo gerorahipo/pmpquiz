@@ -1,6 +1,8 @@
 import type { Concept } from '../types'
+import { CONCEPT_TRAPS } from './conceptTraps'
+import { ADVANCED_CONCEPTS } from './concepts-advanced'
 
-export const CONCEPTS: Concept[] = [
+const BASE_CONCEPTS: Concept[] = [
   // ─────────────────────────── PRINCIPLES ───────────────────────────
   {
     id: 'pr-stewardship',
@@ -597,4 +599,10 @@ export const CONCEPTS: Concept[] = [
       en: 'A regulated-industry project leans on PMBOK® 8-style process detail to satisfy an auditor, while justifying its tailoring choices through PMBOK® 7 principles.\nAn agile team primarily uses the 8 performance domains as a reading grid, resorting to process detail only for heavily regulated areas like procurement.\nOn the exam, facing a difficult choice, favoring the option that best serves “value” or a principle (such as stewardship or stakeholder engagement) over one that mechanically follows a process step.',
     },
   },
+]
+
+/** Merge the exam-trap content into each sheet and append the advanced sheets. */
+export const CONCEPTS: Concept[] = [
+  ...BASE_CONCEPTS.map((c) => ({ ...c, traps: CONCEPT_TRAPS[c.id] ?? c.traps })),
+  ...ADVANCED_CONCEPTS,
 ]

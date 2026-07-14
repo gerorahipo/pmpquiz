@@ -797,11 +797,22 @@ select:focus-visible {
 }
 
 .concept-details,
-.concept-examples {
+.concept-examples,
+.concept-traps {
   max-width: 70ch;
   white-space: pre-line;
   margin: 0;
   color: var(--text);
+}
+
+/* exam traps stand out: warm warning surface */
+.disclosure-traps {
+  background: #fff7ed;
+  border-color: #fdba74;
+}
+
+.disclosure-traps h2 {
+  color: #9a3412;
 }
 
 @media (prefers-reduced-motion: reduce) {

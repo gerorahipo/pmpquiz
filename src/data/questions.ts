@@ -6,10 +6,11 @@ import { HARD_QUESTIONS_1 } from './questions-hard-1'
 import { HARD_QUESTIONS_2 } from './questions-hard-2'
 import { HARD_QUESTIONS_3 } from './questions-hard-3'
 import { PMPDORE_QUESTIONS } from './questions-pmpdore'
+import { EXTRA_QUESTIONS } from './questions-extra'
 import { QUESTION_ECO_TASK } from './questionEcoTags'
 
-/** Bump this version whenever the question bank changes to re-seed IndexedDB. */
-export const QUESTIONS_VERSION = 4
+/** Bump this version whenever the question bank changes (used by the API seed). */
+export const QUESTIONS_VERSION = 5
 
 /** Difficulty assignment for the original (v1) question bank. */
 const BASE_EASY_IDS = new Set([
@@ -31,6 +32,7 @@ const RAW_QUESTIONS: Question[] = [
   ...HARD_QUESTIONS_2,
   ...HARD_QUESTIONS_3,
   ...PMPDORE_QUESTIONS,
+  ...EXTRA_QUESTIONS,
 ]
 
 /** Attach the ECO task tag (for fine-grained weak-area tracking) to each question. */

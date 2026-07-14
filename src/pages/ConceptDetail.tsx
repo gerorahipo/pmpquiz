@@ -46,7 +46,7 @@ export default function ConceptDetail() {
         ? t('catPerformance')
         : t('catTopics')
 
-  const hasMore = Boolean(concept.details || concept.examples)
+  const hasMore = Boolean(concept.details || concept.examples || concept.traps)
 
   return (
     <div className="page concept-detail">
@@ -96,6 +96,12 @@ export default function ConceptDetail() {
                   <section className="disclosure-section">
                     <h2>{t('examplesHeading')}</h2>
                     <p className="concept-examples">{L(concept.examples)}</p>
+                  </section>
+                )}
+                {concept.traps && (
+                  <section className="disclosure-section disclosure-traps">
+                    <h2>{t('trapsHeading')}</h2>
+                    <p className="concept-traps">{L(concept.traps)}</p>
                   </section>
                 )}
               </div>

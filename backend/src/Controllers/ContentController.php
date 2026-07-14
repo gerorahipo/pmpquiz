@@ -64,6 +64,9 @@ final class ContentController
             if ($r['examples_fr'] !== null || $r['examples_en'] !== null) {
                 $concept['examples'] = ['fr' => $r['examples_fr'], 'en' => $r['examples_en']];
             }
+            if (($r['traps_fr'] ?? null) !== null || ($r['traps_en'] ?? null) !== null) {
+                $concept['traps'] = ['fr' => $r['traps_fr'], 'en' => $r['traps_en']];
+            }
             return $concept;
         }, $rows);
         Response::json($out);

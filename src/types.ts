@@ -88,4 +88,6 @@ export interface Concept {
   body: Localized
   details?: Localized
   examples?: Localized
+  /** common exam traps and wrong-answer patterns for this concept */
+  traps?: Localized
 }

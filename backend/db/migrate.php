@@ -19,6 +19,10 @@ $pdo = Database::pdo();
 echo "→ Applying schema…\n";
 applySchema($pdo, __DIR__ . '/schema.sql');
 
+echo "→ Ensuring newer columns on existing tables…\n";
+ensureColumn($pdo, 'concepts', 'traps_fr', 'MEDIUMTEXT NULL');
+ensureColumn($pdo, 'concepts', 'traps_en', 'MEDIUMTEXT NULL');
+
 echo "→ Seeding content…\n";
 seedContent($pdo, __DIR__ . '/seed');
 
@@ -40,6 +44,23 @@ function applySchema(PDO $pdo, string $file): void
         if ($statement !== '') {
             $pdo->exec($statement);
         }
+    }
+}
+
+/**
+ * CREATE TABLE IF NOT EXISTS does not alter existing tables, so columns added
+ * to schema.sql after a database was first created must be back-filled here.
+ */
+function ensureColumn(PDO $pdo, string $table, string $column, string $definition): void
+{
+    $stmt = $pdo->prepare(
+        'SELECT COUNT(*) FROM information_schema.columns
+          WHERE table_schema = DATABASE() AND table_name = ? AND column_name = ?'
+    );
+    $stmt->execute([$table, $column]);
+    if ((int) $stmt->fetchColumn() === 0) {
+        $pdo->exec("ALTER TABLE $table ADD COLUMN $column $definition");
+        echo "  added $table.$column\n";
     }
 }
 
@@ -97,8 +118,8 @@ function seedContent(PDO $pdo, string $seedDir): void
     $cStmt = $pdo->prepare(
         'INSERT INTO concepts
            (id, category, title_fr, title_en, summary_fr, summary_en, body_fr, body_en,
-            details_fr, details_en, examples_fr, examples_en)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+            details_fr, details_en, examples_fr, examples_en, traps_fr, traps_en)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
     );
     foreach ($concepts as $c) {
         $cStmt->execute([
@@ -109,6 +130,7 @@ function seedContent(PDO $pdo, string $seedDir): void
             $c['body']['fr'], $c['body']['en'],
             $c['details']['fr'] ?? null, $c['details']['en'] ?? null,
             $c['examples']['fr'] ?? null, $c['examples']['en'] ?? null,
+            $c['traps']['fr'] ?? null, $c['traps']['en'] ?? null,
         ]);
     }
     echo "  concepts: " . count($concepts) . "\n";

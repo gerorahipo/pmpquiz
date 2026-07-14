@@ -103,6 +103,7 @@ const fr = {
   hideDetails: 'Réduire',
   detailsHeading: 'Pour aller plus loin',
   examplesHeading: 'Exemples pratiques',
+  trapsHeading: 'Pièges d’examen',
 
   // exam simulation
   prev: 'Précédent',
@@ -270,6 +271,7 @@ const en: typeof fr = {
   hideDetails: 'Collapse',
   detailsHeading: 'Going further',
   examplesHeading: 'Practical examples',
+  trapsHeading: 'Exam traps',
 
   // exam simulation
   prev: 'Previous',

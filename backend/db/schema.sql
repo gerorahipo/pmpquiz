@@ -67,6 +67,8 @@ CREATE TABLE IF NOT EXISTS concepts (
   details_en  MEDIUMTEXT NULL,
   examples_fr MEDIUMTEXT NULL,
   examples_en MEDIUMTEXT NULL,
+  traps_fr    MEDIUMTEXT NULL,
+  traps_en    MEDIUMTEXT NULL,
   PRIMARY KEY (id),
   KEY idx_concepts_category (category)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
