@@ -7,10 +7,11 @@ import { HARD_QUESTIONS_2 } from './questions-hard-2'
 import { HARD_QUESTIONS_3 } from './questions-hard-3'
 import { PMPDORE_QUESTIONS } from './questions-pmpdore'
 import { EXTRA_QUESTIONS } from './questions-extra'
+import { MULTI_QUESTIONS } from './questions-multi'
 import { QUESTION_ECO_TASK } from './questionEcoTags'
 
 /** Bump this version whenever the question bank changes (used by the API seed). */
-export const QUESTIONS_VERSION = 5
+export const QUESTIONS_VERSION = 6
 
 /** Difficulty assignment for the original (v1) question bank. */
 const BASE_EASY_IDS = new Set([
@@ -33,6 +34,7 @@ const RAW_QUESTIONS: Question[] = [
   ...HARD_QUESTIONS_3,
   ...PMPDORE_QUESTIONS,
   ...EXTRA_QUESTIONS,
+  ...MULTI_QUESTIONS,
 ]
 
 /** Attach the ECO task tag (for fine-grained weak-area tracking) to each question. */

@@ -21,7 +21,7 @@ node scripts/gen-seed.mjs        # écrit backend/db/seed/*.json
 cd backend
 ddev start
 
-# 3. Créer le schéma + charger le contenu (350 questions, concepts, glossaire, tâches ECO)
+# 3. Créer le schéma + charger le contenu (questions dédupliquées, concepts avec pièges d'examen, glossaire, tâches ECO)
 ddev exec php db/migrate.php
 
 # 4. URL de l'API

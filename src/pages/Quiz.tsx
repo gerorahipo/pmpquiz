@@ -2,8 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { api } from '../api'
-import { loadEcoTasks } from '../content'
+import { loadEcoTasks, loadConcepts } from '../content'
 import { MODE_LABEL_KEYS, parseMode, formatDuration, MODE_TIME_LIMIT, isExamMode } from '../modeMeta'
+import { isMultiSelect, selectCount, isAnswerCorrect, shuffleOptions } from '../quizLogic'
 import type { Attempt, Domain, DomainScore, Localized, Question } from '../types'
 
 const DOMAIN_LABEL_KEYS = {
@@ -11,19 +12,6 @@ const DOMAIN_LABEL_KEYS = {
   process: 'domainProcess',
   business: 'domainBusiness',
 } as const
-
-function shuffleOptions(q: Question): Question {
-  const order = q.options.map((_, i) => i)
-  for (let i = order.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[order[i], order[j]] = [order[j], order[i]]
-  }
-  return {
-    ...q,
-    options: order.map((i) => q.options[i]),
-    correct: order.indexOf(q.correct),
-  }
-}
 
 function emptyDomainScores(): Record<Domain, DomainScore> {
   return {
@@ -33,6 +21,14 @@ function emptyDomainScores(): Record<Domain, DomainScore> {
   }
 }
 
+/** Toggle option `i` in a selection array, respecting the max pick count for this question. */
+function toggleSelection(current: number[], i: number, max: number): number[] {
+  if (max === 1) return [i]
+  if (current.includes(i)) return current.filter((x) => x !== i)
+  if (current.length < max) return [...current, i]
+  return current
+}
+
 export default function Quiz() {
   const { t, L } = useI18n()
   const navigate = useNavigate()
@@ -40,6 +36,9 @@ export default function Quiz() {
 
   const mode = parseMode(searchParams.get('mode'))
   const taskId = searchParams.get('task') || undefined
+  const taskIdsParam = searchParams.get('tasks')
+  const taskIds = taskIdsParam ? taskIdsParam.split(',').filter(Boolean) : undefined
+  const conceptId = searchParams.get('concept') || undefined
   const examSim = isExamMode(mode)
   const timeLimitSec = MODE_TIME_LIMIT[mode]
 
@@ -47,11 +46,14 @@ export default function Quiz() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const [taskLabel, setTaskLabel] = useState<Localized | null>(null)
+  const [conceptTitle, setConceptTitle] = useState<Localized | null>(null)
   const [done, setDone] = useState(false)
   const [index, setIndex] = useState(0)
 
-  // shared per-question state
-  const [selections, setSelections] = useState<(number | null)[]>([])
+  // shared per-question state — each entry is the array of selected option
+  // indices for that question (empty = unanswered; multi-select questions
+  // hold up to selectCount(question) indices).
+  const [selections, setSelections] = useState<number[][]>([])
   // practice mode: whether the answer for a question has been revealed/locked
   const [revealed, setRevealed] = useState<boolean[]>([])
   // exam mode: flagged-for-review questions + palette visibility
@@ -68,12 +70,12 @@ export default function Quiz() {
     setLoading(true)
     setError(false)
     api
-      .questionsForMode(mode, taskId)
+      .questionsForMode(mode, taskId, taskIds)
       .then((qs) => {
         if (cancelled) return
         const prepared = qs.map(shuffleOptions)
         setQuestions(prepared)
-        setSelections(new Array(prepared.length).fill(null))
+        setSelections(prepared.map(() => []))
         setRevealed(new Array(prepared.length).fill(false))
         setFlags(new Array(prepared.length).fill(false))
         startRef.current = Date.now()
@@ -89,7 +91,8 @@ export default function Quiz() {
     return () => {
       cancelled = true
     }
-  }, [mode, taskId, timeLimitSec])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, taskId, taskIdsParam, timeLimitSec])
 
   // resolve the ECO task label for the focused-practice badge
   useEffect(() => {
@@ -107,6 +110,23 @@ export default function Quiz() {
       cancelled = true
     }
   }, [taskId])
+
+  // resolve the concept title for the drill-practice badge
+  useEffect(() => {
+    if (!conceptId) {
+      setConceptTitle(null)
+      return
+    }
+    let cancelled = false
+    loadConcepts()
+      .then((concepts) => {
+        if (!cancelled) setConceptTitle(concepts.find((c) => c.id === conceptId)?.title ?? null)
+      })
+      .catch(() => {})
+    return () => {
+      cancelled = true
+    }
+  }, [conceptId])
 
   // ticking clock (drives countdown for timed modes and pacing indicator)
   useEffect(() => {
@@ -127,13 +147,13 @@ export default function Quiz() {
   }, [loading, done, timeLimitSec])
 
   const current = questions[index]
-  const answeredCount = selections.filter((s) => s !== null).length
+  const isAnswered = (i: number) => (selections[i]?.length ?? 0) === selectCount(questions[i])
+  const answeredCount = questions.reduce((n, _q, i) => n + (isAnswered(i) ? 1 : 0), 0)
 
   const finalize = () => {
     // record each answered question for spaced repetition + task stats
     questions.forEach((q, i) => {
-      const sel = selections[i]
-      void api.recordAnswer(q.id, sel !== null && sel === q.correct)
+      void api.recordAnswer(q.id, isAnswerCorrect(q, selections[i] ?? []))
     })
     setDone(true)
   }
@@ -143,13 +163,13 @@ export default function Quiz() {
     if (revealed[index]) return
     setSelections((prev) => {
       const next = [...prev]
-      next[index] = i
+      next[index] = toggleSelection(next[index] ?? [], i, selectCount(current))
       return next
     })
   }
 
   const validate = () => {
-    if (selections[index] === null) return
+    if (!isAnswered(index)) return
     setRevealed((prev) => {
       const next = [...prev]
       next[index] = true
@@ -166,7 +186,7 @@ export default function Quiz() {
   const chooseExam = (i: number) => {
     setSelections((prev) => {
       const next = [...prev]
-      next[index] = i
+      next[index] = toggleSelection(next[index] ?? [], i, selectCount(current))
       return next
     })
   }
@@ -193,13 +213,15 @@ export default function Quiz() {
     const scores = emptyDomainScores()
     questions.forEach((q, i) => {
       scores[q.domain].total++
-      if (selections[i] === q.correct) scores[q.domain].correct++
+      if (isAnswerCorrect(q, selections[i] ?? [])) scores[q.domain].correct++
     })
     return scores
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selections, questions])
 
   const correctCount = useMemo(
-    () => questions.reduce((n, q, i) => n + (selections[i] === q.correct ? 1 : 0), 0),
+    () => questions.reduce((n, q, i) => n + (isAnswerCorrect(q, selections[i] ?? []) ? 1 : 0), 0),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [questions, selections],
   )
 
@@ -262,10 +284,11 @@ export default function Quiz() {
     const pct = Math.round((correctCount / total) * 100)
     const message = pct >= 80 ? t('greatJob') : pct >= 60 ? t('goodJob') : t('keepGoing')
     const unanswered = total - answeredCount
+    const badgeLabel = conceptTitle ? L(conceptTitle) : taskId ? t('focusedPractice') : t(MODE_LABEL_KEYS[mode])
     return (
       <div className="page">
         <div className="card results">
-          <span className="badge badge-neutral">{taskId ? t('focusedPractice') : t(MODE_LABEL_KEYS[mode])}</span>
+          <span className="badge badge-neutral">{badgeLabel}</span>
           <h1>{t('resultsTitle')}</h1>
           {timedOut && <p className="timeup-banner">{t('timeUp')}</p>}
           <div
@@ -328,12 +351,13 @@ export default function Quiz() {
           <h2>{t('reviewAnswers')}</h2>
           <div className="review-list">
             {questions.map((q, i) => {
-              const sel = selections[i]
-              const good = sel === q.correct
+              const sel = selections[i] ?? []
+              const good = isAnswerCorrect(q, sel)
+              const correctSet = new Set(q.correctMultiple ?? [q.correct])
               return (
                 <details key={q.id} className="review-item">
                   <summary>
-                    <span className={`review-dot ${sel === null ? 'skipped' : good ? 'good' : 'bad'}`}>
+                    <span className={`review-dot ${sel.length === 0 ? 'skipped' : good ? 'good' : 'bad'}`}>
                       {i + 1}
                     </span>
                     <span className="review-summary-text">{L(q.question)}</span>
@@ -341,8 +365,8 @@ export default function Quiz() {
                   <div className="review-body">
                     {q.options.map((opt, oi) => {
                       let cls = 'review-option'
-                      if (oi === q.correct) cls += ' right'
-                      else if (oi === sel) cls += ' wrong'
+                      if (correctSet.has(oi)) cls += ' right'
+                      else if (sel.includes(oi)) cls += ' wrong'
                       return (
                         <div key={oi} className={cls}>
                           <span className="option-letter">{String.fromCharCode(65 + oi)}</span>
@@ -365,6 +389,9 @@ export default function Quiz() {
   }
 
   if (!current) return null
+
+  const currentMulti = isMultiSelect(current)
+  const currentMax = selectCount(current)
 
   // ───────────────────────── EXAM SIMULATION ─────────────────────────
   if (examSim) {
@@ -391,7 +418,7 @@ export default function Quiz() {
             <div className="palette-grid">
               {questions.map((_, i) => {
                 let cls = 'palette-cell'
-                if (selections[i] !== null) cls += ' answered'
+                if (isAnswered(i)) cls += ' answered'
                 if (flags[i]) cls += ' flagged'
                 if (i === index) cls += ' current'
                 return (
@@ -454,18 +481,24 @@ export default function Quiz() {
           </div>
 
           <h1 className="question-text">{L(current.question)}</h1>
-          <div className="options" role="radiogroup" aria-label={L(current.question)}>
-            {current.options.map((opt, i) => (
-              <button
-                key={i}
-                className={`option ${selections[index] === i ? 'selected' : ''}`}
-                aria-pressed={selections[index] === i}
-                onClick={() => chooseExam(i)}
-              >
-                <span className="option-letter">{String.fromCharCode(65 + i)}</span>
-                <span>{L(opt)}</span>
-              </button>
-            ))}
+          {currentMulti && (
+            <p className="select-hint">{t('selectCountHint', { n: currentMax })}</p>
+          )}
+          <div className="options" role={currentMulti ? 'group' : 'radiogroup'} aria-label={L(current.question)}>
+            {current.options.map((opt, i) => {
+              const picked = (selections[index] ?? []).includes(i)
+              return (
+                <button
+                  key={i}
+                  className={`option ${picked ? 'selected' : ''}`}
+                  aria-pressed={picked}
+                  onClick={() => chooseExam(i)}
+                >
+                  <span className="option-letter">{String.fromCharCode(65 + i)}</span>
+                  <span>{L(opt)}</span>
+                </button>
+              )
+            })}
           </div>
 
           <div className="exam-nav">
@@ -492,8 +525,11 @@ export default function Quiz() {
 
   // ───────────────────────── PRACTICE (learning) MODE ─────────────────────────
   const isRevealed = revealed[index]
-  const selected = selections[index]
+  const selectedNow = selections[index] ?? []
+  const correctSet = new Set(current.correctMultiple ?? [current.correct])
+  const answeredCorrectly = isRevealed && isAnswerCorrect(current, selectedNow)
   const progressPct = Math.round((index / questions.length) * 100)
+  const badgeLabel = conceptTitle ? L(conceptTitle) : null
 
   return (
     <div className="page quiz-page">
@@ -502,6 +538,7 @@ export default function Quiz() {
           {t('questionXofY', { x: index + 1, y: questions.length })}
         </span>
         <div className="quiz-header-right">
+          {badgeLabel && <span className="badge badge-neutral">{badgeLabel}</span>}
           {taskLabel && <span className="badge badge-neutral">{L(taskLabel)}</span>}
           <span className={`badge badge-${current.domain}`}>{t(DOMAIN_LABEL_KEYS[current.domain])}</span>
         </div>
@@ -512,13 +549,17 @@ export default function Quiz() {
 
       <div className="card question-card">
         <h1 className="question-text">{L(current.question)}</h1>
-        <div className="options" role="radiogroup" aria-label={L(current.question)}>
+        {currentMulti && !isRevealed && (
+          <p className="select-hint">{t('selectCountHint', { n: currentMax })}</p>
+        )}
+        <div className="options" role={currentMulti ? 'group' : 'radiogroup'} aria-label={L(current.question)}>
           {current.options.map((opt, i) => {
             let cls = 'option'
-            if (!isRevealed && selected === i) cls += ' selected'
+            const picked = selectedNow.includes(i)
+            if (!isRevealed && picked) cls += ' selected'
             if (isRevealed) {
-              if (i === current.correct) cls += ' right'
-              else if (i === selected) cls += ' wrong'
+              if (correctSet.has(i)) cls += ' right'
+              else if (picked) cls += ' wrong'
               else cls += ' dimmed'
             }
             return (
@@ -526,7 +567,7 @@ export default function Quiz() {
                 key={i}
                 className={cls}
                 disabled={isRevealed}
-                aria-pressed={selected === i}
+                aria-pressed={picked}
                 onClick={() => selectOption(i)}
               >
                 <span className="option-letter">{String.fromCharCode(65 + i)}</span>
@@ -537,9 +578,9 @@ export default function Quiz() {
         </div>
 
         {isRevealed && (
-          <div className={`feedback ${selected === current.correct ? 'feedback-good' : 'feedback-bad'}`}>
+          <div className={`feedback ${answeredCorrectly ? 'feedback-good' : 'feedback-bad'}`}>
             <p className="feedback-title">
-              {selected === current.correct ? t('correctAnswer') : t('wrongAnswer')}
+              {answeredCorrectly ? t('correctAnswer') : t('wrongAnswer')}
             </p>
             <p>
               <strong>{t('explanation')} : </strong>
@@ -550,7 +591,7 @@ export default function Quiz() {
 
         <div className="btn-row">
           {!isRevealed ? (
-            <button className="btn btn-cta" disabled={selected === null} onClick={validate}>
+            <button className="btn btn-cta" disabled={!isAnswered(index)} onClick={validate}>
               {t('validate')}
             </button>
           ) : (

@@ -53,6 +53,12 @@ final class Questions
             if (!empty($r['eco_task_id'])) {
                 $item['ecoTask'] = $r['eco_task_id'];
             }
+            if (!empty($r['correct_multiple'])) {
+                $decoded = json_decode((string) $r['correct_multiple'], true);
+                if (is_array($decoded)) {
+                    $item['correctMultiple'] = array_map('intval', $decoded);
+                }
+            }
             $out[] = $item;
         }
         return $out;

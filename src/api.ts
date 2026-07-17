@@ -105,12 +105,17 @@ export const api = {
   allReview: () => request<ReviewItem[]>('/api/review/all'),
   taskStats: () => request<TaskStat[]>('/api/task-stats'),
 
-  /** Draw the question set for a quiz mode (missed mode pulls the SR due queue). */
-  async questionsForMode(mode: QuizMode, taskId?: string): Promise<Question[]> {
+  /**
+   * Draw the question set for a quiz mode (missed mode pulls the SR due
+   * queue). `taskId` targets one ECO task (weak-area practice); `taskIds`
+   * targets several at once (concept-sheet drill).
+   */
+  async questionsForMode(mode: QuizMode, taskId?: string, taskIds?: string[]): Promise<Question[]> {
     if (mode === 'missed') {
       const due = await api.dueReview()
       return due.map((d) => d.question)
     }
+    if (taskIds && taskIds.length > 0) return api.getQuestions({ tasks: taskIds.join(','), limit: '15' })
     if (taskId) return api.getQuestions({ task: taskId, limit: '15' })
     return api.getQuestions({ mode })
   },

@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS questions (
   difficulty     ENUM('easy','medium','hard') NOT NULL,
   eco_task_id    VARCHAR(32) NULL,
   correct        TINYINT UNSIGNED NOT NULL,
+  correct_multiple JSON NULL,                  -- e.g. [0,2] for "select 2" questions; NULL = single-answer
   question_fr    TEXT NOT NULL,
   question_en    TEXT NOT NULL,
   explanation_fr TEXT NOT NULL,

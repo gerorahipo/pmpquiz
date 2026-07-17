@@ -25,10 +25,14 @@ final class ContentController
         $pdo = Database::pdo();
         $mode = $req->query('mode');
         $task = $req->query('task');
+        $tasks = $req->query('tasks');
         $difficulty = $req->query('difficulty');
         $limit = (int) ($req->query('limit') ?? '0');
 
-        if ($task !== null && $task !== '') {
+        if ($tasks !== null && $tasks !== '') {
+            $taskIds = array_values(array_filter(array_map('trim', explode(',', $tasks))));
+            $rows = $this->drawByTasks($pdo, $taskIds, $limit > 0 ? $limit : 15);
+        } elseif ($task !== null && $task !== '') {
             $rows = $this->drawByTask($pdo, $task, $limit > 0 ? $limit : 15);
         } elseif ($mode === 'exam') {
             $rows = $this->drawExam($pdo);
@@ -111,6 +115,28 @@ final class ContentController
         $stmt = $pdo->prepare('SELECT * FROM questions WHERE eco_task_id = ? ORDER BY RAND() LIMIT ?');
         $stmt->bindValue(1, $taskId);
         $stmt->bindValue(2, $count, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    /**
+     * Draw from a SET of ECO tasks — used for "drill" practice launched from
+     * a concept sheet, which typically maps to several related exam tasks.
+     * @param string[] $taskIds
+     * @return array<int,array<string,mixed>>
+     */
+    private function drawByTasks(PDO $pdo, array $taskIds, int $count): array
+    {
+        if ($taskIds === []) {
+            return [];
+        }
+        $placeholders = implode(',', array_fill(0, count($taskIds), '?'));
+        $stmt = $pdo->prepare("SELECT * FROM questions WHERE eco_task_id IN ($placeholders) ORDER BY RAND() LIMIT ?");
+        $i = 1;
+        foreach ($taskIds as $id) {
+            $stmt->bindValue($i++, $id);
+        }
+        $stmt->bindValue($i, $count, PDO::PARAM_INT);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }

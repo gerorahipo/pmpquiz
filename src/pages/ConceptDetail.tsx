@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { loadConcepts } from '../content'
+import { CONCEPT_ECO_TASKS } from '../data/conceptEcoTasks'
 import type { Concept } from '../types'
 
 export default function ConceptDetail() {
   const { t, L } = useI18n()
   const { id } = useParams()
+  const navigate = useNavigate()
   const [expanded, setExpanded] = useState(false)
   const [concepts, setConcepts] = useState<Concept[] | null>(null)
 
@@ -47,6 +49,12 @@ export default function ConceptDetail() {
         : t('catTopics')
 
   const hasMore = Boolean(concept.details || concept.examples || concept.traps)
+  const drillTasks = CONCEPT_ECO_TASKS[concept.id]
+
+  const startDrill = () => {
+    if (!drillTasks || drillTasks.length === 0) return
+    navigate(`/quiz?mode=easy&tasks=${drillTasks.join(',')}&concept=${concept.id}`)
+  }
 
   return (
     <div className="page concept-detail">
@@ -58,6 +66,14 @@ export default function ConceptDetail() {
         <h1>{L(concept.title)}</h1>
         <p className="concept-summary">{L(concept.summary)}</p>
         <p className="concept-body">{L(concept.body)}</p>
+
+        {drillTasks && drillTasks.length > 0 && (
+          <div className="btn-row concept-drill-row">
+            <button className="btn btn-cta" onClick={startDrill}>
+              {t('drillThisSheet')}
+            </button>
+          </div>
+        )}
 
         {hasMore && (
           <div className="concept-disclosure">

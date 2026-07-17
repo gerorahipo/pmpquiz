@@ -120,6 +120,9 @@ const fr = {
   legendFlagged: 'Marquée',
   reviewAnswers: 'Revoir les réponses',
   focusedPractice: 'Entraînement ciblé',
+  selectCountHint: 'Choisissez {n} réponses',
+  drillThisSheet: 'Réviser les questions liées',
+  drillNoQuestions: 'Pas encore de questions liées à cette fiche.',
 
   // spaced repetition + weak areas
   tabReview: 'À réviser',
@@ -288,6 +291,9 @@ const en: typeof fr = {
   legendFlagged: 'Flagged',
   reviewAnswers: 'Review your answers',
   focusedPractice: 'Focused practice',
+  selectCountHint: 'Select {n} answers',
+  drillThisSheet: 'Review related questions',
+  drillNoQuestions: 'No related questions yet for this sheet.',
 
   // spaced repetition + weak areas
   tabReview: 'To review',
