@@ -13,6 +13,7 @@ import StudyLanding from './pages/StudyLanding'
 import StudyDomains from './pages/StudyDomains'
 import StudyDomainDetail from './pages/StudyDomainDetail'
 import StudyLevel from './pages/StudyLevel'
+import DomainSortGame from './pages/DomainSortGame'
 import Stats from './pages/Stats'
 import Auth from './pages/Auth'
 
@@ -104,6 +105,7 @@ export default function App() {
           <Route path="/glossary/domains/:domainId" element={<StudyDomainDetail />} />
           <Route path="/glossary/domains/:domainId/levels/:levelIndex" element={<StudyLevel />} />
           <Route path="/glossary/all" element={<Glossary />} />
+          <Route path="/glossary/game" element={<DomainSortGame />} />
           <Route path="/stats" element={<Stats />} />
         </Routes>
       </main>

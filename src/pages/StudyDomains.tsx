@@ -15,8 +15,15 @@ export default function StudyDomains() {
 
   return (
     <div className="page">
-      <h1>{t('studyDomainsTitle')}</h1>
-      <p className="subtitle">{t('studyDomainsSubtitle')}</p>
+      <div className="study-domains-head">
+        <div>
+          <h1>{t('studyDomainsTitle')}</h1>
+          <p className="subtitle">{t('studyDomainsSubtitle')}</p>
+        </div>
+        <Link className="btn btn-secondary" to="/glossary/game">
+          {t('sortGameTitle')}
+        </Link>
+      </div>
 
       <div className="card-grid study-domain-grid">
         {STUDY_DOMAINS.map((d) => {

@@ -194,6 +194,24 @@ const fr = {
   studyRestartLevel: 'Recommencer',
   studyBackToDomain: 'Retour au domaine',
 
+  // domain-sorting game (ECO 2026 tasks)
+  sortGameTitle: 'Jeu de tri par domaine',
+  sortGameSubtitle: 'Placez chaque tâche de l’ECO 2026 dans son domaine — cliquez une carte puis un domaine pour la déposer.',
+  sortGameModeSort: 'Classer',
+  sortGameModeFix: 'Corriger',
+  sortGameModeSortDesc: 'Toutes les tâches partent d’une pile commune : placez-les une à une dans le bon domaine.',
+  sortGameModeFixDesc: 'Les tâches sont déjà réparties, mais souvent au mauvais endroit : corrigez le classement.',
+  sortGameProgress: 'Cartes placées',
+  sortGameScore: 'Score',
+  sortGameTime: 'Temps',
+  sortGameVerify: 'Vérifier',
+  sortGameRestart: 'Recommencer',
+  sortGameSolution: 'Voir la solution',
+  sortGamePoolHeading: 'Cartes non classées',
+  sortGamePoolEmpty: 'Toutes les cartes sont placées.',
+  sortGameDomainsHeading: 'Domaines',
+  sortGameDropHere: 'Cliquez ici pour déposer la carte sélectionnée.',
+
   // auth
   login: 'Connexion',
   register: 'Inscription',
@@ -405,6 +423,24 @@ const en: typeof fr = {
   studyLevelComplete: 'Level complete!',
   studyRestartLevel: 'Restart',
   studyBackToDomain: 'Back to domain',
+
+  // domain-sorting game (ECO 2026 tasks)
+  sortGameTitle: 'Domain sorting game',
+  sortGameSubtitle: 'Place each 2026 ECO task under its domain — click a card, then a domain, to drop it there.',
+  sortGameModeSort: 'Sort',
+  sortGameModeFix: 'Fix',
+  sortGameModeSortDesc: 'All tasks start in one shared pile: place them one by one into the right domain.',
+  sortGameModeFixDesc: 'Tasks are already spread out, but often in the wrong place: fix the sorting.',
+  sortGameProgress: 'Cards placed',
+  sortGameScore: 'Score',
+  sortGameTime: 'Time',
+  sortGameVerify: 'Check',
+  sortGameRestart: 'Restart',
+  sortGameSolution: 'Show solution',
+  sortGamePoolHeading: 'Unsorted cards',
+  sortGamePoolEmpty: 'All cards are placed.',
+  sortGameDomainsHeading: 'Domains',
+  sortGameDropHere: 'Click here to drop the selected card.',
 
   // auth
   login: 'Log in',

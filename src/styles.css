@@ -1787,6 +1787,133 @@ select:focus-visible {
   justify-content: center;
 }
 
+/* ───────── domain-sorting game ───────── */
+.study-domains-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.study-sort-mode-desc {
+  margin: 0.5rem 0 0;
+}
+
+.study-sort-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.study-sort-zone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0.5rem;
+  min-height: 64px;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.study-sort-pool {
+  background: var(--surface);
+}
+
+.study-sort-zone-active {
+  cursor: pointer;
+  border-color: var(--primary);
+}
+
+.study-sort-zone-active:hover {
+  background: var(--primary-soft);
+}
+
+.study-sort-empty {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.study-sort-domains {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.study-sort-domains .study-sort-zone {
+  flex-direction: column;
+  border: none;
+  border-top: 4px solid var(--domain-color);
+  margin: 0;
+}
+
+.study-sort-zone-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.study-sort-zone-head h3 {
+  margin: 0;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.study-sort-zone-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--domain-color);
+  flex-shrink: 0;
+}
+
+.study-sort-zone-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.study-sort-card {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s, transform 0.1s;
+}
+
+.study-sort-card:hover {
+  border-color: var(--primary);
+}
+
+.study-sort-card-selected {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.study-sort-card-correct {
+  border-color: var(--right-border);
+  background: var(--right-bg);
+  color: #15803d;
+}
+
+.study-sort-card-wrong {
+  border-color: var(--wrong-border);
+  background: var(--wrong-bg);
+  color: var(--danger);
+}
+
 /* ───────── responsive & a11y ───────── */
 @media (max-width: 640px) {
   .header {
@@ -1810,6 +1937,11 @@ select:focus-visible {
 
   .study-domain-banner {
     flex-direction: column;
+  }
+
+  .study-domains-head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
