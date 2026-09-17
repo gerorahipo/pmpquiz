@@ -1474,5 +1474,209 @@
       "fr": "Coût par point = charges salariales de l’équipe sur la période ÷ points réalisés durant l’intervalle. Budget prévisionnel = (coût par point × points totaux à réaliser) + autres dépenses.",
       "en": "Cost per point = team’s salary cost for the period ÷ points completed in the interval. Forecast budget = (cost per point × total points to deliver) + other expenses."
     }
+  },
+  {
+    "id": "g-triangular",
+    "category": "formula",
+    "term": {
+      "fr": "Estimation à trois points (moyenne triangulaire)",
+      "en": "Three-point estimate (triangular average)"
+    },
+    "definition": {
+      "fr": "E = (Optimiste + Probable + Pessimiste) / 3 — moyenne simple, sans pondération. À ne pas confondre avec la moyenne bêta/PERT (/6, pondérée par 4×M).",
+      "en": "E = (Optimistic + Most likely + Pessimistic) / 3 — simple, unweighted average. Not to be confused with the beta/PERT average (/6, weighted 4×M)."
+    }
+  },
+  {
+    "id": "g-leaslevels",
+    "category": "process",
+    "term": {
+      "fr": "Niveaux de conflit de Leas",
+      "en": "Leas conflict levels"
+    },
+    "definition": {
+      "fr": "5 niveaux d’escalade : 1 problème à résoudre, 2 désaccord, 3 rivalité, 4 lutte/fuite, 5 situation inextricable — plus tôt on intervient, plus léger le traitement.",
+      "en": "5 escalation levels: 1 problem to solve, 2 disagreement, 3 contest, 4 fight/flight, 5 intractable — the earlier the intervention, the lighter the fix."
+    }
+  },
+  {
+    "id": "g-riskvsissue",
+    "category": "process",
+    "term": {
+      "fr": "Risque vs point à traiter",
+      "en": "Risk vs issue"
+    },
+    "definition": {
+      "fr": "Risque : futur, positif ou négatif, registre des risques, « réponse au risque ». Point à traiter (issue) : présent, toujours négatif, journal des points à traiter, « solution de contournement ».",
+      "en": "Risk: future, positive or negative, risk register, “risk response”. Issue: present, always negative, issue log, “workaround”."
+    }
+  },
+  {
+    "id": "g-fmea",
+    "category": "process",
+    "term": {
+      "fr": "AMDEC / FMEA",
+      "en": "FMEA"
+    },
+    "definition": {
+      "fr": "Analyse des modes de défaillance et de leurs effets : identifie chaque mode de défaillance possible d’un composant, son effet et sa criticité, en amont de l’analyse qualitative.",
+      "en": "Failure Mode and Effects Analysis: identifies every possible failure mode of a component, its effect and criticality, upstream of qualitative analysis."
+    }
+  },
+  {
+    "id": "g-tornado",
+    "category": "process",
+    "term": {
+      "fr": "Diagramme en tornade",
+      "en": "Tornado diagram"
+    },
+    "definition": {
+      "fr": "Histogramme horizontal issu de l’analyse de sensibilité, classant les risques par impact décroissant sur le résultat du projet.",
+      "en": "Horizontal bar chart from sensitivity analysis, ranking risks by decreasing impact on the project outcome."
+    }
+  },
+  {
+    "id": "g-decisiontree",
+    "category": "process",
+    "term": {
+      "fr": "Arbre de décision",
+      "en": "Decision tree"
+    },
+    "definition": {
+      "fr": "Structure un choix séquentiel sous incertitude ; chaque branche est pondérée par sa valeur monétaire attendue (EMV) pour sélectionner la meilleure option.",
+      "en": "Structures a sequential choice under uncertainty; each branch is weighted by its expected monetary value (EMV) to select the best option."
+    }
+  },
+  {
+    "id": "g-rbs",
+    "category": "process",
+    "term": {
+      "fr": "Organigramme des risques (RBS)",
+      "en": "Risk breakdown structure (RBS)"
+    },
+    "definition": {
+      "fr": "Décomposition hiérarchique des sources de risque : typiquement technique, management, commercial, externe — force l’équipe à balayer toutes les catégories.",
+      "en": "Hierarchical decomposition of risk sources: typically technical, management, commercial, external — forces the team to scan every category."
+    }
+  },
+  {
+    "id": "g-defactojure",
+    "category": "process",
+    "term": {
+      "fr": "Normes de facto vs de jure",
+      "en": "De facto vs de jure standards"
+    },
+    "definition": {
+      "fr": "De facto : largement adoptées dans la pratique mais non imposées légalement (jargon, argot). De jure : rendues obligatoires par la loi ou une autorité reconnue.",
+      "en": "De facto: widely adopted in practice but not legally mandated (jargon, slang). De jure: made mandatory by law or a recognized authority."
+    }
+  },
+  {
+    "id": "g-communityofpractice",
+    "category": "process",
+    "term": {
+      "fr": "Communauté de pratique",
+      "en": "Community of practice"
+    },
+    "definition": {
+      "fr": "Groupe de personnes partageant un intérêt commun, qui apprennent ensemble et développent des pratiques et ressources partagées.",
+      "en": "A group of people sharing a common interest, learning together and developing shared practices and resources."
+    }
+  },
+  {
+    "id": "g-jobshadowing",
+    "category": "process",
+    "term": {
+      "fr": "Observation en situation (job shadowing)",
+      "en": "Job shadowing"
+    },
+    "definition": {
+      "fr": "Observation directe d’une personne accomplissant ses tâches dans son environnement de travail, pour transférer une connaissance tacite.",
+      "en": "Direct observation of a person performing their tasks in their work environment, to transfer tacit knowledge."
+    }
+  },
+  {
+    "id": "g-warranty",
+    "category": "process",
+    "term": {
+      "fr": "Garantie (contractuelle)",
+      "en": "Warranty"
+    },
+    "definition": {
+      "fr": "Promesse, explicite ou implicite, que les biens ou services répondront à une norme prédéterminée (fiabilité, aptitude à l’emploi, sécurité).",
+      "en": "An explicit or implicit promise that goods or services will meet a predetermined standard (reliability, fitness for use, safety)."
+    }
+  },
+  {
+    "id": "g-waiver",
+    "category": "process",
+    "term": {
+      "fr": "Dérogation (waiver)",
+      "en": "Waiver"
+    },
+    "definition": {
+      "fr": "Disposition juridiquement contraignante par laquelle une partie renonce à une réclamation, sans que l’autre partie devienne responsable.",
+      "en": "A legally binding provision by which one party gives up a claim, without the other party becoming liable."
+    }
+  },
+  {
+    "id": "g-contractmods",
+    "category": "process",
+    "term": {
+      "fr": "Types de modifications contractuelles",
+      "en": "Contract modification types"
+    },
+    "definition": {
+      "fr": "Changement administratif (mineur) ; modification de contrat (substantielle) ; accord complémentaire (négocié séparément) ; changement constructif (par action/omission du client) ; résiliation.",
+      "en": "Administrative change (minor); contract modification (substantial); supplemental agreement (negotiated separately); constructive change (by the buyer’s action/omission); termination."
+    }
+  },
+  {
+    "id": "g-growthmindset",
+    "category": "people",
+    "term": {
+      "fr": "État d’esprit de développement (growth mindset)",
+      "en": "Growth mindset"
+    },
+    "definition": {
+      "fr": "Conviction (Carol Dweck) que les capacités et talents peuvent s’améliorer avec l’effort — s’oppose à l’état d’esprit fixe.",
+      "en": "The belief (Carol Dweck) that abilities and talents can improve with effort — the opposite of a fixed mindset."
+    }
+  },
+  {
+    "id": "g-rewardsrecognition",
+    "category": "people",
+    "term": {
+      "fr": "Récompenses vs reconnaissance",
+      "en": "Rewards vs recognition"
+    },
+    "definition": {
+      "fr": "Récompense : élément tangible pour un résultat précis. Reconnaissance : immatérielle, valorise le comportement — ne jamais donner l’une sans l’autre.",
+      "en": "Reward: a tangible item for a specific outcome. Recognition: intangible, values the behavior — never give one without the other."
+    }
+  },
+  {
+    "id": "g-votingmethods",
+    "category": "people",
+    "term": {
+      "fr": "Méthodes de vote",
+      "en": "Voting methods"
+    },
+    "definition": {
+      "fr": "Unanimité (tout le monde s’accorde) ; majorité (>50 %) ; pluralité (le plus grand sous-groupe l’emporte, même sans majorité, utile à 3+ options).",
+      "en": "Unanimity (everyone agrees); majority (>50%); plurality (the largest subgroup wins, even without a majority, useful with 3+ options)."
+    }
+  },
+  {
+    "id": "g-eidomains",
+    "category": "people",
+    "term": {
+      "fr": "Domaines de l’intelligence émotionnelle (Goleman)",
+      "en": "Emotional intelligence domains (Goleman)"
+    },
+    "definition": {
+      "fr": "Conscience de soi et maîtrise de soi (envers soi-même) ; conscience sociale et gestion des relations (envers les autres).",
+      "en": "Self-awareness and self-management (toward oneself); social awareness and relationship management (toward others)."
+    }
   }
 ]

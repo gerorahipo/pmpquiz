@@ -14,10 +14,11 @@ import { GOVERNANCE_QUESTIONS } from './questions-governance'
 import { WBS_SCOPE_QUESTIONS } from './questions-wbs-scope'
 import { COMPLIANCE_REQUIREMENTS_QUESTIONS } from './questions-compliance-requirements'
 import { FOUNDATIONS_PLANNING_QUESTIONS } from './questions-foundations-planning'
+import { CONFLICT_RISK_ISSUES_QUESTIONS } from './questions-conflict-risk-issues'
 import { QUESTION_ECO_TASK } from './questionEcoTags'
 
 /** Bump this version whenever the question bank changes (used by the API seed). */
-export const QUESTIONS_VERSION = 12
+export const QUESTIONS_VERSION = 13
 
 /** Difficulty assignment for the original (v1) question bank. */
 const BASE_EASY_IDS = new Set([
@@ -47,6 +48,7 @@ const RAW_QUESTIONS: Question[] = [
   ...WBS_SCOPE_QUESTIONS,
   ...COMPLIANCE_REQUIREMENTS_QUESTIONS,
   ...FOUNDATIONS_PLANNING_QUESTIONS,
+  ...CONFLICT_RISK_ISSUES_QUESTIONS,
 ]
 
 /** Attach the ECO task tag (for fine-grained weak-area tracking) to each question. */
