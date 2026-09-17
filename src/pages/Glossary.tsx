@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { loadGlossary } from '../content'
 import type { GlossaryCategory, GlossaryEntry } from '../data/glossary'
@@ -96,6 +97,9 @@ export default function Glossary() {
 
   return (
     <div className="page">
+      <Link className="btn btn-secondary study-back-link" to="/glossary/domains">
+        ← {t('studyBrowseByDomain')}
+      </Link>
       <h1>{t('glossaryTitle')}</h1>
       <p className="subtitle">{t('glossarySubtitle')}</p>
 

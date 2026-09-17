@@ -9,6 +9,10 @@ import Concepts from './pages/Concepts'
 import ConceptDetail from './pages/ConceptDetail'
 import Missed from './pages/Missed'
 import Glossary from './pages/Glossary'
+import StudyLanding from './pages/StudyLanding'
+import StudyDomains from './pages/StudyDomains'
+import StudyDomainDetail from './pages/StudyDomainDetail'
+import StudyLevel from './pages/StudyLevel'
 import Stats from './pages/Stats'
 import Auth from './pages/Auth'
 
@@ -95,7 +99,11 @@ export default function App() {
           <Route path="/concepts" element={<Concepts />} />
           <Route path="/concepts/:id" element={<ConceptDetail />} />
           <Route path="/missed" element={<Missed />} />
-          <Route path="/glossary" element={<Glossary />} />
+          <Route path="/glossary" element={<StudyLanding />} />
+          <Route path="/glossary/domains" element={<StudyDomains />} />
+          <Route path="/glossary/domains/:domainId" element={<StudyDomainDetail />} />
+          <Route path="/glossary/domains/:domainId/levels/:levelIndex" element={<StudyLevel />} />
+          <Route path="/glossary/all" element={<Glossary />} />
           <Route path="/stats" element={<Stats />} />
         </Routes>
       </main>

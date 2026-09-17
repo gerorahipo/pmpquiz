@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { loadConcepts } from '../content'
 import { CONCEPT_ECO_TASKS } from '../data/conceptEcoTasks'
+import { markConceptSeen } from '../lib/studyProgress'
 import type { Concept } from '../types'
 
 export default function ConceptDetail() {
@@ -21,6 +22,10 @@ export default function ConceptDetail() {
       cancelled = true
     }
   }, [])
+
+  useEffect(() => {
+    if (id) markConceptSeen(id)
+  }, [id])
 
   if (concepts === null) {
     return (

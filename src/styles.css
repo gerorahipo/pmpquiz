@@ -1468,6 +1468,240 @@ select:focus-visible {
   color: var(--danger);
 }
 
+/* ───────── study domains (glossary + revision sheets landing) ───────── */
+.btn-lg {
+  padding: 0.95rem 2rem;
+  font-size: 1.05rem;
+}
+
+.study-back-link {
+  margin-bottom: 1rem;
+}
+
+.study-hero {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.study-hero-eyebrow {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin: 0 0 0.5rem;
+}
+
+.study-hero h1 {
+  font-size: 2.1rem;
+  line-height: 1.25;
+  margin: 0 auto 0.75rem;
+  max-width: 24ch;
+}
+
+.study-hero-sub {
+  color: var(--text-muted);
+  max-width: 55ch;
+  margin: 0 auto 1.5rem;
+}
+
+.study-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.study-stat-card {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.study-stat-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.study-stat-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.study-landing-footer {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+}
+
+/* domain color tokens */
+.domain-navy { --domain-color: #1e293b; }
+.domain-blue { --domain-color: #0369a1; }
+.domain-teal { --domain-color: #0f766e; }
+.domain-purple { --domain-color: #7e22ce; }
+.domain-green { --domain-color: #15803d; }
+.domain-orange { --domain-color: #c2410c; }
+.domain-amber { --domain-color: #b45309; }
+.domain-red { --domain-color: #b91c1c; }
+.domain-cyan { --domain-color: #0e7490; }
+
+.study-domain-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--text);
+  border-top: 4px solid var(--domain-color);
+}
+
+.study-domain-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--domain-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+
+.study-domain-icon-svg {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.study-domain-card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.study-domain-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  flex: 1;
+}
+
+.study-domain-meta {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.study-progress-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  overflow: hidden;
+}
+
+.study-progress-bar-lg {
+  height: 10px;
+  margin: 0.75rem 0 0.35rem;
+}
+
+.study-progress-bar span {
+  display: block;
+  height: 100%;
+  background: var(--domain-color, var(--cta));
+  border-radius: 999px;
+  transition: width 0.3s;
+}
+
+.study-progress-pct {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.study-domain-banner {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin: 0 0 1rem;
+  border-top: 4px solid var(--domain-color);
+}
+
+.study-domain-banner h1 {
+  margin: 0 0 0.35rem;
+}
+
+.study-domain-banner p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.study-domain-banner-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--domain-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.study-domain-banner-icon .study-domain-icon-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.study-level-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.study-level-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.study-level-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.study-level-badge {
+  font-weight: 800;
+}
+
+.study-level-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.study-level-card .muted {
+  margin: 0;
+}
+
+.study-level-status {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.study-sheet-card {
+  border-top: none;
+}
+
 /* ───────── responsive & a11y ───────── */
 @media (max-width: 640px) {
   .header {
@@ -1486,6 +1720,10 @@ select:focus-visible {
 
   .quiz-config {
     align-items: stretch;
+    flex-direction: column;
+  }
+
+  .study-domain-banner {
     flex-direction: column;
   }
 }
