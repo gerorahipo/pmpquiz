@@ -4,6 +4,10 @@ docroot: public
 php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
+# Dedicated router port, separate from the shared default (443) and from
+# port 5173 which another local DDEV project's Vite proxy add-on reserves
+# router-wide — this avoids "port already in use" clashes on ddev start.
+router_https_port: "5174"
 database:
   type: mysql
   version: "8.0"

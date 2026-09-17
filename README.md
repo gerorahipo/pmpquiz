@@ -27,7 +27,10 @@ Architecture **client / serveur** : un front **React (SPA/PWA)** et une **API PH
 ```bash
 node scripts/gen-seed.mjs                 # génère backend/db/seed/*.json depuis les sources TS
 cd backend && ddev start && ddev exec php db/migrate.php
-# → API sur https://pmpquiz-api.ddev.site
+# → API sur https://pmpquiz-api.ddev.site:5174
+# (port dédié via router_https_port dans backend/.ddev/config.yaml, pour
+#  éviter tout conflit avec le port 5173 qu'un autre projet DDEV local
+#  pourrait réserver au niveau du routeur partagé)
 ```
 
 ### 2. Front
@@ -40,7 +43,7 @@ npm run build               # build de production dans dist/
 npm run preview             # tester le build
 ```
 
-> Le front interroge l'API définie par **`VITE_API_URL`** (défaut : `https://pmpquiz-api.ddev.site`).
+> Le front interroge l'API définie par **`VITE_API_URL`** (défaut : `https://pmpquiz-api.ddev.site:5174`).
 > L'API doit tourner pour se connecter et charger les données.
 
 ## Architecture (front)

@@ -21,11 +21,11 @@ node scripts/gen-seed.mjs        # écrit backend/db/seed/*.json
 cd backend
 ddev start
 
-# 3. Créer le schéma + charger le contenu (350 questions, concepts, glossaire, tâches ECO)
+# 3. Créer le schéma + charger le contenu (questions dédupliquées, concepts avec pièges d'examen, glossaire, tâches ECO)
 ddev exec php db/migrate.php
 
 # 4. URL de l'API
-ddev describe        # → https://pmpquiz-api.ddev.site
+ddev describe        # → https://pmpquiz-api.ddev.site:5174
 ```
 
 Le `migrate.php` est **ré-exécutable** : il ne recrée pas les tables existantes
@@ -46,7 +46,7 @@ Variables d'environnement (définies dans `.ddev/config.yaml`, surchargées en p
 
 ## Endpoints
 
-Base : `https://pmpquiz-api.ddev.site`
+Base : `https://pmpquiz-api.ddev.site:5174`
 
 ### Auth
 | Méthode | Route                | Corps                       | Réponse                     |
@@ -77,7 +77,7 @@ Base : `https://pmpquiz-api.ddev.site`
 ## Tests rapides (curl)
 
 ```bash
-API=https://pmpquiz-api.ddev.site
+API=https://pmpquiz-api.ddev.site:5174
 
 # santé
 curl -s $API/api/health

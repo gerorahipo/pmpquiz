@@ -13,8 +13,15 @@ export interface BaseQuestion {
   domain: Domain
   question: Localized
   options: Localized[]
-  /** index of the correct option */
+  /** index of the correct option (single-answer questions; ignored when correctMultiple is set) */
   correct: number
+  /**
+   * Indices of ALL correct options, for "select N" multi-response questions
+   * (the real PMP exam's other item format). When present with length > 1,
+   * the question is rendered as a multi-select and must be answered with
+   * exactly that many choices, all correct, to count as right.
+   */
+  correctMultiple?: number[]
   explanation: Localized
 }
 

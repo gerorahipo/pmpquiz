@@ -7291,5 +7291,2648 @@
       "fr": "Transparence + gouvernance : une revue de phase sert à décider en connaissance de cause — lui cacher une information la vide de son sens. Le passage conditionnel avec plan daté existe précisément pour ce cas. Influencer l'auditeur est une faute d'intégrité caractérisée.",
       "en": "Transparency + governance: a gate review exists to decide with full information — hiding a finding defeats its purpose. Conditional passes with a dated plan exist precisely for this case. Influencing the auditor is a clear integrity violation."
     }
+  },
+  {
+    "id": "xs01",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-03",
+    "question": {
+      "fr": "Sélectionnez les DEUX stratégies de réponse appropriées face à une MENACE (risque négatif).",
+      "en": "Select the TWO response strategies appropriate for a THREAT (negative risk)."
+    },
+    "options": [
+      {
+        "fr": "Atténuer",
+        "en": "Mitigate"
+      },
+      {
+        "fr": "Exploiter",
+        "en": "Exploit"
+      },
+      {
+        "fr": "Transférer",
+        "en": "Transfer"
+      },
+      {
+        "fr": "Améliorer",
+        "en": "Enhance"
+      },
+      {
+        "fr": "Partager",
+        "en": "Share"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2
+    ],
+    "explanation": {
+      "fr": "Atténuer et transférer traitent les menaces. Exploiter, améliorer et partager sont les réponses symétriques réservées aux OPPORTUNITÉS (risques positifs).",
+      "en": "Mitigate and transfer address threats. Exploit, enhance and share are the symmetric responses reserved for OPPORTUNITIES (positive risks)."
+    }
+  },
+  {
+    "id": "xs02",
+    "domain": "people",
+    "difficulty": "easy",
+    "ecoTask": "people-01",
+    "question": {
+      "fr": "Selon les techniques classiques de résolution de conflit, lesquelles DEUX sont considérées comme les MOINS efficaces à long terme ?",
+      "en": "Among the classic conflict-resolution techniques, which TWO are considered LEAST effective long-term?"
+    },
+    "options": [
+      {
+        "fr": "Collaborer / résoudre le problème",
+        "en": "Collaborate / problem-solve"
+      },
+      {
+        "fr": "Éviter / se retirer",
+        "en": "Avoid / withdraw"
+      },
+      {
+        "fr": "Forcer / imposer",
+        "en": "Force / direct"
+      },
+      {
+        "fr": "Compromis",
+        "en": "Compromise"
+      }
+    ],
+    "correct": 1,
+    "correctMultiple": [
+      1,
+      2
+    ],
+    "explanation": {
+      "fr": "Éviter (reporte sans résoudre) et forcer (gagnant-perdant, use l'autorité) sont les techniques les moins efficaces à long terme. Collaborer est la meilleure ; le compromis est un pis-aller acceptable sous contrainte de temps.",
+      "en": "Avoiding (postpones without resolving) and forcing (win-lose, uses authority) are the least effective long-term. Collaborating is best; compromise is an acceptable stopgap under time pressure."
+    }
+  },
+  {
+    "id": "xs03",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-11",
+    "question": {
+      "fr": "Parmi les éléments suivants, lesquels DEUX sont des types de contrat à COÛTS REMBOURSABLES ?",
+      "en": "Among the following, which TWO are COST-REIMBURSABLE contract types?"
+    },
+    "options": [
+      {
+        "fr": "Prix forfaitaire ferme (FFP)",
+        "en": "Firm Fixed Price (FFP)"
+      },
+      {
+        "fr": "Coûts remboursables avec honoraires fixes (CPFF)",
+        "en": "Cost Plus Fixed Fee (CPFF)"
+      },
+      {
+        "fr": "Temps et matériaux (T&M)",
+        "en": "Time & Materials (T&M)"
+      },
+      {
+        "fr": "Coûts remboursables avec intéressement (CPIF)",
+        "en": "Cost Plus Incentive Fee (CPIF)"
+      }
+    ],
+    "correct": 1,
+    "correctMultiple": [
+      1,
+      3
+    ],
+    "explanation": {
+      "fr": "CPFF et CPIF sont deux variantes de contrats à coûts remboursables (le risque de coût pèse sur l'acheteur). FFP est à prix fixe (risque fournisseur) ; T&M est une catégorie hybride distincte.",
+      "en": "CPFF and CPIF are two variants of cost-reimbursable contracts (cost risk sits with the buyer). FFP is fixed-price (seller risk); T&M is a distinct hybrid category."
+    }
+  },
+  {
+    "id": "xs04",
+    "domain": "people",
+    "difficulty": "easy",
+    "ecoTask": "people-06",
+    "question": {
+      "fr": "Selon le modèle de Tuckman, lesquelles TROIS sont des étapes du développement d'une équipe ?",
+      "en": "According to Tuckman's model, which THREE are stages of team development?"
+    },
+    "options": [
+      {
+        "fr": "Storming (turbulence)",
+        "en": "Storming"
+      },
+      {
+        "fr": "Norming (normalisation)",
+        "en": "Norming"
+      },
+      {
+        "fr": "Escalating (escalade)",
+        "en": "Escalating"
+      },
+      {
+        "fr": "Performing (performance)",
+        "en": "Performing"
+      },
+      {
+        "fr": "Negotiating (négociation)",
+        "en": "Negotiating"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1,
+      3
+    ],
+    "explanation": {
+      "fr": "Les cinq étapes réelles sont : forming, storming, norming, performing, adjourning. « Escalating » et « negotiating » ne font pas partie du modèle — des distracteurs plausibles mais inventés.",
+      "en": "The five real stages are: forming, storming, norming, performing, adjourning. “Escalating” and “negotiating” are not part of the model — plausible but invented distractors."
+    }
+  },
+  {
+    "id": "xs05",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-13",
+    "question": {
+      "fr": "Lesquels DEUX de ces facteurs favorisent le choix d'une approche AGILE plutôt que prédictive ?",
+      "en": "Which TWO of these factors favor an AGILE approach over predictive?"
+    },
+    "options": [
+      {
+        "fr": "Exigences instables, susceptibles d’évoluer fréquemment",
+        "en": "Unstable requirements, likely to evolve frequently"
+      },
+      {
+        "fr": "Besoin de retours fréquents du client sur des increments",
+        "en": "Need for frequent customer feedback on increments"
+      },
+      {
+        "fr": "Coût de changement tardif extrêmement élevé (ex. génie civil)",
+        "en": "Extremely high cost of late change (e.g., civil engineering)"
+      },
+      {
+        "fr": "Obligation réglementaire de documentation exhaustive amont",
+        "en": "Regulatory requirement for exhaustive upfront documentation"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "Exigences volatiles et besoin de feedback fréquent orientent vers l'agile. Un coût de changement tardif très élevé ou une documentation amont imposée orientent au contraire vers le prédictif.",
+      "en": "Volatile requirements and the need for frequent feedback point to agile. A very high cost of late change or mandated upfront documentation point instead to predictive."
+    }
+  },
+  {
+    "id": "xs06",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-07",
+    "question": {
+      "fr": "Lesquelles TROIS de ces activités relèvent du CONTRÔLE qualité (et non de l'assurance qualité) ?",
+      "en": "Which THREE of these activities belong to quality CONTROL (not quality assurance)?"
+    },
+    "options": [
+      {
+        "fr": "Inspecter un livrable par rapport aux critères d’acceptation",
+        "en": "Inspect a deliverable against acceptance criteria"
+      },
+      {
+        "fr": "Auditer le respect du processus de revue de code défini",
+        "en": "Audit compliance with the defined code-review process"
+      },
+      {
+        "fr": "Mesurer le temps de réponse d’une API en production",
+        "en": "Measure an API’s response time in production"
+      },
+      {
+        "fr": "Tester une fonctionnalité par rapport à ses critères d’acceptation",
+        "en": "Test a feature against its acceptance criteria"
+      },
+      {
+        "fr": "Former l’équipe à un nouveau standard de codage",
+        "en": "Train the team on a new coding standard"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2,
+      3
+    ],
+    "explanation": {
+      "fr": "Le contrôle qualité porte sur les PRODUITS : inspection, mesure, test. L'audit de processus relève de l'assurance qualité (processus) ; la formation est une action d'amélioration/prévention, en amont des deux.",
+      "en": "Quality control is about PRODUCTS: inspection, measurement, testing. Process auditing belongs to quality assurance (process); training is an improvement/prevention action, upstream of both."
+    }
+  },
+  {
+    "id": "xs07",
+    "domain": "people",
+    "difficulty": "medium",
+    "ecoTask": "people-14",
+    "question": {
+      "fr": "Selon la théorie bifactorielle de Herzberg, lesquels DEUX sont des facteurs de MOTIVATION (et non d'hygiène) ?",
+      "en": "Per Herzberg's two-factor theory, which TWO are MOTIVATORS (not hygiene factors)?"
+    },
+    "options": [
+      {
+        "fr": "Le salaire",
+        "en": "Salary"
+      },
+      {
+        "fr": "La reconnaissance du travail accompli",
+        "en": "Recognition for accomplished work"
+      },
+      {
+        "fr": "Les conditions de travail",
+        "en": "Working conditions"
+      },
+      {
+        "fr": "Les responsabilités confiées",
+        "en": "Responsibilities entrusted"
+      }
+    ],
+    "correct": 1,
+    "correctMultiple": [
+      1,
+      3
+    ],
+    "explanation": {
+      "fr": "Reconnaissance et responsabilité sont des motivateurs (engagement durable). Salaire et conditions de travail sont des facteurs d'hygiène : leur absence démotive, mais leur présence n'engage pas durablement.",
+      "en": "Recognition and responsibility are motivators (durable engagement). Salary and working conditions are hygiene factors: their absence demotivates, but their presence does not durably engage."
+    }
+  },
+  {
+    "id": "xs08",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-06",
+    "question": {
+      "fr": "Lesquels DEUX énoncés sur la marge (float) sont CORRECTS ?",
+      "en": "Which TWO statements about float are CORRECT?"
+    },
+    "options": [
+      {
+        "fr": "Les activités du chemin critique ont une marge totale nulle",
+        "en": "Critical path activities have zero total float"
+      },
+      {
+        "fr": "La marge libre protège la fin du projet, pas le successeur",
+        "en": "Free float protects the project finish, not the successor"
+      },
+      {
+        "fr": "La marge totale peut être consommée sans retarder la fin du projet",
+        "en": "Total float can be consumed without delaying the project finish"
+      },
+      {
+        "fr": "Le nivellement des ressources ne modifie jamais les marges",
+        "en": "Resource leveling never changes float"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2
+    ],
+    "explanation": {
+      "fr": "Chemin critique = marge totale nulle. La marge totale protège justement la FIN DU PROJET (on peut la consommer sans la décaler). C'est la marge LIBRE qui protège le successeur — l'énoncé inversé est faux. Le nivellement, lui, consomme des marges.",
+      "en": "Critical path = zero total float. Total float precisely protects the PROJECT FINISH (it can be consumed without delaying it). It is FREE float that protects the successor — the reversed statement is wrong. Leveling, in turn, consumes float."
+    }
+  },
+  {
+    "id": "xs09",
+    "domain": "business",
+    "difficulty": "medium",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Lesquels TROIS sont des exemples d'indicateurs AVANCÉS (leading), utiles pour piloter pendant le déploiement plutôt que constater après coup ?",
+      "en": "Which THREE are examples of LEADING indicators, useful to steer during rollout rather than observe after the fact?"
+    },
+    "options": [
+      {
+        "fr": "Taux d'adoption du nouveau processus",
+        "en": "Adoption rate of the new process"
+      },
+      {
+        "fr": "Économies cumulées réalisées sur 12 mois",
+        "en": "Cumulative savings realized over 12 months"
+      },
+      {
+        "fr": "Volume de transactions traité via le nouveau circuit",
+        "en": "Transaction volume processed through the new workflow"
+      },
+      {
+        "fr": "Taux d'abandon de l'ancien système",
+        "en": "Abandonment rate of the old system"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2,
+      3
+    ],
+    "explanation": {
+      "fr": "Adoption, volume traité et abandon de l'ancien système sont mesurables PENDANT le déploiement et prédisent le bénéfice. Les économies cumulées sur 12 mois sont un indicateur RETARDÉ (lagging) : quand il bouge, il est trop tard pour corriger.",
+      "en": "Adoption, volume processed and old-system abandonment are measurable DURING rollout and predict the benefit. Cumulative 12-month savings is a LAGGING indicator: by the time it moves, it is too late to correct."
+    }
+  },
+  {
+    "id": "xs10",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Dans la priorisation MoSCoW, lesquels DEUX énoncés sont EXACTS ?",
+      "en": "In MoSCoW prioritization, which TWO statements are CORRECT?"
+    },
+    "options": [
+      {
+        "fr": "Les « Must have » sont non négociables : le produit est inutilisable sans eux",
+        "en": "“Must haves” are non-negotiable: the product is unusable without them"
+      },
+      {
+        "fr": "Les « Won’t have » sont simplement reportés à une date à définir plus tard dans le projet",
+        "en": "“Won’t haves” are simply deferred to a later date within the same project"
+      },
+      {
+        "fr": "Les « Could have » sont les premiers sacrifiés en cas de contrainte de capacité",
+        "en": "“Could haves” are the first to be sacrificed under capacity constraints"
+      },
+      {
+        "fr": "Les catégories doivent toutes recevoir un pourcentage égal du périmètre",
+        "en": "All categories must receive an equal percentage of scope"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2
+    ],
+    "explanation": {
+      "fr": "Must = non négociable ; Could = premier sacrifié. Won't have est exclu D'EMBLÉE de cette itération/version (pas automatiquement reporté) ; il n'y a pas de règle de répartition égale entre catégories.",
+      "en": "Must = non-negotiable; Could = first to go. Won’t have is excluded UPFRONT from this iteration/release (not automatically deferred); there is no rule requiring equal allocation across categories."
+    }
+  },
+  {
+    "id": "xs11",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-03",
+    "question": {
+      "fr": "Un risque identifié a été transféré via une assurance. Lesquels DEUX énoncés décrivent correctement la situation résultante ?",
+      "en": "An identified risk was transferred via insurance. Which TWO statements correctly describe the resulting situation?"
+    },
+    "options": [
+      {
+        "fr": "L'impact FINANCIER du risque a été déplacé vers l'assureur",
+        "en": "The FINANCIAL impact of the risk has moved to the insurer"
+      },
+      {
+        "fr": "Le risque opérationnel (retard, perturbation) a disparu du projet",
+        "en": "The operational risk (delay, disruption) has disappeared from the project"
+      },
+      {
+        "fr": "Un risque secondaire peut apparaître (ex. délai de traitement du sinistre)",
+        "en": "A secondary risk may appear (e.g., claim processing delay)"
+      },
+      {
+        "fr": "Le registre des risques peut être clôturé pour ce risque",
+        "en": "The risk register can be closed for this risk"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2
+    ],
+    "explanation": {
+      "fr": "Transférer déplace l'impact FINANCIER, pas l'impact opérationnel (le projet subit toujours le retard/la perturbation le temps que l'assurance s'active). La réponse elle-même peut générer un risque secondaire à documenter — le risque n'est jamais « clos » par le simple fait de le transférer.",
+      "en": "Transfer moves the FINANCIAL impact, not the operational one (the project still suffers the delay/disruption while the insurance kicks in). The response itself can generate a secondary risk to document — the risk is never “closed” by the mere act of transferring it."
+    }
+  },
+  {
+    "id": "xs12",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-05",
+    "question": {
+      "fr": "BAC = 500 k€, EV = 200 k€, AC = 260 k€, PV = 250 k€. Lesquels TROIS énoncés sont corrects ?",
+      "en": "BAC = $500K, EV = $200K, AC = $260K, PV = $250K. Which THREE statements are correct?"
+    },
+    "options": [
+      {
+        "fr": "Le projet est en retard sur le planning (SV négatif)",
+        "en": "The project is behind schedule (negative SV)"
+      },
+      {
+        "fr": "Le projet est en dépassement de coût (CV négatif)",
+        "en": "The project is over budget (negative CV)"
+      },
+      {
+        "fr": "Le CPI est supérieur à 1",
+        "en": "CPI is greater than 1"
+      },
+      {
+        "fr": "L'EAC en cas d'écart typique est supérieur au BAC",
+        "en": "EAC assuming a typical variance is greater than BAC"
+      },
+      {
+        "fr": "Le SPI est supérieur à 1",
+        "en": "SPI is greater than 1"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1,
+      3
+    ],
+    "explanation": {
+      "fr": "SV = 200−250 = −50 (retard) ; CV = 200−260 = −60 (dépassement) ; CPI = 200/260 ≈ 0,77 < 1 (donc l'option CPI>1 est fausse) ; EAC = BAC/CPI = 500/0,77 ≈ 649 k€ > BAC (vrai) ; SPI = 200/250 = 0,8 < 1 (donc faux).",
+      "en": "SV = 200−250 = −50 (behind); CV = 200−260 = −60 (over budget); CPI = 200/260 ≈ 0.77 < 1 (so CPI>1 is false); EAC = BAC/CPI = 500/0.77 ≈ $649K > BAC (true); SPI = 200/250 = 0.8 < 1 (so false)."
+    }
+  },
+  {
+    "id": "xs13",
+    "domain": "people",
+    "difficulty": "hard",
+    "ecoTask": "people-02",
+    "question": {
+      "fr": "Lesquelles DEUX affirmations sur le leadership situationnel (Hersey-Blanchard) sont EXACTES ?",
+      "en": "Which TWO statements about situational leadership (Hersey-Blanchard) are CORRECT?"
+    },
+    "options": [
+      {
+        "fr": "Le style se choisit selon la maturité de la personne POUR LA TÂCHE en question",
+        "en": "The style is chosen based on the person’s readiness FOR THE SPECIFIC TASK"
+      },
+      {
+        "fr": "Une fois délégatif atteint avec une équipe, le style ne doit plus jamais redevenir directif",
+        "en": "Once delegating is reached with a team, the style must never become directive again"
+      },
+      {
+        "fr": "La maturité situationnelle peut régresser sous stress aigu ou face à une tâche nouvelle",
+        "en": "Situational readiness can regress under acute stress or when facing a new task"
+      },
+      {
+        "fr": "Le style directif est toujours contre-productif, quelle que soit la situation",
+        "en": "The directive style is always counterproductive, regardless of the situation"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2
+    ],
+    "explanation": {
+      "fr": "Le style dépend de la maturité PAR TÂCHE, qui peut régresser (crise, nouveauté) et appeler un retour temporaire à un style plus directif. Prétendre que le directif est « toujours » mauvais ou que le délégatif est irréversible ignore cette nuance.",
+      "en": "Style depends on readiness PER TASK, which can regress (crisis, novelty) and call for a temporary return to a more directive style. Claiming directive is “always” bad or delegating is irreversible ignores this nuance."
+    }
+  },
+  {
+    "id": "xs14",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-10",
+    "question": {
+      "fr": "Lesquelles TROIS de ces demandes doivent passer par le processus formel de maîtrise des changements (approche prédictive) ?",
+      "en": "Which THREE of these requests must go through formal change control (predictive approach)?"
+    },
+    "options": [
+      {
+        "fr": "Une extension de périmètre demandée par le client",
+        "en": "A scope extension requested by the customer"
+      },
+      {
+        "fr": "Une action corrective mineure remettant le projet sur sa trajectoire planifiée",
+        "en": "A minor corrective action bringing the project back onto its planned trajectory"
+      },
+      {
+        "fr": "Un ajustement de la couleur d'un bouton d'interface, jugé insignifiant par un développeur",
+        "en": "A button color tweak a developer considers insignificant"
+      },
+      {
+        "fr": "Une modification de la date de fin de la référence de base de l'échéancier",
+        "en": "A change to the schedule baseline’s finish date"
+      },
+      {
+        "fr": "La correction d'un défaut non conforme aux critères d'acceptation initiaux",
+        "en": "A defect repair to meet the original acceptance criteria"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1,
+      3
+    ],
+    "explanation": {
+      "fr": "Extension de périmètre, action corrective et modification de référence de base passent TOUS par la maîtrise des changements (même une action corrective, avec un traitement plus léger, reste tracée). Un ajustement visuel jugé insignifiant par un développeur seul et une réparation de défaut RAMENANT au périmètre déjà approuvé ne modifient pas une référence de base et ne nécessitent pas ce même circuit formel.",
+      "en": "Scope extension, corrective action and baseline changes ALL go through change control (even a corrective action, with lighter treatment, stays logged). A visual tweak a lone developer deems insignificant and a defect repair that RESTORES already-approved scope do not touch a baseline and do not need this same formal path."
+    }
+  },
+  {
+    "id": "xs15",
+    "domain": "business",
+    "difficulty": "hard",
+    "ecoTask": "business-01",
+    "question": {
+      "fr": "Lesquels DEUX comportements relèvent d'une violation du code de déontologie et de conduite professionnelle du PMI® ?",
+      "en": "Which TWO behaviors constitute a violation of the PMI® Code of Ethics and Professional Conduct?"
+    },
+    "options": [
+      {
+        "fr": "Influencer un auditeur pour requalifier une non-conformité en simple observation",
+        "en": "Influencing an auditor to downgrade a non-conformity to a mere observation"
+      },
+      {
+        "fr": "Déclarer un conflit d'intérêts avant une décision d'achat",
+        "en": "Disclosing a conflict of interest before a procurement decision"
+      },
+      {
+        "fr": "Verser un paiement de facilitation via un intermédiaire local pour accélérer un permis",
+        "en": "Making a facilitation payment through a local intermediary to speed up a permit"
+      },
+      {
+        "fr": "Escalader un risque dépassant le seuil défini dans le plan de management des risques",
+        "en": "Escalating a risk that exceeds the threshold defined in the risk management plan"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2
+    ],
+    "explanation": {
+      "fr": "Influencer un audit et verser un paiement de facilitation (même via un intermédiaire) sont deux violations caractérisées d'intégrité. Déclarer un conflit d'intérêts et respecter un seuil d'escalade de gouvernance sont au contraire des BONNES pratiques attendues.",
+      "en": "Influencing an audit and making a facilitation payment (even through an intermediary) are two clear integrity violations. Disclosing a conflict of interest and honoring a governance escalation threshold are, on the contrary, expected GOOD practices."
+    }
+  },
+  {
+    "id": "xs16",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-07",
+    "question": {
+      "fr": "Sur une carte de contrôle, lesquels DEUX signaux indiquent qu'un processus est probablement HORS CONTRÔLE ?",
+      "en": "On a control chart, which TWO signals indicate a process is likely OUT OF CONTROL?"
+    },
+    "options": [
+      {
+        "fr": "Un point dépasse la limite de contrôle supérieure ou inférieure",
+        "en": "A point exceeds the upper or lower control limit"
+      },
+      {
+        "fr": "Tous les points se trouvent à l'intérieur des limites de spécification client",
+        "en": "All points fall within the customer specification limits"
+      },
+      {
+        "fr": "Sept points consécutifs se trouvent du même côté de la moyenne (règle des sept)",
+        "en": "Seven consecutive points fall on the same side of the mean (rule of seven)"
+      },
+      {
+        "fr": "La moyenne du processus est légèrement inférieure à la cible visée",
+        "en": "The process mean is slightly below the target"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2
+    ],
+    "explanation": {
+      "fr": "Un dépassement des limites de contrôle et la règle des sept (motif non aléatoire) signalent tous deux une cause assignable à investiguer. Être dans les limites de SPÉCIFICATION ne dit rien sur la stabilité STATISTIQUE du processus (deux notions distinctes) ; une moyenne légèrement décalée sans autre signal n'est pas en soi hors contrôle.",
+      "en": "Exceeding control limits and the rule of seven (a non-random pattern) both signal an assignable cause to investigate. Being within SPECIFICATION limits says nothing about the process’s STATISTICAL stability (two distinct notions); a slightly offset mean with no other signal is not by itself out of control."
+    }
+  },
+  {
+    "id": "xs17",
+    "domain": "people",
+    "difficulty": "hard",
+    "ecoTask": "people-08",
+    "question": {
+      "fr": "En négociation, lesquelles TROIS pratiques relèvent d'une approche fondée sur des critères OBJECTIFS (negotiation raisonnée) plutôt que sur le rapport de force ?",
+      "en": "In negotiation, which THREE practices reflect a principled (objective-criteria) approach rather than a power-based one?"
+    },
+    "options": [
+      {
+        "fr": "Préparer une alternative crédible (BATNA) avant d'entrer en négociation",
+        "en": "Preparing a credible alternative (BATNA) before entering negotiation"
+      },
+      {
+        "fr": "Séparer les personnes du problème à résoudre",
+        "en": "Separating the people from the problem to be solved"
+      },
+      {
+        "fr": "Menacer de rompre la relation pour obtenir une concession rapide",
+        "en": "Threatening to end the relationship to force a quick concession"
+      },
+      {
+        "fr": "Se concentrer sur les intérêts sous-jacents plutôt que sur les positions affichées",
+        "en": "Focusing on underlying interests rather than stated positions"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1,
+      3
+    ],
+    "explanation": {
+      "fr": "BATNA, séparation personnes/problème et focalisation sur les intérêts sont les piliers de la négociation raisonnée (méthode de Harvard). Menacer la relation est une tactique de pouvoir qui produit des accords fragiles et dégrade la confiance.",
+      "en": "BATNA, separating people from the problem, and focusing on interests are the pillars of principled negotiation (Harvard method). Threatening the relationship is a power tactic that produces fragile agreements and erodes trust."
+    }
+  },
+  {
+    "id": "xs18",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-17",
+    "question": {
+      "fr": "Pour la clôture d'un projet arrêté PRÉMATURÉMENT (décision stratégique), lesquelles TROIS actions restent requises ?",
+      "en": "For the closure of a project terminated PREMATURELY (strategic decision), which THREE actions are still required?"
+    },
+    "options": [
+      {
+        "fr": "Documenter et archiver l’état des livrables partiels réutilisables",
+        "en": "Document and archive the state of reusable partial deliverables"
+      },
+      {
+        "fr": "Capturer les leçons apprises malgré l’arrêt anticipé",
+        "en": "Capture lessons learned despite the early termination"
+      },
+      {
+        "fr": "Libérer formellement les ressources et clore les contrats ouverts",
+        "en": "Formally release resources and close open contracts"
+      },
+      {
+        "fr": "Détruire toute trace du projet pour ne pas ternir son bilan",
+        "en": "Destroy all trace of the project so as not to tarnish its record"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1,
+      2
+    ],
+    "explanation": {
+      "fr": "Un arrêt prématuré suit le MÊME processus de clôture qu'une fin normale : archivage des actifs réutilisables, capture des leçons, libération des ressources et clôture contractuelle. Détruire les traces est à l'opposé de la transparence et de l'intendance attendues.",
+      "en": "Premature termination follows the SAME closure process as a normal end: archiving reusable assets, capturing lessons, releasing resources and closing contracts. Destroying records is the opposite of the expected transparency and stewardship."
+    }
+  },
+  {
+    "id": "xo01",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Dans une organisation matricielle FAIBLE, qui détient généralement le plus d'autorité sur l'affectation des ressources ?",
+      "en": "In a WEAK matrix organization, who generally holds the most authority over resource assignment?"
+    },
+    "options": [
+      {
+        "fr": "Le responsable fonctionnel",
+        "en": "The functional manager"
+      },
+      {
+        "fr": "Le chef de projet",
+        "en": "The project manager"
+      },
+      {
+        "fr": "Le PMO directif",
+        "en": "The directive PMO"
+      },
+      {
+        "fr": "L'équipe projet elle-même",
+        "en": "The project team itself"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "En matricielle faible, le responsable fonctionnel domine et le chef de projet joue un rôle proche du coordinateur : il doit négocier ou convaincre plutôt qu'affecter directement.",
+      "en": "In a weak matrix, the functional manager dominates and the PM plays a role closer to coordinator: they must negotiate or persuade rather than assign directly."
+    }
+  },
+  {
+    "id": "xo02",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Quel type de PMO se limite à fournir des conseils, des modèles et une bibliothèque de leçons apprises, sans exiger de conformité ?",
+      "en": "Which PMO type is limited to giving advice, templates and a lessons-learned library, without requiring compliance?"
+    },
+    "options": [
+      {
+        "fr": "Le PMO de soutien",
+        "en": "The supportive PMO"
+      },
+      {
+        "fr": "Le PMO de contrôle",
+        "en": "The controlling PMO"
+      },
+      {
+        "fr": "Le PMO directif",
+        "en": "The directive PMO"
+      },
+      {
+        "fr": "Le comité d'investissement",
+        "en": "The investment committee"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le PMO de soutien a un contrôle faible : rôle consultatif, sans obligation de conformité. Le PMO de contrôle exige la conformité à un cadre ; le PMO directif gère les projets lui-même.",
+      "en": "The supportive PMO has low control: a consultative role, with no compliance obligation. The controlling PMO requires framework compliance; the directive PMO manages projects itself."
+    }
+  },
+  {
+    "id": "xo03",
+    "domain": "business",
+    "difficulty": "easy",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Comment appelle-t-on une dépense déjà engagée et non récupérable, qui ne doit jamais influencer une décision future ?",
+      "en": "What is a cost already incurred and unrecoverable, which should never influence a future decision, called?"
+    },
+    "options": [
+      {
+        "fr": "Un coût irrécupérable (sunk cost)",
+        "en": "A sunk cost"
+      },
+      {
+        "fr": "Un coût d'opportunité",
+        "en": "An opportunity cost"
+      },
+      {
+        "fr": "Une réserve pour aléas",
+        "en": "A contingency reserve"
+      },
+      {
+        "fr": "Une provision pour risque",
+        "en": "A risk provision"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le coût irrécupérable est déjà dépensé et ne peut être récupéré, quelle que soit la décision prise ensuite : il ne doit jamais peser dans un choix futur (piège classique de l'examen).",
+      "en": "A sunk cost is already spent and cannot be recovered whatever is decided next: it must never weigh in a future choice (a classic exam trap)."
+    }
+  },
+  {
+    "id": "xo04",
+    "domain": "business",
+    "difficulty": "easy",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Que mesure le délai de récupération (payback period) d'un projet ?",
+      "en": "What does a project's payback period measure?"
+    },
+    "options": [
+      {
+        "fr": "Le temps nécessaire pour récupérer l'investissement initial",
+        "en": "The time needed to recover the initial investment"
+      },
+      {
+        "fr": "Le taux de rentabilité interne du projet",
+        "en": "The project's internal rate of return"
+      },
+      {
+        "fr": "La valeur actuelle nette du projet",
+        "en": "The project's net present value"
+      },
+      {
+        "fr": "Le ratio bénéfices/coûts du projet",
+        "en": "The project's benefit-cost ratio"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le délai de récupération est le temps pour récupérer la mise de départ. Simple à calculer, mais il ignore la valeur temps de l'argent et tout ce qui se passe après le seuil de récupération.",
+      "en": "The payback period is the time needed to recover the initial outlay. Simple to compute, but it ignores the time value of money and anything happening after the recovery point."
+    }
+  },
+  {
+    "id": "xo05",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Dans une structure PAR PROJET (projectized), quel est l'inconvénient le plus souvent cité à la clôture du projet ?",
+      "en": "In a PROJECTIZED structure, what drawback is most often cited at project closure?"
+    },
+    "options": [
+      {
+        "fr": "Les compétences de l'équipe se dispersent, faute de département fonctionnel où revenir",
+        "en": "Team skills scatter, with no functional department to return to"
+      },
+      {
+        "fr": "Le chef de projet perd toute autorité dès le lancement",
+        "en": "The project manager loses all authority from kickoff"
+      },
+      {
+        "fr": "L'équipe reste rattachée à son département d'origine",
+        "en": "The team stays attached to its home department"
+      },
+      {
+        "fr": "Le PMO impose systématiquement sa méthodologie",
+        "en": "The PMO always enforces its own methodology"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Dans une structure par projet, l'équipe est dédiée à plein temps au chef de projet — fort en efficacité pendant le projet, mais à la clôture, il n'y a pas de « maison » fonctionnelle où réintégrer les compétences.",
+      "en": "In a projectized structure, the team is dedicated full-time to the PM — strong efficiency during the project, but at closure there is no functional “home” to reabsorb the skills into."
+    }
+  },
+  {
+    "id": "xo06",
+    "domain": "business",
+    "difficulty": "medium",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Deux projets sont comparés : P1 (VAN 800 k€, délai de récupération 4 ans) et P2 (VAN 500 k€, délai de récupération 18 mois). L'entreprise traverse une crise de trésorerie sévère. Quelle est la MEILLEURE recommandation ?",
+      "en": "Two projects are compared: P1 (NPV $800K, payback 4 years) and P2 (NPV $500K, payback 18 months). The company is in a severe cash crisis. What is the BEST recommendation?"
+    },
+    "options": [
+      {
+        "fr": "Recommander P2 en explicitant que le contexte de trésorerie fait du délai de récupération un critère de survie prioritaire",
+        "en": "Recommend P2, explaining that the cash context makes payback a priority survival criterion"
+      },
+      {
+        "fr": "Recommander P1 : la VAN est toujours le critère supérieur, quel que soit le contexte",
+        "en": "Recommend P1: NPV is always the superior criterion regardless of context"
+      },
+      {
+        "fr": "Refuser de recommander sans calculer d'abord le TRI des deux projets",
+        "en": "Refuse to recommend without first computing both projects’ IRR"
+      },
+      {
+        "fr": "Recommander les deux projets en parallèle pour maximiser la valeur totale",
+        "en": "Recommend both projects in parallel to maximize total value"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Aucun critère financier n'est absolu : le contexte donné (crise de trésorerie) rend le délai de récupération court de P2 prioritaire pour la survie de l'entreprise, même si sa VAN est inférieure. La recommandation doit expliciter ce compromis.",
+      "en": "No financial criterion is absolute: the given context (cash crisis) makes P2’s short payback a survival priority even though its NPV is lower. The recommendation must make this trade-off explicit."
+    }
+  },
+  {
+    "id": "xo07",
+    "domain": "business",
+    "difficulty": "medium",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Un projet est financé à 40 %. Une analyse révèle qu'il n'est plus aligné avec la stratégie de l'entreprise. Quelle est la démarche correcte ?",
+      "en": "A project is 40% funded. An analysis reveals it is no longer aligned with company strategy. What is the correct course of action?"
+    },
+    "options": [
+      {
+        "fr": "Évaluer si la valeur restante à créer justifie l'investissement à venir, sans tenir compte des 40 % déjà dépensés",
+        "en": "Assess whether the remaining value to be created justifies the investment still to come, disregarding the 40% already spent"
+      },
+      {
+        "fr": "Continuer le projet jusqu'au bout : arrêter maintenant gaspillerait les 40 % déjà investis",
+        "en": "Continue the project to the end: stopping now would waste the 40% already invested"
+      },
+      {
+        "fr": "Réduire le périmètre de moitié pour compenser le désalignement",
+        "en": "Cut the scope in half to offset the misalignment"
+      },
+      {
+        "fr": "Attendre la fin de la phase en cours avant toute analyse",
+        "en": "Wait until the end of the current phase before any analysis"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Les 40 % déjà dépensés sont un coût irrécupérable (sunk cost) : ils ne doivent pas peser dans la décision. Seule la valeur RESTANTE à créer, comparée au coût RESTANT à engager, doit guider le choix de continuer ou d'arrêter.",
+      "en": "The 40% already spent is a sunk cost: it must not weigh in the decision. Only the REMAINING value to be created, weighed against the REMAINING cost, should guide the choice to continue or stop."
+    }
+  },
+  {
+    "id": "xo08",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Un chef de projet en organisation matricielle ÉQUILIBRÉE est en conflit récurrent avec un responsable fonctionnel : chacun revendique l'autorité sur la même ressource. Que traduit le mieux cette situation ?",
+      "en": "A project manager in a BALANCED matrix has a recurring conflict with a functional manager: each claims authority over the same resource. What does this best illustrate?"
+    },
+    "options": [
+      {
+        "fr": "La signature classique de la matricielle équilibrée : autorité partagée et comparable entre les deux rôles",
+        "en": "The classic signature of a balanced matrix: comparable, shared authority between the two roles"
+      },
+      {
+        "fr": "Une défaillance ponctuelle à corriger en passant en structure par projet",
+        "en": "A one-off failure to fix by switching to a projectized structure"
+      },
+      {
+        "fr": "La preuve que le PMO doit devenir directif",
+        "en": "Proof that the PMO must become directive"
+      },
+      {
+        "fr": "Un signe que le chef de projet manque de compétences techniques",
+        "en": "A sign the PM lacks technical skills"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La matricielle équilibrée donne une autorité comparable aux deux rôles, ce qui génère structurellement ce type de tension — ce n'est pas une anomalie à « corriger » mais une caractéristique connue de la structure, à gérer par la négociation et une gouvernance claire.",
+      "en": "A balanced matrix gives comparable authority to both roles, which structurally generates this kind of tension — it is not an anomaly to “fix” but a known trait of the structure, managed through negotiation and clear governance."
+    }
+  },
+  {
+    "id": "xo09",
+    "domain": "business",
+    "difficulty": "medium",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Que représente le taux de rentabilité interne (TRI) d'un projet ?",
+      "en": "What does a project's internal rate of return (IRR) represent?"
+    },
+    "options": [
+      {
+        "fr": "Le taux d'actualisation pour lequel la VAN du projet est égale à zéro",
+        "en": "The discount rate at which the project’s NPV equals zero"
+      },
+      {
+        "fr": "Le montant total des bénéfices actualisés du projet",
+        "en": "The project's total discounted benefits"
+      },
+      {
+        "fr": "Le pourcentage de l'investissement récupéré chaque année",
+        "en": "The percentage of the investment recovered each year"
+      },
+      {
+        "fr": "Le ratio entre bénéfices et coûts du projet",
+        "en": "The project's benefit-to-cost ratio"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le TRI est un TAUX (%), pas un montant : c'est le taux d'actualisation qui annule la VAN. Plus il dépasse le coût du capital de l'organisation, plus le projet est financièrement attractif.",
+      "en": "IRR is a RATE (%), not an amount: it is the discount rate that zeroes out the NPV. The more it exceeds the organization’s cost of capital, the more financially attractive the project."
+    }
+  },
+  {
+    "id": "xo10",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Un PMO de CONTRÔLE impose un gabarit de charte de projet et exige une revue de conformité à chaque jalon. Un chef de projet expérimenté juge le gabarit inadapté à son projet très incertain et veut le simplifier drastiquement. Quelle est la MEILLEURE action ?",
+      "en": "A CONTROLLING PMO mandates a project charter template and requires a compliance review at each milestone. An experienced PM judges the template unfit for their highly uncertain project and wants to drastically simplify it. What is the BEST action?"
+    },
+    "options": [
+      {
+        "fr": "Discuter avec le PMO pour proposer une adaptation justifiée du gabarit à l'incertitude du projet, dans le cadre de la conformité exigée",
+        "en": "Discuss with the PMO to propose a justified adaptation of the template to the project’s uncertainty, within the required compliance framework"
+      },
+      {
+        "fr": "Utiliser le gabarit simplifié sans en informer le PMO : c'est une décision de mise en œuvre",
+        "en": "Use the simplified template without informing the PMO: this is an implementation decision"
+      },
+      {
+        "fr": "Refuser toute charte tant que le PMO n'assouplit pas sa politique",
+        "en": "Refuse any charter until the PMO relaxes its policy"
+      },
+      {
+        "fr": "Escalader immédiatement au sponsor pour contourner le PMO",
+        "en": "Immediately escalate to the sponsor to bypass the PMO"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Un PMO de contrôle exige la conformité, mais l'adaptation (tailoring) reste légitime si elle est justifiée et négociée avec l'instance qui fixe le cadre — pas imposée unilatéralement ni escaladée prématurément sans avoir tenté le dialogue.",
+      "en": "A controlling PMO requires compliance, but tailoring remains legitimate when justified and negotiated with the body that sets the framework — not imposed unilaterally nor escalated prematurely without first attempting dialogue."
+    }
+  },
+  {
+    "id": "xo11",
+    "domain": "business",
+    "difficulty": "hard",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Un comité de sélection évalue trois projets candidats. Après avoir vu les dossiers, un membre propose de modifier la pondération des critères pour favoriser le projet de sa division. Quelle est la MEILLEURE réponse du chef de projet qui préside le comité ?",
+      "en": "A selection committee evaluates three candidate projects. After seeing the proposals, a member suggests changing the criteria weighting to favor their division’s project. What is the BEST response from the PM chairing the committee?"
+    },
+    "options": [
+      {
+        "fr": "Refuser : les critères pondérés doivent être fixés avant l'évaluation et rester stables pour préserver l'intégrité de la décision",
+        "en": "Decline: weighted criteria must be set before evaluation and stay stable to preserve the decision’s integrity"
+      },
+      {
+        "fr": "Accepter si la majorité du comité est d'accord",
+        "en": "Accept if a majority of the committee agrees"
+      },
+      {
+        "fr": "Proposer un compromis à mi-chemin sur la nouvelle pondération",
+        "en": "Propose a compromise halfway toward the new weighting"
+      },
+      {
+        "fr": "Reporter la décision à un comité ultérieur sans trancher",
+        "en": "Postpone the decision to a later committee without ruling"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Modifier les critères après avoir vu les projets, même avec l'accord de la majorité, est un piège de gouvernance : cela invalide l'objectivité du processus de sélection. Les critères pondérés se fixent AVANT l'évaluation et ne bougent pas pour favoriser un résultat.",
+      "en": "Changing criteria after seeing the projects, even with majority agreement, is a governance trap: it invalidates the objectivity of the selection process. Weighted criteria are set BEFORE evaluation and do not move to favor an outcome."
+    }
+  },
+  {
+    "id": "xo12",
+    "domain": "business",
+    "difficulty": "hard",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Six mois après la clôture d'un projet, le propriétaire des bénéfices désigné constate que le bénéfice attendu (réduction de 15 % des délais de traitement) n'est mesuré nulle part. Quelle est la cause racine la plus probable ?",
+      "en": "Six months after a project closes, the designated benefits owner notices the expected benefit (15% reduction in processing time) is not being measured anywhere. What is the most likely root cause?"
+    },
+    "options": [
+      {
+        "fr": "Le plan de management des bénéfices n'a pas été correctement établi ou transmis au propriétaire des bénéfices avant la clôture",
+        "en": "The benefits management plan was not properly established or handed off to the benefits owner before closure"
+      },
+      {
+        "fr": "Le chef de projet aurait dû rester en poste après la clôture pour mesurer le bénéfice lui-même",
+        "en": "The project manager should have stayed on after closure to measure the benefit themselves"
+      },
+      {
+        "fr": "Le bénéfice n'était pas assez ambitieux pour justifier un suivi",
+        "en": "The benefit was not ambitious enough to justify tracking"
+      },
+      {
+        "fr": "Les bénéfices ne peuvent jamais être mesurés après la clôture du projet",
+        "en": "Benefits can never be measured after project closure"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le plan de management des bénéfices définit COMMENT et QUAND chaque bénéfice sera mesuré, souvent bien après la clôture, avec un propriétaire des bénéfices désigné qui survit au projet. Un bénéfice non suivi révèle un plan mal établi ou mal transmis, pas une impossibilité de mesure.",
+      "en": "The benefits management plan defines HOW and WHEN each benefit will be measured, often well after closure, with a designated benefits owner who outlives the project. An untracked benefit points to a poorly built or poorly handed-off plan, not an impossibility of measurement."
+    }
+  },
+  {
+    "id": "xo13",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Sélectionnez les DEUX affirmations exactes concernant les structures organisationnelles matricielles.",
+      "en": "Select the TWO accurate statements about matrix organizational structures."
+    },
+    "options": [
+      {
+        "fr": "Dans une matricielle forte, le chef de projet dispose généralement d'un staff dédié",
+        "en": "In a strong matrix, the PM generally has dedicated staff"
+      },
+      {
+        "fr": "Dans une matricielle faible, le chef de projet joue un rôle proche du coordinateur",
+        "en": "In a weak matrix, the PM plays a role close to a coordinator"
+      },
+      {
+        "fr": "La matricielle équilibrée élimine tout risque de conflit d'autorité",
+        "en": "A balanced matrix eliminates any risk of authority conflict"
+      },
+      {
+        "fr": "Toute structure matricielle équivaut à une structure par projet",
+        "en": "Any matrix structure is equivalent to a projectized structure"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "La matricielle forte donne au chef de projet un staff dédié et une autorité proche de celle d'une structure par projet. La matricielle faible le limite à un rôle de coordination. La matricielle équilibrée, à l'inverse, est justement propice aux conflits d'autorité, et n'équivaut jamais à une structure par projet.",
+      "en": "A strong matrix gives the PM dedicated staff and authority close to a projectized structure. A weak matrix limits them to a coordinating role. A balanced matrix, by contrast, is precisely prone to authority conflicts, and no matrix structure is equivalent to a projectized one."
+    }
+  },
+  {
+    "id": "xo14",
+    "domain": "business",
+    "difficulty": "hard",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Sélectionnez les DEUX critères financiers qui intègrent DÉJÀ la valeur temps de l'argent dans leur calcul.",
+      "en": "Select the TWO financial criteria that ALREADY account for the time value of money in their calculation."
+    },
+    "options": [
+      {
+        "fr": "La valeur actuelle nette (VAN)",
+        "en": "Net present value (NPV)"
+      },
+      {
+        "fr": "Le taux de rentabilité interne (TRI)",
+        "en": "Internal rate of return (IRR)"
+      },
+      {
+        "fr": "Le délai de récupération simple (payback period)",
+        "en": "Simple payback period"
+      },
+      {
+        "fr": "Le coût irrécupérable (sunk cost)",
+        "en": "Sunk cost"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "La VAN et le TRI reposent tous deux sur l'actualisation des flux futurs : ils intègrent la valeur temps de l'argent. Le délai de récupération simple l'ignore délibérément (c'est sa principale limite), et le coût irrécupérable n'est pas un critère de décision — c'est une dépense déjà engagée à ignorer.",
+      "en": "Both NPV and IRR rely on discounting future cash flows: they account for the time value of money. The simple payback period deliberately ignores it (its main limitation), and sunk cost is not a decision criterion at all — it is an already-incurred expense to disregard."
+    }
+  },
+  {
+    "id": "xc01",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-04",
+    "question": {
+      "fr": "Quelles trois dimensions le cube des parties prenantes utilise-t-il pour cartographier une partie prenante ?",
+      "en": "Which three dimensions does the stakeholder cube use to map a stakeholder?"
+    },
+    "options": [
+      {
+        "fr": "Intérêt, pouvoir et influence",
+        "en": "Interest, power and influence"
+      },
+      {
+        "fr": "Coût, délai et qualité",
+        "en": "Cost, schedule and quality"
+      },
+      {
+        "fr": "Urgence, légitimité et pouvoir",
+        "en": "Urgency, legitimacy and power"
+      },
+      {
+        "fr": "Interne, externe et neutre",
+        "en": "Internal, external and neutral"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le cube des parties prenantes ajoute une troisième dimension (l'influence) à la grille pouvoir/intérêt classique, pour cartographier des situations trop complexes pour deux axes seulement.",
+      "en": "The stakeholder cube adds a third dimension (influence) to the classic power/interest grid, to map situations too complex for two axes alone."
+    }
+  },
+  {
+    "id": "xc02",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-04",
+    "question": {
+      "fr": "Dans la matrice d'évaluation de l'engagement, quelle est la différence entre une partie prenante « non informée » et une partie prenante « neutre » ?",
+      "en": "In the stakeholder engagement assessment matrix, what is the difference between an “unaware” and a “neutral” stakeholder?"
+    },
+    "options": [
+      {
+        "fr": "Le non informé ignore le projet ; le neutre le connaît mais ne prend pas parti",
+        "en": "The unaware does not know the project exists; the neutral knows about it but takes no side"
+      },
+      {
+        "fr": "Les deux termes désignent la même situation",
+        "en": "Both terms describe the same situation"
+      },
+      {
+        "fr": "Le neutre est toujours plus puissant que le non informé",
+        "en": "The neutral is always more powerful than the unaware"
+      },
+      {
+        "fr": "Le non informé est toujours un membre externe, le neutre toujours interne",
+        "en": "The unaware is always external, the neutral always internal"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le non informé ignore purement et simplement l'existence du projet (risque de surprise s'il n'est pas traité) ; le neutre le connaît mais reste sans position — la stratégie diffère : sensibiliser dans un cas, convaincre dans l'autre.",
+      "en": "The unaware simply does not know the project exists (risk of surprise if left untreated); the neutral knows about it but takes no stance — the strategy differs: raise awareness in one case, persuade in the other."
+    }
+  },
+  {
+    "id": "xc03",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-02",
+    "question": {
+      "fr": "Combien de canaux de communication existent entre 10 parties prenantes, selon la formule n(n-1)/2 ?",
+      "en": "How many communication channels exist among 10 stakeholders, using the n(n-1)/2 formula?"
+    },
+    "options": [
+      {
+        "fr": "45",
+        "en": "45"
+      },
+      {
+        "fr": "90",
+        "en": "90"
+      },
+      {
+        "fr": "20",
+        "en": "20"
+      },
+      {
+        "fr": "55",
+        "en": "55"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "n(n-1)/2 = 10 × 9 / 2 = 45 canaux.",
+      "en": "n(n-1)/2 = 10 × 9 / 2 = 45 channels."
+    }
+  },
+  {
+    "id": "xc04",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-02",
+    "question": {
+      "fr": "Un contrat signé avec un fournisseur est un exemple de quelle combinaison méthode/forme de communication ?",
+      "en": "A signed contract with a vendor is an example of which method/form communication combination?"
+    },
+    "options": [
+      {
+        "fr": "Push, écrit formel",
+        "en": "Push, formal written"
+      },
+      {
+        "fr": "Interactive, verbal formel",
+        "en": "Interactive, formal verbal"
+      },
+      {
+        "fr": "Pull, écrit informel",
+        "en": "Pull, informal written"
+      },
+      {
+        "fr": "Push, verbal informel",
+        "en": "Push, informal verbal"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Un contrat est envoyé sans garantie immédiate de lecture partagée (push) et rédigé selon un format officiel et traçable (écrit formel) — lent mais juridiquement solide.",
+      "en": "A contract is sent without an immediate shared-reading guarantee (push) and drafted in an official, traceable format (formal written) — slow but legally solid."
+    }
+  },
+  {
+    "id": "xc05",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-04",
+    "question": {
+      "fr": "Un autre chef de projet, gérant un projet parallèle, revendique la même ressource clé que vous pour le mois prochain. Selon le modèle des directions d'influence, de quelle direction s'agit-il ?",
+      "en": "Another project manager, running a parallel project, claims the same key resource as you for next month. According to the influence-direction model, which direction is this?"
+    },
+    "options": [
+      {
+        "fr": "Latérale (un pair)",
+        "en": "Lateral (a peer)"
+      },
+      {
+        "fr": "Vers le haut (management senior)",
+        "en": "Upward (senior management)"
+      },
+      {
+        "fr": "Vers l'extérieur (fournisseur)",
+        "en": "Outward (a vendor)"
+      },
+      {
+        "fr": "Vers le bas (membre de l'équipe)",
+        "en": "Downward (a team member)"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Un autre chef de projet est un pair : son influence s'exerce LATÉRALEMENT. Cette direction est souvent négligée au profit des influences « vers le haut », mais elle exige tout autant une stratégie d'engagement dédiée.",
+      "en": "Another project manager is a peer: their influence is LATERAL. This direction is often overlooked in favor of “upward” influence, yet it just as much requires a dedicated engagement strategy."
+    }
+  },
+  {
+    "id": "xc06",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-04",
+    "question": {
+      "fr": "Une partie prenante est classée « leader » dans la matrice d'évaluation de l'engagement : elle défend activement le projet auprès d'autres cadres. Quel est l'objectif du chef de projet à son égard ?",
+      "en": "A stakeholder is classified as “leading” in the engagement assessment matrix: they actively champion the project to other executives. What is the PM’s goal toward them?"
+    },
+    "options": [
+      {
+        "fr": "Maintenir et soutenir cet engagement, la garder informée et impliquée",
+        "en": "Sustain and support that engagement, keep them informed and involved"
+      },
+      {
+        "fr": "La gérer de près comme on le ferait pour une partie prenante résistante",
+        "en": "Manage them closely, as one would a resistant stakeholder"
+      },
+      {
+        "fr": "Réduire les échanges avec elle puisqu'elle est déjà acquise à la cause",
+        "en": "Reduce interactions with them since they are already won over"
+      },
+      {
+        "fr": "Ne rien faire de particulier, son soutien est acquis pour toujours",
+        "en": "Do nothing special, their support is permanently secured"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Une partie prenante « leader » demande de MAINTENIR l'engagement (informer, impliquer) — un niveau d'engagement élevé n'est jamais définitivement acquis, il se cultive.",
+      "en": "A “leading” stakeholder calls for SUSTAINING engagement (inform, involve) — a high engagement level is never permanently secured, it must be nurtured."
+    }
+  },
+  {
+    "id": "xc07",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-02",
+    "question": {
+      "fr": "Une équipe passe de 8 à 15 personnes en cours de projet. Que devient le nombre de canaux de communication, et quelle est la réponse appropriée du chef de projet ?",
+      "en": "A team grows from 8 to 15 people during the project. What happens to the number of communication channels, and what is the PM’s appropriate response?"
+    },
+    "options": [
+      {
+        "fr": "Les canaux passent de 28 à 105 ; il faut restructurer la communication (sous-équipes, décisions documentées)",
+        "en": "Channels go from 28 to 105; communication must be restructured (sub-teams, documented decisions)"
+      },
+      {
+        "fr": "Les canaux passent de 28 à 105 ; il suffit de planifier plus de réunions générales",
+        "en": "Channels go from 28 to 105; simply schedule more general meetings"
+      },
+      {
+        "fr": "Les canaux restent stables tant que le périmètre ne change pas",
+        "en": "Channels stay stable as long as scope does not change"
+      },
+      {
+        "fr": "Les canaux doublent seulement, comme le nombre de personnes",
+        "en": "Channels only double, like the headcount"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "8(8-1)/2 = 28, 15(15-1)/2 = 105 : la croissance est plus que proportionnelle. La réponse attendue est structurelle (sous-équipes, documentation, rituels ciblés), pas « plus de réunions ».",
+      "en": "8(8-1)/2 = 28, 15(15-1)/2 = 105: growth is more than proportional. The expected response is structural (sub-teams, documentation, targeted rituals), not “more meetings”."
+    }
+  },
+  {
+    "id": "xc08",
+    "domain": "business",
+    "difficulty": "medium",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Après une démonstration de sprint, le CSAT recueilli auprès des utilisateurs est excellent. Pourtant, le NPS trimestriel mesuré auprès des sponsors est en baisse constante depuis deux trimestres. Comment interpréter cette situation ?",
+      "en": "After a sprint demo, the CSAT collected from users is excellent. Yet the quarterly NPS measured among sponsors has been steadily declining for two quarters. How should this be interpreted?"
+    },
+    "options": [
+      {
+        "fr": "La satisfaction ponctuelle sur les livrables ne garantit pas l’adhésion globale et durable : les deux signaux doivent être traités séparément",
+        "en": "Punctual satisfaction with deliverables does not guarantee overall, lasting buy-in: both signals must be addressed separately"
+      },
+      {
+        "fr": "Le NPS en baisse est une anomalie à ignorer puisque le CSAT est excellent",
+        "en": "The declining NPS is an anomaly to ignore since CSAT is excellent"
+      },
+      {
+        "fr": "Il faut cesser de mesurer le CSAT, qui donne un signal contradictoire",
+        "en": "Stop measuring CSAT, since it gives a contradictory signal"
+      },
+      {
+        "fr": "Le NPS et le CSAT mesurent la même chose ; l’un des deux résultats est forcément erroné",
+        "en": "NPS and CSAT measure the same thing; one of the two results must be wrong"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le CSAT est court terme et ponctuel (un livrable, une interaction), le NPS est déclaratif et global (la confiance dans le projet). Un bon CSAT peut coexister avec une érosion progressive de la confiance, invisible sans mesure séparée du NPS.",
+      "en": "CSAT is short-term and punctual (one deliverable, one interaction), NPS is declarative and global (trust in the project). A good CSAT can coexist with a gradual erosion of trust, invisible without separately measuring NPS."
+    }
+  },
+  {
+    "id": "xc09",
+    "domain": "business",
+    "difficulty": "hard",
+    "ecoTask": "business-02",
+    "question": {
+      "fr": "Le processus d'approbation des livrables exige de multiples allers-retours et validations. Chaque livrable individuel obtient pourtant un bon CSAT. Que révèle un CES (Customer Effort Score) élevé dans ce contexte, et quelle est la MEILLEURE action ?",
+      "en": "The deliverable approval process requires multiple back-and-forths and sign-offs. Yet each individual deliverable gets a good CSAT. What does a high CES (Customer Effort Score) reveal here, and what is the BEST action?"
+    },
+    "options": [
+      {
+        "fr": "Le CES révèle une friction structurelle qui prédit un désengagement futur même si la satisfaction ponctuelle est bonne : simplifier le processus d'approbation",
+        "en": "CES reveals structural friction that predicts future disengagement even though punctual satisfaction is good: simplify the approval process"
+      },
+      {
+        "fr": "Un CES élevé est sans conséquence tant que le CSAT reste bon",
+        "en": "A high CES has no consequence as long as CSAT stays good"
+      },
+      {
+        "fr": "Ignorer le CES, car il ne s'applique qu'aux produits commerciaux, pas aux projets internes",
+        "en": "Ignore CES, since it only applies to commercial products, not internal projects"
+      },
+      {
+        "fr": "Augmenter la fréquence des validations pour rassurer les parties prenantes",
+        "en": "Increase sign-off frequency to reassure stakeholders"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le CES mesure la friction perçue dans la collaboration. Un CES élevé est un signal AVANCÉ de désengagement, même quand la satisfaction immédiate (CSAT) reste bonne : l'ignorer revient à piloter uniquement au rétroviseur. La réponse traite la cause structurelle (le processus), pas le symptôme.",
+      "en": "CES measures perceived friction in collaborating. A high CES is an EARLY signal of disengagement, even when immediate satisfaction (CSAT) stays good: ignoring it means steering purely by the rearview mirror. The response addresses the structural cause (the process), not the symptom."
+    }
+  },
+  {
+    "id": "xc10",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-04",
+    "question": {
+      "fr": "Deux parties prenantes sont toutes deux classées « résistantes ». L'une bloque activement des décisions en comité, l'autre exprime des préoccupations en privé mais ne bloque rien publiquement. Quelle est la MEILLEURE lecture de la situation ?",
+      "en": "Two stakeholders are both classified as “resistant”. One actively blocks decisions in committee, the other privately voices concerns but blocks nothing publicly. What is the BEST reading of the situation?"
+    },
+    "options": [
+      {
+        "fr": "Le niveau d'engagement partagé (résistant) ne suffit pas à choisir la stratégie : le pouvoir, l'influence et le mode d'expression de la résistance doivent aussi être analysés pour adapter l'approche",
+        "en": "The shared engagement level (resistant) is not enough to choose the strategy: power, influence and how the resistance is expressed must also be analyzed to tailor the approach"
+      },
+      {
+        "fr": "Le même plan d'engagement standard convient aux deux, puisqu'elles partagent le même niveau",
+        "en": "The same standard engagement plan fits both, since they share the same level"
+      },
+      {
+        "fr": "Seule celle qui bloque publiquement mérite l'attention du chef de projet",
+        "en": "Only the one blocking publicly deserves the PM’s attention"
+      },
+      {
+        "fr": "Il faut escalader immédiatement les deux cas au sponsor",
+        "en": "Both cases must be immediately escalated to the sponsor"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La matrice d'engagement donne un niveau, pas une stratégie complète : le pouvoir/l'influence (grille pouvoir-intérêt ou cube) et la manière dont la résistance s'exprime (ouverte vs discrète) doivent compléter l'analyse pour choisir l'action adaptée à CHAQUE partie prenante.",
+      "en": "The engagement matrix gives a level, not a full strategy: power/influence (power-interest grid or cube) and how the resistance is expressed (open vs. quiet) must complete the analysis to choose the action fit for EACH stakeholder."
+    }
+  },
+  {
+    "id": "xc11",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-04",
+    "question": {
+      "fr": "Sélectionnez les DEUX affirmations exactes concernant les cinq niveaux de la matrice d'évaluation de l'engagement.",
+      "en": "Select the TWO accurate statements about the five levels of the engagement assessment matrix."
+    },
+    "options": [
+      {
+        "fr": "Une partie prenante « non informée » risque d'être surprise si des changements surviennent sans qu'elle ait été sensibilisée",
+        "en": "An “unaware” stakeholder risks being surprised if changes occur without them having been made aware"
+      },
+      {
+        "fr": "Une partie prenante « neutre » partage activement des informations et contribue à la réussite du projet",
+        "en": "A “neutral” stakeholder actively shares information and contributes to project success"
+      },
+      {
+        "fr": "L'objectif face à une partie prenante « résistante » est de traiter ses préoccupations et de bâtir la confiance",
+        "en": "The goal with a “resistant” stakeholder is to address their concerns and build trust"
+      },
+      {
+        "fr": "Les cinq niveaux sont fixes et ne peuvent pas évoluer au cours du projet",
+        "en": "The five levels are fixed and cannot change over the course of the project"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      2
+    ],
+    "explanation": {
+      "fr": "Le non informé risque la surprise faute de sensibilisation ; le résistant appelle un traitement des préoccupations pour bâtir la confiance. Le comportement décrit (partage actif, coopération) correspond au niveau « soutenant », pas « neutre » ; et les niveaux évoluent, c'est même l'objet de la réévaluation continue.",
+      "en": "The unaware risks surprise absent awareness-raising; the resistant calls for addressing concerns to build trust. The described behavior (active sharing, cooperation) matches “supportive”, not “neutral”; and the levels do change — that is the whole point of continuous reassessment."
+    }
+  },
+  {
+    "id": "xc12",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-02",
+    "question": {
+      "fr": "Sélectionnez les DEUX combinaisons méthode/forme correctement associées à leur exemple.",
+      "en": "Select the TWO method/form combinations correctly matched to their example."
+    },
+    "options": [
+      {
+        "fr": "Interactive, verbal formel → revue de comité de pilotage",
+        "en": "Interactive, formal verbal → steering committee review"
+      },
+      {
+        "fr": "Push, écrit informel → courriel de mise à jour de routine",
+        "en": "Push, informal written → routine status email"
+      },
+      {
+        "fr": "Pull, écrit formel → appel téléphonique rapide entre collègues",
+        "en": "Pull, formal written → a quick phone call between colleagues"
+      },
+      {
+        "fr": "Push, verbal formel → dépôt de documents sur un portail",
+        "en": "Push, formal verbal → documents posted on a portal"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "Une revue de comité de pilotage est bien une interaction verbale formelle. Un courriel de routine est un push écrit informel. Un appel rapide est une interaction VERBALE informelle (pas pull ni écrit) ; un dépôt sur portail est du PULL écrit (pas push ni verbal) — les deux dernières associations sont incorrectes.",
+      "en": "A steering-committee review is indeed a formal verbal interaction. A routine email is an informal written push. A quick call is an informal VERBAL interaction (not pull nor written); a portal upload is written PULL (not push nor verbal) — the last two pairings are wrong."
+    }
+  },
+  {
+    "id": "xg01",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Dans un environnement agile, la gouvernance est décrite comme « légère et auto-gouvernée ». Que signifie ce terme ?",
+      "en": "In an agile environment, governance is described as “lightweight and self-governed”. What does that mean?"
+    },
+    "options": [
+      {
+        "fr": "La responsabilité de la gouvernance est portée collectivement par l'équipe, pas par un comité formel",
+        "en": "Governance responsibility is carried collectively by the team, not by a formal committee"
+      },
+      {
+        "fr": "Il n'existe aucune forme de gouvernance dans un projet agile",
+        "en": "No form of governance exists in an agile project"
+      },
+      {
+        "fr": "La gouvernance est entièrement déléguée à un PMO directif",
+        "en": "Governance is entirely delegated to a directive PMO"
+      },
+      {
+        "fr": "La gouvernance devient obligatoirement plus stricte qu'en prédictif",
+        "en": "Governance necessarily becomes stricter than in a predictive context"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "L'auto-gouvernance déplace la responsabilité vers l'équipe, elle ne la supprime pas : « gouvernance légère » ne signifie jamais « absence de gouvernance ».",
+      "en": "Self-governance shifts responsibility to the team; it does not remove it: “lightweight governance” never means “no governance”."
+    }
+  },
+  {
+    "id": "xg02",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Lequel des indicateurs suivants est un indicateur de GOUVERNANCE pertinent (axé résultats/valeur), plutôt qu'un indicateur d'intrant ?",
+      "en": "Which of the following is a relevant GOVERNANCE indicator (outcome/value-focused), rather than an input indicator?"
+    },
+    "options": [
+      {
+        "fr": "La valeur livrée à un jalon clé",
+        "en": "Value delivered at a key milestone"
+      },
+      {
+        "fr": "Le taux d'utilisation des ressources de l'équipe",
+        "en": "The team’s resource utilization rate"
+      },
+      {
+        "fr": "Le nombre d'heures de formation suivies",
+        "en": "The number of training hours completed"
+      },
+      {
+        "fr": "Le nombre de réunions tenues dans le mois",
+        "en": "The number of meetings held in the month"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Les indicateurs de gouvernance portent sur les RÉSULTATS et la valeur (ROI, jalons atteints, valeur livrée), pas sur des indicateurs d'intrants (utilisation des ressources, heures de formation, nombre de réunions).",
+      "en": "Governance indicators focus on OUTCOMES and value (ROI, milestones met, value delivered), not on input indicators (resource utilization, training hours, meeting counts)."
+    }
+  },
+  {
+    "id": "xg03",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Un projet atteint son objectif de valeur trois mois avant sa date de fin planifiée et est clos par anticipation. De quel scénario de gouvernance s'agit-il ?",
+      "en": "A project reaches its value goal three months before its planned end date and is closed early. Which governance scenario is this?"
+    },
+    "options": [
+      {
+        "fr": "Arrêt anticipé pour cause positive",
+        "en": "Early termination for a positive reason"
+      },
+      {
+        "fr": "Arrêt anticipé pour cause négative",
+        "en": "Early termination for a negative reason"
+      },
+      {
+        "fr": "Replanification",
+        "en": "Replanning"
+      },
+      {
+        "fr": "Extension du projet",
+        "en": "Project extension"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La valeur attendue a déjà été atteinte : c'est un arrêt anticipé pour cause POSITIVE — un succès, à ne pas confondre avec l'arrêt pour cause négative (valeur devenue inatteignable).",
+      "en": "The expected value has already been achieved: this is early termination for a POSITIVE reason — a success, not to be confused with termination for a negative reason (value no longer achievable)."
+    }
+  },
+  {
+    "id": "xg04",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Quelle est la différence entre une connaissance EXPLICITE et une connaissance TACITE ?",
+      "en": "What is the difference between EXPLICIT and TACIT knowledge?"
+    },
+    "options": [
+      {
+        "fr": "L'explicite est documentée et facilement partageable ; la tacite est fondée sur l'expérience et difficile à transférer",
+        "en": "Explicit knowledge is documented and easily shared; tacit knowledge is experience-based and hard to transfer"
+      },
+      {
+        "fr": "Les deux termes désignent la même chose",
+        "en": "Both terms describe the same thing"
+      },
+      {
+        "fr": "L'explicite est toujours plus précieuse que la tacite",
+        "en": "Explicit knowledge is always more valuable than tacit knowledge"
+      },
+      {
+        "fr": "La tacite se transfère automatiquement à la clôture du projet",
+        "en": "Tacit knowledge automatically transfers at project closure"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Les connaissances explicites (procédures, manuels) se documentent et se partagent facilement ; les connaissances tacites (expérience personnelle) sont difficiles à documenter et à transférer — l'enjeu de gouvernance est de convertir le tacite en explicite quand c'est possible.",
+      "en": "Explicit knowledge (procedures, manuals) is easily documented and shared; tacit knowledge (personal experience) is hard to document and transfer — the governance challenge is converting tacit into explicit whenever possible."
+    }
+  },
+  {
+    "id": "xg05",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Un projet perd son sponsor initial et, après un changement réglementaire majeur, son business case n'est plus soutenable. Quelle est la MEILLEURE action de gouvernance ?",
+      "en": "A project loses its original sponsor and, after a major regulatory change, its business case is no longer sustainable. What is the BEST governance action?"
+    },
+    "options": [
+      {
+        "fr": "Faire acter par la gouvernance un arrêt anticipé pour cause négative plutôt que de poursuivre par inertie",
+        "en": "Have governance formally act on early termination for a negative reason rather than continuing out of inertia"
+      },
+      {
+        "fr": "Continuer le projet jusqu'à ce qu'un nouveau sponsor soit trouvé, sans réévaluer le business case",
+        "en": "Continue the project until a new sponsor is found, without reassessing the business case"
+      },
+      {
+        "fr": "Réduire discrètement le périmètre sans en informer la gouvernance",
+        "en": "Quietly reduce scope without informing governance"
+      },
+      {
+        "fr": "Attendre la fin de la phase en cours avant toute décision",
+        "en": "Wait until the end of the current phase before any decision"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Quand la valeur attendue n'est plus atteignable, la gouvernance doit acter un arrêt anticipé pour cause NÉGATIVE — poursuivre par inertie ou agir en catimini contourne le rôle même de la gouvernance : protéger la valeur.",
+      "en": "When the expected value is no longer achievable, governance must formally act on early termination for a NEGATIVE reason — continuing out of inertia or acting quietly bypasses governance’s very role: protecting value."
+    }
+  },
+  {
+    "id": "xg06",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Quels sont les trois éléments sur lesquels repose une gouvernance efficace, selon le cadre du domaine de performance Gouvernance ?",
+      "en": "What are the three elements effective governance rests on, per the Governance performance domain framework?"
+    },
+    "options": [
+      {
+        "fr": "Des indicateurs cibles alignés stratégiquement, des indicateurs avancés donnant des signaux précoces, et des mécanismes de rétroaction",
+        "en": "Strategically aligned target indicators, leading indicators giving early signals, and feedback mechanisms"
+      },
+      {
+        "fr": "Un PMO directif, un comité de pilotage et un plan de management des risques",
+        "en": "A directive PMO, a steering committee, and a risk management plan"
+      },
+      {
+        "fr": "Un business case, une charte de projet et un registre des parties prenantes",
+        "en": "A business case, a project charter, and a stakeholder register"
+      },
+      {
+        "fr": "Des contrats à prix forfaitaire, une matrice RACI et une revue de code",
+        "en": "Fixed-price contracts, a RACI matrix, and a code review"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Une gouvernance efficace combine indicateurs cibles (ce qu'il faut atteindre), indicateurs avancés (signaux précoces avant qu'un problème ne devienne critique) et mécanismes de rétroaction (pour ajuster la décision).",
+      "en": "Effective governance combines target indicators (what must be achieved), leading indicators (early signals before a problem turns critical), and feedback mechanisms (to adjust decisions)."
+    }
+  },
+  {
+    "id": "xg07",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Une experte détentrice d'une connaissance clé, jamais documentée, s'apprête à quitter le projet dans deux semaines. Quelle est la MEILLEURE action de gouvernance des connaissances ?",
+      "en": "An expert holding key, never-documented knowledge is about to leave the project in two weeks. What is the BEST knowledge-governance action?"
+    },
+    "options": [
+      {
+        "fr": "Organiser activement le transfert (mentorat, storytelling, documentation) pour convertir cette connaissance tacite en connaissance explicite avant son départ",
+        "en": "Actively organize the transfer (mentoring, storytelling, documentation) to convert this tacit knowledge into explicit knowledge before she leaves"
+      },
+      {
+        "fr": "Ne rien faire : la connaissance tacite n'est de toute façon pas transférable",
+        "en": "Do nothing: tacit knowledge is not transferable anyway"
+      },
+      {
+        "fr": "Attendre son départ puis reconstituer la connaissance à partir des livrables existants",
+        "en": "Wait until she leaves, then reconstruct the knowledge from existing deliverables"
+      },
+      {
+        "fr": "Demander un rapport écrit de sa part le dernier jour",
+        "en": "Ask her for a written report on her last day"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La gouvernance doit chercher ACTIVEMENT à transformer le tacite en explicite AVANT le départ, via la collaboration, le mentorat, le storytelling — pas après, quand la connaissance est déjà perdue.",
+      "en": "Governance must ACTIVELY work to turn tacit into explicit knowledge BEFORE the departure, through collaboration, mentoring, storytelling — not after, once the knowledge is already lost."
+    }
+  },
+  {
+    "id": "xg08",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-11",
+    "question": {
+      "fr": "Une organisation dispose déjà d'une expertise interne forte sur un composant stratégique nécessitant une innovation significative. Quelle option l'analyse « faire ou acheter » favorise-t-elle, et pourquoi ?",
+      "en": "An organization already has strong internal expertise on a strategic component requiring significant innovation. Which option does the “make-or-buy” analysis favor, and why?"
+    },
+    "options": [
+      {
+        "fr": "Faire (internaliser) : exploite l'expertise disponible, souvent moins coûteux pour une innovation significative, et renforce le contrôle sur un livrable stratégique",
+        "en": "Make (insource): leverages available expertise, often cheaper for significant innovation, and strengthens control over a strategic deliverable"
+      },
+      {
+        "fr": "Acheter (externaliser) : transfère systématiquement le risque, donc toujours préférable",
+        "en": "Buy (outsource): systematically transfers risk, so always preferable"
+      },
+      {
+        "fr": "Le choix est indifférent tant que le prix est comparable",
+        "en": "The choice is indifferent as long as the price is comparable"
+      },
+      {
+        "fr": "Acheter, car cela libère automatiquement des capacités internes quel que soit le contexte",
+        "en": "Buy, because it automatically frees internal capacity regardless of context"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Faire (internaliser) est souvent préférable quand l'expertise est déjà disponible et qu'une innovation significative est en jeu : cela renforce l'intégration avec l'avantage stratégique et le contrôle des livrables — l'inverse d'un cas où l'expertise manque en interne.",
+      "en": "Make (insource) is often preferable when expertise is already available and significant innovation is at stake: it strengthens integration with strategic advantage and control over deliverables — the opposite of a case where expertise is missing internally."
+    }
+  },
+  {
+    "id": "xg09",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Un projet hybride identifie une opportunité business majeure qui augmenterait significativement la valeur du produit, mais elle n'est pas alignée avec le business case initial, exige une re-priorisation importante du backlog, et son analyse complète prendrait plusieurs semaines. Le sponsor exige une décision rapide. Quelle est la MEILLEURE action ?",
+      "en": "A hybrid project identifies a major business opportunity that would significantly increase product value, but it is misaligned with the initial business case, requires major backlog re-prioritization, and a full analysis would take several weeks. The sponsor demands a fast decision. What is the BEST action?"
+    },
+    "options": [
+      {
+        "fr": "Proposer une évaluation accélérée de l'opportunité et recommander une décision de gouvernance fondée sur une analyse progressive",
+        "en": "Propose an accelerated evaluation of the opportunity and recommend a governance decision based on progressive analysis"
+      },
+      {
+        "fr": "Intégrer immédiatement l'opportunité en s'appuyant sur sa valeur potentielle, et ajuster le business case plus tard",
+        "en": "Immediately integrate the opportunity based on its potential value, and adjust the business case later"
+      },
+      {
+        "fr": "Soumettre une demande de changement formelle et attendre une validation complète avant toute action, malgré la pression du sponsor",
+        "en": "Submit a formal change request and wait for full validation before any action, despite the sponsor’s pressure"
+      },
+      {
+        "fr": "Re-prioriser seul le backlog avec le sponsor, sans passer par la gouvernance",
+        "en": "Re-prioritize the backlog alone with the sponsor, bypassing governance"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Une décision adaptative, progressive et encadrée équilibre vitesse et gouvernance : agir sans contrôle (intégrer immédiatement) sacrifie la valeur analytique, attendre une validation complète (trop lent) perd l'opportunité, et court-circuiter la gouvernance avec le seul sponsor est un piège agile classique. L'évaluation accélérée avec décision de gouvernance progressive est le bon équilibre.",
+      "en": "A progressive, adaptive, governed decision balances speed and governance: acting without control (integrate immediately) sacrifices analytical rigor, waiting for full validation (too slow) loses the opportunity, and bypassing governance with just the sponsor is a classic agile trap. An accelerated evaluation with a progressive governance decision is the right balance."
+    }
+  },
+  {
+    "id": "xg10",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Un programme prédictif applique une gouvernance très formelle (validation de chaque jalon par un comité), tandis qu'une équipe agile du même portefeuille est totalement auto-gouvernée. Un dirigeant s'en étonne et demande d'uniformiser le niveau de gouvernance entre les deux. Quelle est la MEILLEURE réponse ?",
+      "en": "A predictive program applies very formal governance (every milestone validated by a committee), while an agile team in the same portfolio is fully self-governed. An executive is surprised and asks to standardize the governance level across both. What is the BEST response?"
+    },
+    "options": [
+      {
+        "fr": "Expliquer que la gouvernance doit être adaptée à l'approche et au contexte de chaque projet, et non uniformisée arbitrairement",
+        "en": "Explain that governance must be tailored to each project’s approach and context, not arbitrarily standardized"
+      },
+      {
+        "fr": "Accepter d'imposer la gouvernance formelle du programme prédictif à l'équipe agile pour satisfaire le dirigeant",
+        "en": "Agree to impose the predictive program’s formal governance on the agile team to satisfy the executive"
+      },
+      {
+        "fr": "Accepter de supprimer toute gouvernance formelle du programme prédictif pour l'aligner sur l'équipe agile",
+        "en": "Agree to remove all formal governance from the predictive program to match the agile team"
+      },
+      {
+        "fr": "Ignorer la demande, la gouvernance ne devant jamais être discutée avec la direction",
+        "en": "Ignore the request, since governance should never be discussed with leadership"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La gouvernance s'adapte au secteur, à la réglementation, à l'organisation et à la complexité de CHAQUE projet — l'uniformiser arbitrairement entre un contexte prédictif et un contexte agile va à l'encontre du principe même d'adaptation de la gouvernance.",
+      "en": "Governance adapts to the sector, regulation, organization and complexity of EACH project — arbitrarily standardizing it between a predictive and an agile context runs against the very principle of governance adaptation."
+    }
+  },
+  {
+    "id": "xg11",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Sélectionnez les DEUX scénarios qui déclenchent typiquement une revue institutionnelle de gouvernance.",
+      "en": "Select the TWO scenarios that typically trigger an institutional governance review."
+    },
+    "options": [
+      {
+        "fr": "Une replanification majeure du budget ou du planning pour préserver la valeur",
+        "en": "A major budget or schedule replanning to preserve value"
+      },
+      {
+        "fr": "Un arrêt anticipé, positif ou négatif",
+        "en": "An early termination, positive or negative"
+      },
+      {
+        "fr": "Une réunion quotidienne de synchronisation d'équipe",
+        "en": "A daily team sync meeting"
+      },
+      {
+        "fr": "Une conversation informelle entre deux membres de l'équipe",
+        "en": "An informal conversation between two team members"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "Le démarrage, la replanification, l'extension/réduction du périmètre et l'arrêt anticipé (positif ou négatif) sont les scénarios de gouvernance classiques. Les réunions quotidiennes et conversations informelles relèvent du pilotage d'exécution courant, pas d'une revue de gouvernance.",
+      "en": "Startup, replanning, scope extension/reduction, and early termination (positive or negative) are the classic governance scenarios. Daily meetings and informal conversations belong to routine execution steering, not a governance review."
+    }
+  },
+  {
+    "id": "xg12",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-14",
+    "question": {
+      "fr": "Sélectionnez les DEUX affirmations exactes sur l'adaptation de la gouvernance selon l'approche du projet.",
+      "en": "Select the TWO accurate statements about tailoring governance to the project approach."
+    },
+    "options": [
+      {
+        "fr": "En approche prédictive, la gouvernance tend à être plus formelle et structurée (sponsor, PMO, comité)",
+        "en": "In a predictive approach, governance tends to be more formal and structured (sponsor, PMO, committee)"
+      },
+      {
+        "fr": "En approche adaptative/agile, la gouvernance tend à être légère avec des équipes auto-gouvernées",
+        "en": "In an adaptive/agile approach, governance tends to be lightweight with self-governed teams"
+      },
+      {
+        "fr": "En approche hybride, la gouvernance doit toujours copier intégralement le modèle prédictif",
+        "en": "In a hybrid approach, governance must always fully copy the predictive model"
+      },
+      {
+        "fr": "L'approche du projet n'a aucune influence sur le niveau de gouvernance approprié",
+        "en": "The project’s approach has no influence on the appropriate governance level"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "Prédictif → gouvernance plus formelle ; adaptatif → gouvernance légère et auto-gouvernée ; hybride → gouvernance équilibrée et itérative, PAS une copie intégrale du modèle prédictif. L'approche influence directement le niveau de gouvernance approprié.",
+      "en": "Predictive → more formal governance; adaptive → lightweight, self-governed; hybrid → balanced and iterative governance, NOT a full copy of the predictive model. The approach directly influences the appropriate governance level."
+    }
+  },
+  {
+    "id": "xw01",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Une WBS (structure de découpage du projet) doit être organisée autour de quoi ?",
+      "en": "What should a WBS (work breakdown structure) be organized around?"
+    },
+    "options": [
+      {
+        "fr": "Les livrables du projet",
+        "en": "The project's deliverables"
+      },
+      {
+        "fr": "Les tâches quotidiennes de chaque membre",
+        "en": "Each team member's daily tasks"
+      },
+      {
+        "fr": "L'organigramme hiérarchique de l'entreprise",
+        "en": "The company's org chart"
+      },
+      {
+        "fr": "Le calendrier des réunions",
+        "en": "The meeting calendar"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La WBS est une décomposition hiérarchique orientée LIVRABLES, pas tâches : elle organise ce qui doit être produit, pas les activités pour le produire.",
+      "en": "The WBS is a hierarchical decomposition oriented toward DELIVERABLES, not tasks: it organizes what must be produced, not the activities to produce it."
+    }
+  },
+  {
+    "id": "xw02",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Quelle règle s'applique aux lots de travail (work packages) d'une WBS ?",
+      "en": "What rule applies to the work packages of a WBS?"
+    },
+    "options": [
+      {
+        "fr": "Il ne doit y avoir ni lacune ni chevauchement entre les lots de travail",
+        "en": "There must be neither gaps nor overlaps between work packages"
+      },
+      {
+        "fr": "Chaque lot de travail doit durer exactement une semaine",
+        "en": "Each work package must last exactly one week"
+      },
+      {
+        "fr": "Les lots de travail peuvent se chevaucher tant que le coût total reste correct",
+        "en": "Work packages can overlap as long as the total cost stays correct"
+      },
+      {
+        "fr": "Un lot de travail n'a pas besoin d'identifiant unique",
+        "en": "A work package does not need a unique identifier"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La règle d'or de la WBS : rien n'est omis, rien n'est dupliqué. Chaque nœud a un identifiant unique, et les lots de travail couvrent l'intégralité du périmètre sans lacune ni chevauchement.",
+      "en": "The WBS golden rule: nothing is omitted, nothing is duplicated. Every node carries a unique identifier, and work packages cover the entire scope with no gaps or overlaps."
+    }
+  },
+  {
+    "id": "xw03",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Que contient principalement le dictionnaire de la WBS pour un lot de travail donné ?",
+      "en": "What does the WBS dictionary mainly contain for a given work package?"
+    },
+    "options": [
+      {
+        "fr": "Le responsable, l'estimation de durée et de coût, les exigences qualité et une description détaillée du travail",
+        "en": "The owner, duration and cost estimates, quality requirements, and a detailed work description"
+      },
+      {
+        "fr": "Uniquement le nom du livrable, sans autre détail",
+        "en": "Only the deliverable’s name, with no other detail"
+      },
+      {
+        "fr": "La liste des réunions prévues pour ce lot de travail",
+        "en": "The list of meetings planned for that work package"
+      },
+      {
+        "fr": "Le code source associé au lot de travail",
+        "en": "The source code associated with the work package"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le dictionnaire de la WBS transforme la structure visuelle en référence opérationnelle : responsable, durée, coût, informations comptables, exigences qualité, jalons, description détaillée.",
+      "en": "The WBS dictionary turns the visual structure into an operational reference: owner, duration, cost, accounting info, quality requirements, milestones, detailed description."
+    }
+  },
+  {
+    "id": "xw04",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Quel est l'objectif du processus « Valider le périmètre » ?",
+      "en": "What is the objective of the “Validate Scope” process?"
+    },
+    "options": [
+      {
+        "fr": "Obtenir l'acceptation formelle des livrables par les parties prenantes",
+        "en": "Obtain formal acceptance of deliverables from stakeholders"
+      },
+      {
+        "fr": "Vérifier que le livrable est techniquement correct et sans défaut",
+        "en": "Verify the deliverable is technically correct and defect-free"
+      },
+      {
+        "fr": "Estimer le coût des lots de travail restants",
+        "en": "Estimate the cost of the remaining work packages"
+      },
+      {
+        "fr": "Décomposer le périmètre en lots de travail",
+        "en": "Decompose the scope into work packages"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Valider le périmètre confirme formellement que les livrables respectent les normes de qualité ET obtient leur acceptation par les parties prenantes — une confirmation externe, différente du contrôle qualité interne.",
+      "en": "Validate Scope formally confirms deliverables meet quality standards AND obtains stakeholder acceptance — an external confirmation, distinct from internal control quality."
+    }
+  },
+  {
+    "id": "xw05",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Dans quel ordre les processus « Contrôler la qualité » et « Valider le périmètre » doivent-ils normalement se dérouler ?",
+      "en": "In what order should “Control Quality” and “Validate Scope” normally occur?"
+    },
+    "options": [
+      {
+        "fr": "Contrôler la qualité d'abord, puis valider le périmètre avec le livrable vérifié",
+        "en": "Control quality first, then validate scope with the verified deliverable"
+      },
+      {
+        "fr": "Valider le périmètre d'abord, puis contrôler la qualité si le client le demande",
+        "en": "Validate scope first, then control quality only if the customer asks"
+      },
+      {
+        "fr": "L'ordre est indifférent, les deux processus sont interchangeables",
+        "en": "The order does not matter, the two processes are interchangeable"
+      },
+      {
+        "fr": "Les deux processus se déroulent toujours simultanément",
+        "en": "The two processes always happen simultaneously"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le contrôle qualité (vérification interne, technique) précède TOUJOURS la validation du périmètre (acceptation externe, formelle) : présenter un livrable non contrôlé à l'acceptation client est un piège classique de l'examen.",
+      "en": "Control quality (internal, technical verification) ALWAYS precedes validate scope (external, formal acceptance): presenting an uninspected deliverable for customer acceptance is a classic exam trap."
+    }
+  },
+  {
+    "id": "xw06",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Un compte de contrôle regroupe plusieurs lots de travail de la WBS. À quoi sert-il principalement ?",
+      "en": "A control account groups several work packages of the WBS. What is it mainly used for?"
+    },
+    "options": [
+      {
+        "fr": "Mesurer la performance et l'intégration coût-échéancier à un niveau de gestion intermédiaire",
+        "en": "Measuring cost-schedule performance and integration at an intermediate management level"
+      },
+      {
+        "fr": "Remplacer entièrement le dictionnaire de la WBS",
+        "en": "Fully replacing the WBS dictionary"
+      },
+      {
+        "fr": "Documenter uniquement les risques du projet",
+        "en": "Documenting only the project’s risks"
+      },
+      {
+        "fr": "Servir de registre des parties prenantes",
+        "en": "Serving as the stakeholder register"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le compte de contrôle est le niveau intermédiaire où l'on mesure la performance (coût, avancement) de façon agrégée sur plusieurs lots de travail — c'est la base de la gestion de la valeur acquise (EVM).",
+      "en": "The control account is the intermediate level where performance (cost, progress) is measured in aggregate across several work packages — the basis of earned value management (EVM)."
+    }
+  },
+  {
+    "id": "xw07",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Qu'est-ce que la structure de décomposition de la valeur (VBS), par rapport à une WBS classique ?",
+      "en": "What is the value breakdown structure (VBS), compared to a classic WBS?"
+    },
+    "options": [
+      {
+        "fr": "Une hiérarchie qui relie les livrables à la valeur attendue, permettant une priorisation basée sur la valeur",
+        "en": "A hierarchy linking deliverables to expected value, enabling value-based prioritization"
+      },
+      {
+        "fr": "Un synonyme strict de la WBS, sans différence de fond",
+        "en": "A strict synonym for the WBS, with no substantive difference"
+      },
+      {
+        "fr": "Un document réservé exclusivement aux projets prédictifs",
+        "en": "A document reserved exclusively for predictive projects"
+      },
+      {
+        "fr": "Une liste des risques classés par probabilité",
+        "en": "A list of risks ranked by probability"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La VBS relie les livrables à la valeur attendue plutôt qu'au seul périmètre technique, ce qui permet de prioriser le travail en fonction de la valeur qu'il génère.",
+      "en": "The VBS links deliverables to expected value rather than technical scope alone, enabling work to be prioritized by the value it generates."
+    }
+  },
+  {
+    "id": "xw08",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-10",
+    "question": {
+      "fr": "Sur plusieurs mois, une équipe intègre régulièrement de petits ajustements demandés par des parties prenantes, sans jamais soumettre de demande de changement formelle, chaque ajustement étant jugé « d'impact individuel négligeable ». Le chef de projet constate maintenant une charge de travail en hausse et un échéancier qui dérive, sans pouvoir expliquer clairement l'écart. Quelle est la MEILLEURE action ?",
+      "en": "Over several months, a team regularly integrates small stakeholder-requested tweaks without ever submitting a formal change request, each judged to have “negligible individual impact”. The PM now sees rising workload and schedule drift, without being able to clearly explain the variance. What is the BEST action?"
+    },
+    "options": [
+      {
+        "fr": "Analyser l'écart cumulé causé par ces ajustements informels et le soumettre au processus de maîtrise intégrée des changements",
+        "en": "Analyze the cumulative variance caused by these informal adjustments and submit it to the integrated change control process"
+      },
+      {
+        "fr": "Continuer à accepter les ajustements mineurs tant qu'ils apportent une valeur immédiate",
+        "en": "Keep accepting minor adjustments as long as they bring immediate value"
+      },
+      {
+        "fr": "Mettre à jour rétroactivement la référence de périmètre pour refléter les ajustements déjà faits, sans autre analyse",
+        "en": "Retroactively update the scope baseline to reflect the adjustments already made, with no further analysis"
+      },
+      {
+        "fr": "Ignorer le problème puisque chaque ajustement pris individuellement était mineur",
+        "en": "Ignore the issue since each adjustment, taken individually, was minor"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Le danger n'est pas le changement en soi, mais le changement NON CONTRÔLÉ : une accumulation de « petits » ajustements non validés est une dérive de périmètre classique. La réponse correcte analyse l'écart cumulé et le fait passer par la maîtrise intégrée des changements — pas un maquillage rétroactif de la baseline.",
+      "en": "The danger is not change itself, but UNCONTROLLED change: an accumulation of unapproved “small” adjustments is classic scope creep. The correct response analyzes the cumulative variance and routes it through integrated change control — not a retroactive whitewashing of the baseline."
+    }
+  },
+  {
+    "id": "xw09",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Une équipe construit une WBS où le premier niveau liste des activités (« Concevoir », « Développer », « Tester ») plutôt que des livrables. Un lot de travail « Tester » couvre à la fois les tests du module A et du module B, dont les livrables respectifs apparaissent aussi ailleurs dans la WBS sous d'autres branches. Quels DEUX problèmes cela pose-t-il ?",
+      "en": "A team builds a WBS whose first level lists activities (“Design”, “Develop”, “Test”) rather than deliverables. A “Test” work package covers testing for both module A and module B, whose respective deliverables also appear elsewhere in the WBS under other branches. What TWO problems does this create?"
+    },
+    "options": [
+      {
+        "fr": "La WBS est orientée tâches au lieu de livrables, ce qui contrevient au principe fondamental de sa construction",
+        "en": "The WBS is task-oriented instead of deliverable-oriented, violating its fundamental construction principle"
+      },
+      {
+        "fr": "Il y a un chevauchement : les modules A et B sont couverts à la fois par leurs branches propres et par le lot « Tester », violant la règle d'absence de duplication",
+        "en": "There is an overlap: modules A and B are covered both by their own branches and by the “Test” package, violating the no-duplication rule"
+      },
+      {
+        "fr": "La WBS ne peut légalement pas dépasser trois niveaux de profondeur",
+        "en": "A WBS cannot legally exceed three levels of depth"
+      },
+      {
+        "fr": "Chaque lot de travail doit obligatoirement coûter moins de 1 000 $",
+        "en": "Every work package must cost less than $1,000"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "Deux fautes classiques : une WBS orientée tâches (« Tester ») au lieu de livrables, et un chevauchement entre les branches par module et la branche « Tester » qui couvre les mêmes éléments deux fois — la WBS doit couvrir le périmètre sans lacune NI duplication.",
+      "en": "Two classic mistakes: a task-oriented WBS (“Test”) instead of deliverable-oriented, and an overlap between the per-module branches and the “Test” branch covering the same elements twice — the WBS must cover scope with no gaps AND no duplication."
+    }
+  },
+  {
+    "id": "xr01",
+    "domain": "business",
+    "difficulty": "easy",
+    "ecoTask": "business-01",
+    "question": {
+      "fr": "Qui est responsable de la conformité aux exigences légales et réglementaires d'un projet ?",
+      "en": "Who is responsible for a project's compliance with legal and regulatory requirements?"
+    },
+    "options": [
+      {
+        "fr": "Le PMO surveille la conformité au niveau organisationnel, et l'équipe projet reste responsable de la conformité de ses propres activités",
+        "en": "The PMO monitors compliance at the organizational level, and the project team remains responsible for compliance in its own activities"
+      },
+      {
+        "fr": "Uniquement le PMO, l'équipe projet n'a pas à s'en soucier",
+        "en": "Only the PMO — the project team doesn't need to worry about it"
+      },
+      {
+        "fr": "Uniquement le chef de projet, à titre personnel",
+        "en": "Only the project manager, personally"
+      },
+      {
+        "fr": "Uniquement le service juridique de l'organisation",
+        "en": "Only the organization's legal department"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La conformité est une responsabilité PARTAGÉE à deux échelles : le PMO au niveau organisationnel, l'équipe projet sur ses propres processus, livrables et fournisseurs.",
+      "en": "Compliance is a SHARED responsibility at two scales: the PMO at the organizational level, the project team over its own processes, deliverables and vendors."
+    }
+  },
+  {
+    "id": "xr02",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Que signifie la Définition de « Prêt » (DoR) pour une exigence ou un récit utilisateur ?",
+      "en": "What does the Definition of Ready (DoR) mean for a requirement or user story?"
+    },
+    "options": [
+      {
+        "fr": "La liste de contrôle de ce qui doit être en place AVANT que l'équipe commence à travailler dessus",
+        "en": "The checklist of what must be in place BEFORE the team starts working on it"
+      },
+      {
+        "fr": "La liste de contrôle confirmant que le travail est terminé et prêt pour le client",
+        "en": "The checklist confirming the work is finished and ready for the customer"
+      },
+      {
+        "fr": "Un synonyme strict de la Définition de « Terminé » (DoD)",
+        "en": "A strict synonym for the Definition of Done (DoD)"
+      },
+      {
+        "fr": "Un document utilisé uniquement dans les projets prédictifs",
+        "en": "A document used only in predictive projects"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La DoR est un critère d'ENTRÉE : ce qui doit être en place pour que l'équipe puisse commencer le travail. La DoD est un critère de SORTIE, comparable aux critères d'acceptation en prédictif.",
+      "en": "The DoR is an ENTRY criterion: what must be in place for the team to start work. The DoD is an EXIT criterion, comparable to acceptance criteria in predictive projects."
+    }
+  },
+  {
+    "id": "xr03",
+    "domain": "process",
+    "difficulty": "easy",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Dans le cadre OKR (Objectifs et Résultats Clés), combien de résultats clés soutiennent typiquement un objectif ?",
+      "en": "In the OKR framework (Objectives and Key Results), how many key results typically support one objective?"
+    },
+    "options": [
+      {
+        "fr": "Trois à cinq",
+        "en": "Three to five"
+      },
+      {
+        "fr": "Exactement un",
+        "en": "Exactly one"
+      },
+      {
+        "fr": "Dix ou plus",
+        "en": "Ten or more"
+      },
+      {
+        "fr": "Cela n'a aucune importance",
+        "en": "It does not matter"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "Un objectif OKR est soutenu par trois à cinq résultats clés, spécifiques, mesurables et limités dans le temps.",
+      "en": "An OKR objective is supported by three to five key results, specific, measurable and time-bound."
+    }
+  },
+  {
+    "id": "xr04",
+    "domain": "business",
+    "difficulty": "easy",
+    "ecoTask": "business-01",
+    "question": {
+      "fr": "Selon les bonnes pratiques de gestion de la conformité, à quel moment les contrôles de conformité doivent-ils être effectués ?",
+      "en": "Per compliance management best practices, when should compliance checks be performed?"
+    },
+    "options": [
+      {
+        "fr": "À différentes étapes du projet, de manière continue, et avant la fin du projet",
+        "en": "At different stages of the project, continuously, and before the project ends"
+      },
+      {
+        "fr": "Uniquement à la toute fin du projet, lors de la clôture",
+        "en": "Only at the very end of the project, during closure"
+      },
+      {
+        "fr": "Uniquement au lancement du projet",
+        "en": "Only at project kickoff"
+      },
+      {
+        "fr": "Seulement si un incident de conformité est signalé",
+        "en": "Only if a compliance incident is reported"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La conformité s'évalue en continu, à différentes étapes du projet, et doit être vérifiée AVANT la fin du projet pour éviter de transférer des problèmes non résolus en aval.",
+      "en": "Compliance is assessed continuously, at different stages of the project, and must be verified BEFORE the project ends to avoid transferring unresolved problems downstream."
+    }
+  },
+  {
+    "id": "xr05",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "À la fin d'un trimestre, une équipe constate qu'elle a atteint 100 % de tous ses résultats clés OKR. Quelle est la lecture attendue de ce résultat ?",
+      "en": "At the end of a quarter, a team finds it achieved 100% of all its OKR key results. What is the expected reading of this outcome?"
+    },
+    "options": [
+      {
+        "fr": "Ce taux doit être réexaminé : il révèle probablement un niveau de difficulté insuffisant plutôt qu'un franc succès",
+        "en": "This rate should be reconsidered: it probably reveals insufficient difficulty rather than an outright win"
+      },
+      {
+        "fr": "C'est un succès total à célébrer sans réserve",
+        "en": "It is a total success to celebrate without reservation"
+      },
+      {
+        "fr": "Cela prouve que l'équipe doit revoir ses résultats clés à la baisse pour le trimestre suivant",
+        "en": "It proves the team should lower its key results for the next quarter"
+      },
+      {
+        "fr": "Un taux de 100 % est impossible à atteindre, ce résultat est donc une erreur de calcul",
+        "en": "A 100% rate is impossible to reach, so this result must be a calculation error"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La règle OKR vise un taux de réalisation d'environ 70 % pour maintenir une dynamique ambitieuse. Un taux de 100 % doit être réexaminé car il signale des objectifs pas assez ambitieux, pas une réussite totale.",
+      "en": "The OKR rule targets roughly a 70% completion rate to sustain ambitious momentum. A 100% rate should be reconsidered because it signals insufficiently ambitious goals, not an outright win."
+    }
+  },
+  {
+    "id": "xr06",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Un product owner doit prioriser un backlog de 40 exigences avec 15 parties prenantes ayant des avis divergents. Quelle technique de priorisation est la MIEUX adaptée à ce contexte ?",
+      "en": "A product owner must prioritize a backlog of 40 requirements with 15 stakeholders holding divergent opinions. Which prioritization technique BEST fits this context?"
+    },
+    "options": [
+      {
+        "fr": "La méthode des 100 points : adaptée à tout type de groupe, y compris les plus grands, et favorise une réflexion approfondie",
+        "en": "The 100-point method: suited to any group size, including large ones, and encourages deep reflection"
+      },
+      {
+        "fr": "Le modèle de Kano, conçu pour un éventail restreint d'exigences subjectives",
+        "en": "The Kano model, designed for a narrow range of subjective requirements"
+      },
+      {
+        "fr": "La comparaison par paires, dont le nombre de comparaisons devient impraticable avec 40 éléments",
+        "en": "Paired comparison, whose number of comparisons becomes impractical with 40 items"
+      },
+      {
+        "fr": "Aucune technique structurée n'est nécessaire avec autant de parties prenantes",
+        "en": "No structured technique is needed with that many stakeholders"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La méthode des 100 points (allocation fixe) est adaptée à tout type de groupe, y compris les plus grands, contrairement au modèle de Kano (éventail restreint) ou à la comparaison par paires (nombre de comparaisons qui explose avec le volume d'exigences).",
+      "en": "The 100-point method (fixed allocation) suits any group size, including large ones, unlike the Kano model (narrow range) or paired comparison (comparison count explodes with requirement volume)."
+    }
+  },
+  {
+    "id": "xr07",
+    "domain": "business",
+    "difficulty": "medium",
+    "ecoTask": "business-01",
+    "question": {
+      "fr": "Un fournisseur externe livre un composant non conforme à une réglementation applicable au projet. Le chef de projet estime que cela « ne relève pas du périmètre de responsabilité du projet » puisque c'est un tiers qui a livré. Cette position est-elle correcte ?",
+      "en": "An external vendor delivers a component that fails to meet a regulation applicable to the project. The PM believes this “is not the project’s responsibility” since a third party delivered it. Is this position correct?"
+    },
+    "options": [
+      {
+        "fr": "Non : les achats et travaux réalisés par des fournisseurs font explicitement partie du périmètre de responsabilité de conformité de l'équipe projet",
+        "en": "No: procurement and vendor-performed work explicitly fall within the project team’s compliance responsibility"
+      },
+      {
+        "fr": "Oui : la responsabilité de conformité d'un tiers relève uniquement du fournisseur lui-même",
+        "en": "Yes: a third party’s compliance responsibility belongs solely to the vendor itself"
+      },
+      {
+        "fr": "Oui, sauf si le contrat le précise explicitement",
+        "en": "Yes, unless the contract explicitly states otherwise"
+      },
+      {
+        "fr": "La question ne peut être tranchée sans l'avis du PMO",
+        "en": "The question cannot be settled without the PMO’s opinion"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "L'équipe projet est responsable de la conformité de ses propres activités, ce qui inclut explicitement les achats et le travail réalisé par des fournisseurs — ce n'est pas parce qu'un tiers a livré que la responsabilité disparaît.",
+      "en": "The project team is responsible for compliance in its own activities, which explicitly includes procurement and vendor-performed work — a third party delivering does not make the responsibility disappear."
+    }
+  },
+  {
+    "id": "xr08",
+    "domain": "business",
+    "difficulty": "hard",
+    "ecoTask": "business-01",
+    "question": {
+      "fr": "Une équipe découvre un écart de conformité réglementaire sur une fonctionnalité, deux semaines avant la clôture prévue du projet. Corriger l'écart maintenant retarderait la clôture de trois semaines. Quelle est la MEILLEURE action du chef de projet ?",
+      "en": "A team discovers a regulatory compliance gap on a feature two weeks before the planned project closure. Fixing it now would delay closure by three weeks. What is the PM’s BEST action?"
+    },
+    "options": [
+      {
+        "fr": "Résoudre le problème de conformité avant la clôture, quitte à décaler la date de fin, plutôt que de transférer le problème en aval",
+        "en": "Resolve the compliance issue before closure, even if it pushes the end date, rather than transferring the problem downstream"
+      },
+      {
+        "fr": "Clore le projet à la date prévue et transférer la correction aux opérations après transition",
+        "en": "Close the project on schedule and hand the fix off to operations after transition"
+      },
+      {
+        "fr": "Ignorer l'écart s'il est mineur, pour respecter le calendrier annoncé au sponsor",
+        "en": "Ignore the gap if minor, to honor the schedule announced to the sponsor"
+      },
+      {
+        "fr": "Documenter l'écart dans les leçons apprises sans le corriger, pour le prochain projet",
+        "en": "Document the gap in lessons learned without fixing it, for the next project"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La conformité doit être vérifiée AVANT la fin du projet précisément pour éviter de transférer des problèmes non résolus en aval — le coût de la non-conformité (pénalités, poursuites, perte de confiance) dépasse largement celui d'un délai de clôture assumé et communiqué.",
+      "en": "Compliance must be verified BEFORE the project ends precisely to avoid transferring unresolved problems downstream — the cost of non-compliance (penalties, lawsuits, loss of trust) far outweighs a communicated, deliberate closure delay."
+    }
+  },
+  {
+    "id": "xr09",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Une équipe commence à travailler sur un récit utilisateur dont les maquettes ne sont pas finalisées et dont les critères d'acceptation restent flous, sous prétexte que le sprint doit démarrer à date fixe. À mi-sprint, le travail doit être largement repris faute de clarté initiale. Quel principe a été violé ?",
+      "en": "A team starts work on a user story whose mockups are unfinished and whose acceptance criteria remain vague, because the sprint must start on a fixed date. Mid-sprint, the work must be largely redone for lack of initial clarity. What principle was violated?"
+    },
+    "options": [
+      {
+        "fr": "La Définition de « Prêt » (DoR) n'était pas remplie avant de démarrer le travail",
+        "en": "The Definition of Ready (DoR) was not fulfilled before starting the work"
+      },
+      {
+        "fr": "La Définition de « Terminé » (DoD) n'a pas été respectée en fin de sprint",
+        "en": "The Definition of Done (DoD) was not honored at the end of the sprint"
+      },
+      {
+        "fr": "Le modèle de Kano n'a pas été appliqué à ce récit utilisateur",
+        "en": "The Kano model was not applied to this user story"
+      },
+      {
+        "fr": "L'OKR du trimestre n'a pas été correctement défini",
+        "en": "The quarter’s OKR was not correctly defined"
+      }
+    ],
+    "correct": 0,
+    "explanation": {
+      "fr": "La DoR est le critère d'ENTRÉE : elle doit être remplie AVANT que l'équipe commence le travail. Démarrer malgré des maquettes et critères d'acceptation flous revient à ignorer la DoR, ce qui explique la reprise en cours de sprint.",
+      "en": "The DoR is the ENTRY criterion: it must be fulfilled BEFORE the team starts the work. Starting despite unfinished mockups and vague acceptance criteria means ignoring the DoR, which explains the mid-sprint rework."
+    }
+  },
+  {
+    "id": "xr10",
+    "domain": "process",
+    "difficulty": "medium",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Sélectionnez les DEUX affirmations exactes sur la Définition de « Prêt » (DoR) et la Définition de « Terminé » (DoD).",
+      "en": "Select the TWO accurate statements about the Definition of Ready (DoR) and the Definition of Done (DoD)."
+    },
+    "options": [
+      {
+        "fr": "La DoR est un critère d'entrée : ce qui doit être en place avant que l'équipe commence le travail",
+        "en": "The DoR is an entry criterion: what must be in place before the team starts the work"
+      },
+      {
+        "fr": "La DoD s'appuie sur la DoR et décrit l'état souhaité à l'arrivée",
+        "en": "The DoD builds on the DoR and describes the desired end state"
+      },
+      {
+        "fr": "La DoR et la DoD sont deux noms différents pour exactement le même concept",
+        "en": "The DoR and the DoD are two different names for exactly the same concept"
+      },
+      {
+        "fr": "La DoD n'a aucun équivalent dans les projets prédictifs",
+        "en": "The DoD has no equivalent in predictive projects"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "La DoR (critère d'entrée) et la DoD (critère de sortie, qui s'appuie sur la DoR) sont deux concepts distincts et complémentaires. La DoD est d'ailleurs l'équivalent agile des critères d'acceptation en approche prédictive.",
+      "en": "The DoR (entry criterion) and the DoD (exit criterion, building on the DoR) are two distinct, complementary concepts. The DoD is in fact agile’s equivalent of acceptance criteria in a predictive approach."
+    }
+  },
+  {
+    "id": "xr11",
+    "domain": "process",
+    "difficulty": "hard",
+    "ecoTask": "process-08",
+    "question": {
+      "fr": "Sélectionnez les DEUX techniques de priorisation des exigences correctement associées à leur meilleur contexte d'usage.",
+      "en": "Select the TWO requirement-prioritization techniques correctly matched to their best-fit use case."
+    },
+    "options": [
+      {
+        "fr": "MoSCoW : comparer plusieurs points de vue et se concentrer sur les exigences les plus importantes, souvent avec le timeboxing",
+        "en": "MoSCoW: comparing multiple viewpoints and focusing on the most important requirements, often paired with timeboxing"
+      },
+      {
+        "fr": "Le modèle de Kano : adapté à un éventail restreint d'exigences subjectives, pas à un long backlog",
+        "en": "The Kano model: suited to a narrow range of subjective requirements, not a long backlog"
+      },
+      {
+        "fr": "La comparaison par paires : la technique la plus efficace pour prioriser plusieurs centaines d'exigences",
+        "en": "Paired comparison: the most efficient technique for prioritizing several hundred requirements"
+      },
+      {
+        "fr": "La méthode des 100 points : réservée aux très petits groupes de 2 à 3 parties prenantes",
+        "en": "The 100-point method: reserved for very small groups of 2–3 stakeholders"
+      }
+    ],
+    "correct": 0,
+    "correctMultiple": [
+      0,
+      1
+    ],
+    "explanation": {
+      "fr": "MoSCoW et le modèle de Kano sont bien décrits dans leur cas d'usage propre. La comparaison par paires devient au contraire IMPRATICABLE au-delà d'une poignée d'éléments (le nombre de comparaisons croît en n(n-1)/2), et la méthode des 100 points est justement adaptée à tout type de groupe, y compris les plus grands.",
+      "en": "MoSCoW and the Kano model are correctly described in their own use case. Paired comparison, by contrast, becomes IMPRACTICAL beyond a handful of items (comparisons grow as n(n-1)/2), and the 100-point method is precisely suited to any group size, including large ones."
+    }
   }
 ]

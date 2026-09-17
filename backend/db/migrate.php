@@ -22,6 +22,7 @@ applySchema($pdo, __DIR__ . '/schema.sql');
 echo "→ Ensuring newer columns on existing tables…\n";
 ensureColumn($pdo, 'concepts', 'traps_fr', 'MEDIUMTEXT NULL');
 ensureColumn($pdo, 'concepts', 'traps_en', 'MEDIUMTEXT NULL');
+ensureColumn($pdo, 'questions', 'correct_multiple', 'JSON NULL');
 
 echo "→ Seeding content…\n";
 seedContent($pdo, __DIR__ . '/seed');
@@ -89,8 +90,8 @@ function seedContent(PDO $pdo, string $seedDir): void
 
     $qStmt = $pdo->prepare(
         'INSERT INTO questions
-           (id, domain, difficulty, eco_task_id, correct, question_fr, question_en, explanation_fr, explanation_en)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)'
+           (id, domain, difficulty, eco_task_id, correct, correct_multiple, question_fr, question_en, explanation_fr, explanation_en)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
     );
     $oStmt = $pdo->prepare(
         'INSERT INTO question_options (question_id, position, text_fr, text_en) VALUES (?, ?, ?, ?)'
@@ -103,6 +104,7 @@ function seedContent(PDO $pdo, string $seedDir): void
             $q['difficulty'],
             $q['ecoTask'] ?? null,
             (int) $q['correct'],
+            isset($q['correctMultiple']) ? json_encode($q['correctMultiple']) : null,
             $q['question']['fr'],
             $q['question']['en'],
             $q['explanation']['fr'],
