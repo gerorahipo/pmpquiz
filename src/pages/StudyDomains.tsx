@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { STUDY_DOMAINS } from '../data/studyDomains'
 import { chunkIntoLevels } from '../lib/studyLevels'
-import { countSeen } from '../lib/studyProgress'
+import { glossaryProgressPct } from '../lib/studyProgress'
 import { pluralWord } from '../lib/pluralize'
 import DomainIcon from '../components/DomainIcon'
 
@@ -21,8 +21,7 @@ export default function StudyDomains() {
       <div className="card-grid study-domain-grid">
         {STUDY_DOMAINS.map((d) => {
           const levels = chunkIntoLevels(d.glossaryIds)
-          const seen = countSeen(d.glossaryIds, 'glossary')
-          const pct = d.glossaryIds.length ? Math.round((seen / d.glossaryIds.length) * 100) : 0
+          const pct = glossaryProgressPct(d.glossaryIds)
           return (
             <Link key={d.id} to={`/glossary/domains/${d.id}`} className={`card study-domain-card domain-${d.color}`}>
               <div className="study-domain-icon">

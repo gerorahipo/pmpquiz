@@ -185,6 +185,14 @@ const fr = {
   studyDomainProgress: 'Progression du domaine',
   studySheetsHeading: 'Fiches de révision',
   studyRead: 'Relire',
+  studyCounterOf: 'sur',
+  studyDidYouKnow: 'Avez-vous bien répondu ?',
+  studyRateNo: 'Non',
+  studyRateAlmost: 'Presque',
+  studyRateYes: 'Oui',
+  studyLevelComplete: 'Niveau terminé !',
+  studyRestartLevel: 'Recommencer',
+  studyBackToDomain: 'Retour au domaine',
 
   // auth
   login: 'Connexion',
@@ -389,6 +397,14 @@ const en: typeof fr = {
   studyDomainProgress: 'Domain progress',
   studySheetsHeading: 'Revision sheets',
   studyRead: 'Reread',
+  studyCounterOf: 'of',
+  studyDidYouKnow: 'Did you get it right?',
+  studyRateNo: 'No',
+  studyRateAlmost: 'Almost',
+  studyRateYes: 'Yes',
+  studyLevelComplete: 'Level complete!',
+  studyRestartLevel: 'Restart',
+  studyBackToDomain: 'Back to domain',
 
   // auth
   login: 'Log in',

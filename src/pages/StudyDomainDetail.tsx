@@ -4,7 +4,7 @@ import { useI18n } from '../i18n'
 import { loadConcepts } from '../content'
 import { STUDY_DOMAINS } from '../data/studyDomains'
 import { chunkIntoLevels } from '../lib/studyLevels'
-import { countSeen, isSeen } from '../lib/studyProgress'
+import { glossaryProgressPct, glossaryAttemptedCount, isConceptSeen } from '../lib/studyProgress'
 import { pluralWord } from '../lib/pluralize'
 import DomainIcon from '../components/DomainIcon'
 import type { Concept } from '../types'
@@ -38,8 +38,7 @@ export default function StudyDomainDetail() {
   }
 
   const levels = chunkIntoLevels(domain.glossaryIds)
-  const seenTotal = countSeen(domain.glossaryIds, 'glossary')
-  const pctTotal = domain.glossaryIds.length ? Math.round((seenTotal / domain.glossaryIds.length) * 100) : 0
+  const pctTotal = glossaryProgressPct(domain.glossaryIds)
 
   const domainConcepts = (concepts ?? []).filter((c) => domain.conceptIds.includes(c.id))
 
@@ -68,9 +67,10 @@ export default function StudyDomainDetail() {
       <h2 className="section-title">{t('studyLevelsHeading')}</h2>
       <div className="card-grid study-level-grid">
         {levels.map((levelIds, i) => {
-          const seen = countSeen(levelIds, 'glossary')
-          const pct = Math.round((seen / levelIds.length) * 100)
-          const started = seen > 0
+          const pct = glossaryProgressPct(levelIds)
+          const attempted = glossaryAttemptedCount(levelIds)
+          const started = attempted > 0
+          const done = attempted === levelIds.length
           return (
             <div key={i} className="card study-level-card">
               <div className="study-level-head">
@@ -85,7 +85,7 @@ export default function StudyDomainDetail() {
               <p className="muted">{t('studyLevelOnly')}</p>
               <p className="study-level-status">
                 {levelIds.length} {pluralWord(levelIds.length, t('studyCardSingular'), t('studyCardPlural'))} ·{' '}
-                {pct === 100 ? t('studyDone') : started ? t('studyInProgress') : t('studyNotStarted')}
+                {done ? t('studyDone') : started ? t('studyInProgress') : t('studyNotStarted')}
               </p>
               <div className="study-progress-bar" aria-hidden="true">
                 <span style={{ width: `${pct}%` }} />
@@ -103,12 +103,14 @@ export default function StudyDomainDetail() {
           <h2 className="section-title">{t('studySheetsHeading')}</h2>
           <div className="card-grid study-sheet-grid">
             {domainConcepts.map((c) => (
-              <Link key={c.id} to={`/concepts/${c.id}`} className="card concept-card study-sheet-card">
+              <Link
+                key={c.id}
+                to={`/concepts/${c.id}`}
+                className={`card concept-card study-sheet-card domain-${domain.color}`}
+              >
                 <h2>{L(c.title)}</h2>
                 <p>{L(c.summary)}</p>
-                <span className="read-more">
-                  {isSeen(c.id, 'concepts') ? t('studyRead') : t('readMore')} →
-                </span>
+                <span className="read-more">{isConceptSeen(c.id) ? t('studyRead') : t('readMore')} →</span>
               </Link>
             ))}
           </div>

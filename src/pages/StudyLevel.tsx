@@ -4,7 +4,7 @@ import { useI18n } from '../i18n'
 import { loadGlossary } from '../content'
 import { STUDY_DOMAINS } from '../data/studyDomains'
 import { chunkIntoLevels } from '../lib/studyLevels'
-import { markGlossarySeen } from '../lib/studyProgress'
+import { rateGlossaryTerm, glossaryProgressPct, type GlossaryRating } from '../lib/studyProgress'
 import type { GlossaryCategory, GlossaryEntry } from '../data/glossary'
 
 const CATEGORY_KEYS: Record<GlossaryCategory, 'glossFormula' | 'glossAgile' | 'glossProcess' | 'glossPeople'> = {
@@ -20,6 +20,7 @@ export default function StudyLevel() {
   const [glossary, setGlossary] = useState<GlossaryEntry[] | null>(null)
   const [pos, setPos] = useState(0)
   const [flipped, setFlipped] = useState(false)
+  const [finished, setFinished] = useState(false)
 
   useEffect(() => {
     let cancelled = false
@@ -59,22 +60,48 @@ export default function StudyLevel() {
     )
   }
 
+  const restart = () => {
+    setPos(0)
+    setFlipped(false)
+    setFinished(false)
+  }
+
+  if (finished) {
+    const pct = glossaryProgressPct(levelIds)
+    return (
+      <div className="page">
+        <Link className="btn btn-secondary study-back-link" to={`/glossary/domains/${domain.id}`}>
+          ← {t('back')}
+        </Link>
+        <div className={`card study-level-done domain-${domain.color}`}>
+          <h1>{t('studyLevelComplete')}</h1>
+          <p className="study-progress-pct study-level-done-pct">{pct}%</p>
+          <div className="btn-row">
+            <button className="btn btn-cta" onClick={restart}>
+              {t('studyRestartLevel')}
+            </button>
+            <Link className="btn btn-secondary" to={`/glossary/domains/${domain.id}`}>
+              {t('studyBackToDomain')}
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   const card = cards[pos]
 
-  const flip = () => {
-    setFlipped((f) => {
-      const next = !f
-      if (next && card) markGlossarySeen(card.id)
-      return next
-    })
-  }
-  const nextCard = () => {
-    setFlipped(false)
-    setPos((p) => (p + 1) % cards.length)
-  }
-  const prevCard = () => {
-    setFlipped(false)
-    setPos((p) => (p - 1 + cards.length) % cards.length)
+  const flip = () => setFlipped(true)
+
+  const rate = (rating: GlossaryRating) => {
+    if (!card) return
+    rateGlossaryTerm(card.id, rating)
+    if (pos + 1 >= cards.length) {
+      setFinished(true)
+    } else {
+      setPos((p) => p + 1)
+      setFlipped(false)
+    }
   }
 
   return (
@@ -82,15 +109,23 @@ export default function StudyLevel() {
       <Link className="btn btn-secondary study-back-link" to={`/glossary/domains/${domain.id}`}>
         ← {t('back')}
       </Link>
-      <h1>
-        {L(domain.title)} — {t('studyLevelLabel')} {idx + 1}
-      </h1>
+      <div className="study-level-header">
+        <h1>
+          {L(domain.title)} — {t('studyLevelLabel')} {idx + 1}
+        </h1>
+        {cards.length > 0 && (
+          <span className="study-level-counter">
+            {pos + 1} {t('studyCounterOf')} {cards.length}
+          </span>
+        )}
+      </div>
 
       {card ? (
         <div className="flashcard-wrap">
           <button
             className={`flashcard ${flipped ? 'flipped' : ''}`}
             onClick={flip}
+            disabled={flipped}
             aria-label={flipped ? t('flashcardBack') : t('flashcardFront')}
           >
             <div className="flashcard-inner">
@@ -105,17 +140,22 @@ export default function StudyLevel() {
             </div>
           </button>
 
-          <div className="flashcard-controls">
-            <button className="btn btn-secondary" onClick={prevCard}>
-              ← {t('prev')}
-            </button>
-            <span className="flashcard-counter">
-              {pos + 1} / {cards.length}
-            </span>
-            <button className="btn btn-secondary" onClick={nextCard}>
-              {t('next')} →
-            </button>
-          </div>
+          {flipped && (
+            <div className="study-rate">
+              <p className="study-rate-prompt">{t('studyDidYouKnow')}</p>
+              <div className="study-rate-buttons">
+                <button className="study-rate-btn study-rate-no" onClick={() => rate(0)}>
+                  <span aria-hidden="true">✗</span> {t('studyRateNo')}
+                </button>
+                <button className="study-rate-btn study-rate-almost" onClick={() => rate(1)}>
+                  <span aria-hidden="true">−</span> {t('studyRateAlmost')}
+                </button>
+                <button className="study-rate-btn study-rate-yes" onClick={() => rate(2)}>
+                  <span aria-hidden="true">✓</span> {t('studyRateYes')}
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       ) : (
         <p className="muted">{t('noResults')}</p>
