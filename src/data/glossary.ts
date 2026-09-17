@@ -1368,4 +1368,31 @@ export const GLOSSARY: GlossaryEntry[] = [
       en: 'Number of items entering or leaving the system over a given period — a key flow metric in continuous-flow (Kanban) work.',
     },
   },
+  {
+    id: 'g-eco2026',
+    category: 'process',
+    term: { fr: "ECO 2026 (Grandes lignes du contenu de l'examen)", en: '2026 ECO (Examination Content Outline)' },
+    definition: {
+      fr: "Mise à jour de juillet 2026 de la structure de l'examen PMP : 3 domaines (Personnes 33 %, Processus 41 %, Environnement commercial 26 %), 26 tâches, 180 questions (170 notées) en 240 minutes. Remplace l'ancienne répartition 42/50/8 % de 2021.",
+      en: "The July 2026 update to the PMP exam structure: 3 domains (People 33%, Process 41%, Business Environment 26%), 26 tasks, 180 questions (170 scored) in 240 minutes. Replaces the old 2021 42/50/8% split.",
+    },
+  },
+  {
+    id: 'g-catalyseurs',
+    category: 'process',
+    term: { fr: 'Catalyseurs (enablers)', en: 'Enablers' },
+    definition: {
+      fr: "Dans l'ECO, exemples concrets de travail associés à une tâche — une liste illustrative, non exhaustive, de ce qu'un chef de projet fait pour accomplir la tâche.",
+      en: "In the ECO, concrete examples of work tied to a task — an illustrative, non-exhaustive list of what a project manager does to accomplish the task.",
+    },
+  },
+  {
+    id: 'g-pmiethicsvalues',
+    category: 'people',
+    term: { fr: "4 valeurs du code d'éthique PMI", en: '4 PMI Code of Ethics values' },
+    definition: {
+      fr: 'Responsabilité, respect, équité, honnêteté — les 4 valeurs non négociables du code de déontologie du PMI ; une option qui en viole une seule est automatiquement fausse à l’examen.',
+      en: 'Responsibility, respect, fairness, honesty — the 4 non-negotiable values of the PMI Code of Ethics; an option violating even one is automatically wrong on the exam.',
+    },
+  },
 ]

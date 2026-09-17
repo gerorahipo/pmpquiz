@@ -16,10 +16,11 @@ import { COMPLIANCE_REQUIREMENTS_QUESTIONS } from './questions-compliance-requir
 import { FOUNDATIONS_PLANNING_QUESTIONS } from './questions-foundations-planning'
 import { CONFLICT_RISK_ISSUES_QUESTIONS } from './questions-conflict-risk-issues'
 import { CHANGE_CLOSURE_QUESTIONS } from './questions-change-closure'
+import { ECO2026_ETHICS_QUESTIONS } from './questions-eco2026-ethics'
 import { QUESTION_ECO_TASK } from './questionEcoTags'
 
 /** Bump this version whenever the question bank changes (used by the API seed). */
-export const QUESTIONS_VERSION = 14
+export const QUESTIONS_VERSION = 15
 
 /** Difficulty assignment for the original (v1) question bank. */
 const BASE_EASY_IDS = new Set([
@@ -51,6 +52,7 @@ const RAW_QUESTIONS: Question[] = [
   ...FOUNDATIONS_PLANNING_QUESTIONS,
   ...CONFLICT_RISK_ISSUES_QUESTIONS,
   ...CHANGE_CLOSURE_QUESTIONS,
+  ...ECO2026_ETHICS_QUESTIONS,
 ]
 
 /** Attach the ECO task tag (for fine-grained weak-area tracking) to each question. */
