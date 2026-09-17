@@ -167,3 +167,8 @@ export const STUDY_DOMAINS: StudyDomain[] = [
     ],
   },
 ]
+
+/** Reverse lookup: which domain's accent color to use for a given concept sheet id (revision page tinting). */
+export const CONCEPT_DOMAIN_COLOR: Record<string, StudyDomain['color']> = Object.fromEntries(
+  STUDY_DOMAINS.flatMap((d) => d.conceptIds.map((id) => [id, d.color] as const)),
+)

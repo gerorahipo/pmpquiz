@@ -691,11 +691,12 @@ select:focus-visible {
   display: block;
   color: var(--text);
   text-decoration: none;
+  border-top: 4px solid var(--domain-color, var(--primary));
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .concept-card:hover {
-  border-color: var(--primary);
+  border-color: var(--domain-color, var(--primary));
 }
 
 .concept-card h2 {

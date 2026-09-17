@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { loadConcepts } from '../content'
+import { CONCEPT_DOMAIN_COLOR } from '../data/studyDomains'
 import type { Concept, ConceptCategory } from '../types'
 
 const CATEGORIES: { id: ConceptCategory; labelKey: 'catPrinciples' | 'catPerformance' | 'catTopics' }[] = [
@@ -58,7 +59,11 @@ export default function Concepts() {
 
           <div className="card-grid concepts-grid">
             {items.map((c) => (
-              <Link key={c.id} to={`/concepts/${c.id}`} className="card concept-card">
+              <Link
+                key={c.id}
+                to={`/concepts/${c.id}`}
+                className={`card concept-card domain-${CONCEPT_DOMAIN_COLOR[c.id] ?? 'navy'}`}
+              >
                 <h2>{L(c.title)}</h2>
                 <p>{L(c.summary)}</p>
                 <span className="read-more">{t('readMore')} →</span>
