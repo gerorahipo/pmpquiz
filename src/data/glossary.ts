@@ -381,8 +381,8 @@ export const GLOSSARY: GlossaryEntry[] = [
     category: 'process',
     term: { fr: 'Matrice RACI', en: 'RACI matrix' },
     definition: {
-      fr: 'Responsible, Accountable, Consulted, Informed — clarifie les rôles (un seul « A » par tâche).',
-      en: 'Responsible, Accountable, Consulted, Informed — clarifies roles (one “A” per task).',
+      fr: 'R (réalise le travail, ≥1 par tâche) A (redevable, délègue et valide, exactement 1 par tâche) C (consulté, échange à double sens) I (informé, à sens unique, sans détail).',
+      en: 'R (does the work, ≥1 per task) A (accountable, delegates and reviews, exactly 1 per task) C (consulted, two-way exchange) I (informed, one-way, no detail needed).',
     },
   },
   {
@@ -1068,6 +1068,71 @@ export const GLOSSARY: GlossaryEntry[] = [
     definition: {
       fr: 'Le chef de projet a une autorité quasi totale ; l’équipe lui est rattachée à plein temps.',
       en: 'The PM has near-total authority; the team reports to them full-time.',
+    },
+  },
+
+  // ─────────────── PROCESS (batch 3) ───────────────
+  {
+    id: 'g-projectcharter',
+    category: 'process',
+    term: { fr: 'Charte du projet', en: 'Project charter' },
+    definition: {
+      fr: 'Document du commanditaire qui autorise formellement le projet et donne au chef de projet le pouvoir d’affecter des ressources. Distinct de la charte d’équipe.',
+      en: 'The sponsor’s document formally authorizing the project and empowering the PM to assign resources. Distinct from the team charter.',
+    },
+  },
+  {
+    id: 'g-visionstatement',
+    category: 'process',
+    term: { fr: 'Énoncé de la vision du projet', en: 'Project vision statement' },
+    definition: {
+      fr: 'Créé par un commanditaire/cadre : décrit le meilleur résultat possible et l’alignement stratégique visé — sert de boussole tout au long du projet.',
+      en: 'Created by a sponsor/executive: describes the best possible outcome and the intended strategic alignment — a compass throughout the project.',
+    },
+  },
+  {
+    id: 'g-staceymodel',
+    category: 'process',
+    term: { fr: 'Modèle de complexité de Stacey', en: 'Stacey complexity model' },
+    definition: {
+      fr: 'Croise certitude des exigences × certitude technique : simple, compliqué, complexe ou chaotique — guide le choix prédictif/adaptatif.',
+      en: 'Crosses requirement certainty × technical certainty: simple, complicated, complex or chaotic — guides the predictive/adaptive choice.',
+    },
+  },
+  {
+    id: 'g-threshold',
+    category: 'process',
+    term: { fr: 'Seuil (gouvernance)', en: 'Threshold (governance)' },
+    definition: {
+      fr: 'Valeur prédéfinie d’une variable mesurable au-delà de laquelle une escalade ou une action est requise.',
+      en: 'A predefined value of a measurable variable beyond which escalation or action is required.',
+    },
+  },
+  {
+    id: 'g-tolerance',
+    category: 'process',
+    term: { fr: 'Tolérance', en: 'Tolerance' },
+    definition: {
+      fr: 'Variation acceptable, chiffrée, pour une exigence (qualité, risque, budget…) — au-delà, le seuil est franchi.',
+      en: 'The quantified acceptable variation for a requirement (quality, risk, budget…) — beyond it, the threshold is crossed.',
+    },
+  },
+  {
+    id: 'g-capex-opex',
+    category: 'formula',
+    term: { fr: 'CapEx vs OpEx', en: 'CapEx vs OpEx' },
+    definition: {
+      fr: 'CapEx : dépenses d’investissement (actifs physiques, durables). OpEx : dépenses opérationnelles récurrentes (salaires, loyers) — catégories budgétaires distinctes.',
+      en: 'CapEx: capital expenditures (physical, durable assets). OpEx: recurring operational expenses (salaries, rent) — distinct budget categories.',
+    },
+  },
+  {
+    id: 'g-costperpoint',
+    category: 'formula',
+    term: { fr: 'Coût par point (agile)', en: 'Cost per point (agile)' },
+    definition: {
+      fr: 'Coût par point = charges salariales de l’équipe sur la période ÷ points réalisés durant l’intervalle. Budget prévisionnel = (coût par point × points totaux à réaliser) + autres dépenses.',
+      en: 'Cost per point = team’s salary cost for the period ÷ points completed in the interval. Forecast budget = (cost per point × total points to deliver) + other expenses.',
     },
   },
 ]
