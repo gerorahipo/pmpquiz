@@ -3,7 +3,7 @@ import type { GlossaryEntry } from './data/glossary'
 import type { EcoTask } from './data/ecoTasks'
 
 /** Base URL of the PHP API. Override with VITE_API_URL at build/dev time. */
-const BASE = (import.meta.env.VITE_API_URL ?? 'https://pmpquiz-api.ddev.site').replace(/\/$/, '')
+const BASE = (import.meta.env.VITE_API_URL ?? 'https://pmpquiz-api.ddev.site:5174').replace(/\/$/, '')
 
 const TOKEN_KEY = 'pmpquiz-token'
 let token: string | null = localStorage.getItem(TOKEN_KEY)

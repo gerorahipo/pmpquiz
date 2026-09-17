@@ -25,7 +25,7 @@ ddev start
 ddev exec php db/migrate.php
 
 # 4. URL de l'API
-ddev describe        # → https://pmpquiz-api.ddev.site
+ddev describe        # → https://pmpquiz-api.ddev.site:5174
 ```
 
 Le `migrate.php` est **ré-exécutable** : il ne recrée pas les tables existantes
@@ -46,7 +46,7 @@ Variables d'environnement (définies dans `.ddev/config.yaml`, surchargées en p
 
 ## Endpoints
 
-Base : `https://pmpquiz-api.ddev.site`
+Base : `https://pmpquiz-api.ddev.site:5174`
 
 ### Auth
 | Méthode | Route                | Corps                       | Réponse                     |
@@ -77,7 +77,7 @@ Base : `https://pmpquiz-api.ddev.site`
 ## Tests rapides (curl)
 
 ```bash
-API=https://pmpquiz-api.ddev.site
+API=https://pmpquiz-api.ddev.site:5174
 
 # santé
 curl -s $API/api/health
