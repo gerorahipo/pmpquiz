@@ -44,6 +44,7 @@ export const CONCEPT_ECO_TASKS: Record<string, string[]> = {
   'tp-motivation': ['people-14', 'people-02'],
   'tp-org-structures': ['process-14'],
   'tp-selection': ['business-02'],
+  'tp-governance': ['process-14'],
   // tp-eco and tp-mindset are meta/exam-format sheets with no single-task
   // match — intentionally omitted, so no drill button shows for them.
 }
