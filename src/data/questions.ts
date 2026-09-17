@@ -11,10 +11,11 @@ import { MULTI_QUESTIONS } from './questions-multi'
 import { ORG_SELECTION_QUESTIONS } from './questions-org-selection'
 import { STAKEHOLDERS_COMMS_QUESTIONS } from './questions-stakeholders-comms'
 import { GOVERNANCE_QUESTIONS } from './questions-governance'
+import { WBS_SCOPE_QUESTIONS } from './questions-wbs-scope'
 import { QUESTION_ECO_TASK } from './questionEcoTags'
 
 /** Bump this version whenever the question bank changes (used by the API seed). */
-export const QUESTIONS_VERSION = 9
+export const QUESTIONS_VERSION = 10
 
 /** Difficulty assignment for the original (v1) question bank. */
 const BASE_EASY_IDS = new Set([
@@ -41,6 +42,7 @@ const RAW_QUESTIONS: Question[] = [
   ...ORG_SELECTION_QUESTIONS,
   ...STAKEHOLDERS_COMMS_QUESTIONS,
   ...GOVERNANCE_QUESTIONS,
+  ...WBS_SCOPE_QUESTIONS,
 ]
 
 /** Attach the ECO task tag (for fine-grained weak-area tracking) to each question. */
