@@ -1678,5 +1678,101 @@
       "fr": "Conscience de soi et maîtrise de soi (envers soi-même) ; conscience sociale et gestion des relations (envers les autres).",
       "en": "Self-awareness and self-management (toward oneself); social awareness and relationship management (toward others)."
     }
+  },
+  {
+    "id": "g-kotter",
+    "category": "process",
+    "term": {
+      "fr": "Modèle de changement en 8 étapes de Kotter",
+      "en": "Kotter’s 8-step change model"
+    },
+    "definition": {
+      "fr": "Urgence → coalition → vision → communication → lever les obstacles → victoires rapides → consolider l’élan → ancrer dans la culture. Arrêter après une victoire rapide est le piège classique.",
+      "en": "Urgency → coalition → vision → communication → remove obstacles → short-term wins → build on momentum → anchor in culture. Stopping after an early win is the classic trap."
+    }
+  },
+  {
+    "id": "g-pestle",
+    "category": "process",
+    "term": {
+      "fr": "PESTLE",
+      "en": "PESTLE"
+    },
+    "definition": {
+      "fr": "Politique, Économique, Socioculturel, Technologique, Légal, Environnemental — référentiel généraliste pour scanner l’environnement externe d’un projet.",
+      "en": "Political, Economic, Sociocultural, Technological, Legal, Environmental — a general-purpose framework for scanning a project’s external environment."
+    }
+  },
+  {
+    "id": "g-tecop",
+    "category": "process",
+    "term": {
+      "fr": "TECOP",
+      "en": "TECOP"
+    },
+    "definition": {
+      "fr": "Technique, Environnemental, Commercial, Opérationnel, Politique — référentiel de scan externe centré sur l’exécution du projet.",
+      "en": "Technical, Environmental, Commercial, Operational, Political — an external-scanning framework focused on project execution."
+    }
+  },
+  {
+    "id": "g-vuca",
+    "category": "process",
+    "term": {
+      "fr": "VUCA",
+      "en": "VUCA"
+    },
+    "definition": {
+      "fr": "Volatilité, Incertitude, Complexité, Ambiguïté — résume l’environnement type d’un projet moderne.",
+      "en": "Volatility, Uncertainty, Complexity, Ambiguity — summarizes the typical environment of a modern project."
+    }
+  },
+  {
+    "id": "g-devops",
+    "category": "process",
+    "term": {
+      "fr": "DevOps",
+      "en": "DevOps"
+    },
+    "definition": {
+      "fr": "Ensemble de pratiques visant un flux de livraison fluide en améliorant la collaboration entre équipes de développement et d’exploitation.",
+      "en": "A set of practices aiming for a smooth delivery flow by improving collaboration between development and operations teams."
+    }
+  },
+  {
+    "id": "g-hypercare",
+    "category": "process",
+    "term": {
+      "fr": "Hypercare",
+      "en": "Hypercare"
+    },
+    "definition": {
+      "fr": "Support renforcé post-implémentation, immédiatement après la mise en service, pour stabiliser l’adoption et résoudre rapidement les incidents.",
+      "en": "Intensified post-implementation support, immediately after go-live, to stabilize adoption and quickly resolve incidents."
+    }
+  },
+  {
+    "id": "g-benefitsowner",
+    "category": "process",
+    "term": {
+      "fr": "Responsable des bénéfices (benefits owner)",
+      "en": "Benefits owner"
+    },
+    "definition": {
+      "fr": "Analyste métier, commanditaire ou responsable des opérations chargé de suivre la réalisation des bénéfices après la clôture ; survit au projet.",
+      "en": "A business analyst, sponsor or operations manager responsible for tracking benefits realization after closure; outlives the project."
+    }
+  },
+  {
+    "id": "g-throughput",
+    "category": "formula",
+    "term": {
+      "fr": "Débit (throughput)",
+      "en": "Throughput"
+    },
+    "definition": {
+      "fr": "Nombre d’éléments entrant ou sortant du système sur une période donnée — mesure clé du flux continu (Kanban).",
+      "en": "Number of items entering or leaving the system over a given period — a key flow metric in continuous-flow (Kanban) work."
+    }
   }
 ]
