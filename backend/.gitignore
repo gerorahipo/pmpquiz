@@ -14,3 +14,4 @@
 
 # Local env overrides
 .env
+/src/env.local.php

@@ -44,6 +44,15 @@ Variables d'environnement (définies dans `.ddev/config.yaml`, surchargées en p
 | `JWT_TTL`           | `604800` (7 j)                    | durée de vie du token (secondes)       |
 | `CORS_ALLOW_ORIGIN` | `*`                               | origine autorisée (ex. l'app Vite)     |
 
+### Hébergement mutualisé (sans vraies variables d'env)
+
+Sur un hébergeur comme LWS (souvent PHP-FPM/LiteSpeed), `.htaccess SetEnv`
+n'est pas toujours répercuté vers `getenv()`. Filet de sécurité : copier
+`src/env.local.example.php` en `src/env.local.php` (gitignoré) et y mettre
+les vraies valeurs — chargé automatiquement par `bootstrap.php` s'il existe,
+sans jamais écraser une vraie variable d'environnement déjà définie. En prod,
+mettre `CORS_ALLOW_ORIGIN` à l'origine exacte du site plutôt que `*`.
+
 ## Endpoints
 
 Base : `https://pmpquiz-api.ddev.site:5174`
