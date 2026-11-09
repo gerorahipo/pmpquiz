@@ -21,7 +21,7 @@ import { TOOLS_TECHNIQUES_QUESTIONS } from './questions-tools-techniques'
 import { QUESTION_ECO_TASK } from './questionEcoTags'
 
 /** Bump this version whenever the question bank changes (used by the API seed). */
-export const QUESTIONS_VERSION = 16
+export const QUESTIONS_VERSION = 17
 
 /** Difficulty assignment for the original (v1) question bank. */
 const BASE_EASY_IDS = new Set([
