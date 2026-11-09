@@ -20,7 +20,7 @@ export const MODE_TIME_LIMIT: Record<QuizMode, number | undefined> = {
   easy: undefined,
   medium: undefined,
   expert: 150 * 60, // 120 hard questions, exam pace
-  exam: 230 * 60, // full 180-question mock exam
+  exam: 240 * 60, // full 180-question mock exam
   missed: undefined,
 }
 
